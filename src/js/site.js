@@ -2,16 +2,20 @@
     if (!$) throw "jQuery library is required."
 
     //Global reference
-    const timeoutDelay = 50;
-    const $win = $(window);
-    const $doc = $(document);
-    const $body = $("body");
+    const timeoutDelay      = 50;
+    const $win              = $(window);
+    const $doc              = $(document);
+    const $body             = $("body");
 
     //Cached references
-    let $siteHeader = $("#site-header");
-    let $dropdownToggles = $("#site-header .dropdown-toggle");
-    let $tooltip = $('[data-toggle="tooltip"]');
-    let $popover = $('[data-toggle="popover"]')
+    let $siteHeader         = $("#site-header");
+    let $dropdownToggles    = $("#site-header .dropdown-toggle");
+    let $tooltip            = $('[data-toggle="tooltip"]');
+    let $popover            = $('[data-toggle="popover"]');
+    let $mainMenu           = $('#main-menu');
+    let $searchToggle       = $('#search-toggle');
+    let $searchInput        = $('#search-input');
+    let $searchSubmit       = $('#search-submit');
 
     //Timeout Vars
     let scrollTimeout;
@@ -62,6 +66,14 @@
         $body.scrollspy({
             offset: 100,
             target: '#scrollspy'
+        });
+
+        //Toggle site search input box
+        $searchToggle.click(function() {
+            $searchInput.toggleClass('d-lg-block slide-horiz-l');
+            $searchSubmit.toggleClass('d-lg-block slide-horiz-l');
+            $mainMenu.toggleClass('d-lg-none slide-horiz-l');
+            $searchToggle.toggleClass('icon-cross');
         });
     });
 
