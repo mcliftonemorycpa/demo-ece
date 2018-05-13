@@ -1,0 +1,3 @@
+[submodule "template-ece"]
+	path = template-ece
+	url = https://github.com/emorycpa/template-ece

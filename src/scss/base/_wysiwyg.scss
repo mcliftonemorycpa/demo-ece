@@ -1,0 +1,23 @@
+/*
+ * Styles specific to Cascade WYSIWYG areas
+*/
+
+.wysiwyg {
+    h1 {
+        @include heading;
+    }
+    h2,h3,h4,h5,h6 {
+        @include subheading;
+    }
+    blockquote {
+        font-style:italic;
+        margin-left:$grid-gutter-width;
+    }
+    a {
+        text-decoration:underline; // Accessibility
+        &:hover,
+        &:focus {
+            text-decoration:none;
+        }
+    }
+}

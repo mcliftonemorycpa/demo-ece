@@ -1,0 +1,25 @@
+{% set siteName = "New Website" %}
+{% set includePath = "includes/" %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "partials/meta.njk" %}
+    {% block head %}{% endblock %}
+    {% include "partials/head.njk" %}
+</head>
+
+<body>
+    <a href="#main" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    {% include "partials/global/header.njk" %}
+
+    <a id="main" class="sr-only sr-only-focusable">Main content</a>
+
+    {% block content %}{% endblock %}
+
+    {% include "partials/global/footer.njk" %}
+    {% include "partials/js.njk" %}
+</body>
+
+</html>

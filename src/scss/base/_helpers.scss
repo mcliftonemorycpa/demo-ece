@@ -1,0 +1,40 @@
+/*
+ * Create a placeholder space for images
+ * to prevent content shifting around
+ * while they load or if the image is broken
+*/
+
+figure.image {
+    margin: 0;
+    padding: 0;
+}
+
+.image {
+    display: block;
+    position: relative;
+
+    // 1:1 aspect ratio (square)
+    &.image-1by1 {
+        padding-top: 100%;
+    }
+
+    // 4:3 aspect ratio
+    &.image-4by3 {
+        padding-top: 75%;
+    }
+
+    // 16:9 aspect ratio
+    &.image-16by9 {
+        padding-top: 56.25%;
+    }
+
+    img {
+        bottom: 0;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+    }
+}

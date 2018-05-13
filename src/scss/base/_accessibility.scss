@@ -1,0 +1,13 @@
+/*
+ * Text selection color
+*/
+
+::-moz-selection {
+    color: $white;
+    background: theme-color("primary");
+}
+
+::selection {
+    color: $white;
+    background: theme-color("primary");
+}

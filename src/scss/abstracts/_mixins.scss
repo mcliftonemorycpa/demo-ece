@@ -1,0 +1,10 @@
+@mixin heading {
+    font-family:$spectral;
+    line-height:1.1em;
+}
+
+@mixin subheading {
+    font-family:$barlow-condensed;
+    line-height:1.1em;
+    text-transform:uppercase;
+}

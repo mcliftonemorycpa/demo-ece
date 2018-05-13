@@ -1,0 +1,45 @@
+.carousel {
+
+    /*
+     * Accessibility
+    */
+
+    // Larger touchpoint for indicators
+    .carousel-indicators li,
+    .carousel-indicators li.active {
+        height: 18px;
+        width: 18px;
+        border-width: 2px;
+        position: relative;
+    }
+
+    // Focus effects
+    .carousel-tablist-highlight {
+        display: block;
+        position: absolute;
+        outline: 2px solid transparent;
+        background-color: transparent;
+
+        &.focus {
+            outline: 2px solid $sky-blue;
+        }
+    }
+
+    .carousel-control-next:focus .carousel-control-next-icon,
+    .carousel-control-prev:focus .carousel-control-prev-icon {
+        outline: 2px solid $sky-blue;
+    }
+
+    // Hide position of pause/resume button
+    .carousel-pause-button {
+        position: absolute;
+        top: -30em;
+        left: -300em;
+        display: block;
+
+        &.focus {
+            top: 0.5em;
+            left: 0.5em
+        }
+    }
+}
