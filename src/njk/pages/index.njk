@@ -1,5 +1,6 @@
 {% extends "layout.njk" %}
 {% set pageTitle = 'Home' %}
+{% set pageType = 'Layout' %}
 {% block head %}
 <title>{{ pageTitle}} | {{ siteName }}</title>
 {% endblock %}
@@ -7,5 +8,95 @@
 {% block content %}
 <main id="main">
 
+    <section aria-labelledby="page-title">
+        {% include "partials/hero/hero-home.njk" %}
+    </section>
+
+    <section class="gradient-v-gray pinch pinch-gray" aria-label="Testimonial carousel with photos">
+        <div class="container py-5">
+            {% include "partials/component/carousel-testimonial-photos.njk" %}
+        </div>
+    </section>
+
+    <section aria-label="Card icons">
+        <div class="wrapper bg-fractal-frame">
+            <div class="container">
+                <div class="text-center pb-5">
+                    <h2 class="heading">Card Icons Component</h2>
+                </div>
+                {% include "partials/component/card-icons.njk" %}
+            </div>
+        </div>
+    </section>
+
+    <section class="gradient-hz-blue pinch pinch-blue" aria-label="Card links">
+        <div class="bg-effects">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h2 class="heading text-white mb-0">Card Links Component</h2>
+                </div>
+                {% include "partials/component/card-links.njk" %}
+            </div>
+        </div>
+    </section>
+
+    <section aria-label="Photo overlap, Events feed, News feed">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-2">
+                        <h2 class="heading">Section with Photo Overlap Component</h2>
+                        <div class="wysiwyg">
+                            <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                            <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+                            <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <a href="#" class="btn btn-primary">Call to action</a>
+                    </div>
+                    <!-- /.col-lg-6 -->
+
+                    <div class="col-lg-6 order-1 align-self-center">
+                        {% include "partials/snippet/photo-overlap.njk" %}
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+
+                <hr class="my-5">
+
+                <h2 class="heading mb-3">Events feed component</h2>
+                <div class="row">
+                    {% for i in range(0,2) %}
+                    <div class="col-md-6">
+                        {% include "partials/component/feed-events.njk" %}
+                    </div>
+                    <!-- /.-col-md-6 -->
+                    {% endfor %}
+                </div>
+                <!-- /.row -->
+                <a href="#" class="btn btn-primary mt-4 mt-md-0">View all events</a>
+
+                <hr class="my-5">
+
+                <h2 class="heading mb-3">News feed component</h2>
+                <div class="row">
+                    {% for i in range(0,2) %}
+                    <div class="col-sm-6">
+                        {% include "partials/component/feed-news.njk" %}
+                    </div>
+                    <!-- /.-col-sm-6 -->
+                    {% endfor %}
+                </div>
+                <!-- /.row -->
+                <a href="#" class="btn btn-primary">View all news</a>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
 </main>
+
 {% endblock %}

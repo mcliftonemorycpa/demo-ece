@@ -1,0 +1,40 @@
+<div class="card-links">
+
+    <div class="row">
+        {% for i in range(0,3) %}
+        <div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="#">
+                <h3 class="card-links__title">Short title</h3>
+                <ul class="card-links__list">
+                    {% for i in range(0,4) %}
+                    <li>List item here</li>
+                    <li>This item has a longer string of text</li>
+                    {% endfor %}
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+        <div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="#">
+                <h3 class="card-links__title">This item has a much longer title</h3>
+                <ul class="card-links__list">
+                    {% for i in range(0,3) %}
+                    <li>List item here</li>
+                    <li>This item has a longer string of text</li>
+                    {% endfor %}
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+        {% endfor %}
+    </div>
+    <!-- /.row -->
+
+    <div class="btn-group btn-group-lg d-flex justify-content-center pb-5" role="group" aria-label="Basic example">
+        <a href="#" class="btn btn-secondary">View all offerings</a>
+        <a href="search.html" class="btn btn-outline-light">
+            <img src="{{ includePath }}images/icons/magnifier-w.svg" class="icon-sm" alt=""/> Search Courses
+        </a>
+    </div>
+    <!-- /.btn-group -->
+
+</div>
+<!-- /.card-links -->

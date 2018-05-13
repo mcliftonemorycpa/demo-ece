@@ -1,0 +1,64 @@
+{% extends "layout.njk" %}
+{% set pageTitle = 'Interior with Sidebar' %}
+{% set pageType = 'Layout' %}
+{% block head %}
+<title>{{ pageTitle }} | {{ siteName }}</title>
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        {% include "partials/hero/hero-interior.njk" %}
+    </section>
+
+    <section aria-label="Photo overlap, Stats 2x2 grid, Stats row">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- LEFT COLUMN: WYSIWYG Demo -->
+                    <div class="col-md-8 col-lg-9">
+                        {% include "partials/wysiwyg/wysiwyg.njk" %}
+                        <strong>List with Checks:</strong>
+                        <ul class="list-checks">
+                            <li>This is a list with checks instead of bullets. Use <code>.list-checks</code> to activate.</li>
+                            <li>{% include "partials/wysiwyg/sentence-sm.njk" %}</li>
+                            <li>This is a list with checks</li>
+                        </ul>
+                    </div>
+                    <!-- /.col-md-8 .col-lg-9 -->
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-4 col-lg-3">
+                        <aside class="sidebar">
+                            {% include "partials/component/sidebar-menu.njk" %}
+                            {% include "partials/component/cta-sidebar-bio.njk" %}
+                        </aside>
+                    </div><!-- /.col-md-4 -->
+
+                </div>
+                <!-- /.row -->
+                {% include "partials/snippet/heading-group.njk" %}
+                {% include "partials/component/list-row.njk" %}
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+    <section aria-label="Testimonial Carousel with 2 items per slide">
+        <div class="bg-facets-gray">
+            <div class="container">
+                {% include "partials/component/carousel-testimonial-2x.njk" %}
+                <div class="text-center pt-3 pb-5">
+                    <a href="#" class="btn btn-lg btn-primary">View all Testimonials</a>
+                </div>
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- .bg-facets-gray -->
+    </section>
+
+</main>
+{% endblock %}

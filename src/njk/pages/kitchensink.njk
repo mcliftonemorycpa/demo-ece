@@ -1,6 +1,11 @@
-{% extends "layout.njk" %} {% set pageTitle = 'Kitchen Sink' %} {% block head %}
+{% extends "layout.njk" %}
+{% set pageTitle = 'Kitchen Sink' %}
+{% set pageType = 'Layout' %}
+{% block head %}
 <title>{{ pageTitle }} | {{ siteName }}</title>
-{% endblock %} {% block content %}
+{% endblock %}
+
+{% block content %}
 <!--
 #########################################
 BOOTSTRAP KITCHEN SINK
@@ -9,12 +14,12 @@ Bootstrap 4.1 components
 #########################################
 -->
 <main id="main">
-  <div class="container-fluid">
+  <div class="container bg-white">
     <div class="row no-gutters">
-      <div class="col-lg-3">
+      <div class="col-lg-2">
         <div class="position-fixed d-none d-lg-block">
-          <div id="scrollspy" class="list-group list-group-flush d-flex flex-columns flex-wrap" style="height:87vh">
-            <a class="list-group-item list-group-item-action" href="#typography" style="border-top:1px solid rgba(16, 24, 32, 0.125)">Typography</a>
+          <div id="scrollspy" class="list-group list-group-flush">
+            <a class="list-group-item list-group-item-action" href="#typography">Typography</a>
             <a class="list-group-item list-group-item-action" href="#images">Images</a>
             <a class="list-group-item list-group-item-action" href="#tables">Tables</a>
             <a class="list-group-item list-group-item-action" href="#list-groups">List Groups</a>
@@ -30,12 +35,11 @@ Bootstrap 4.1 components
             <a class="list-group-item list-group-item-action" href="#popovers">Popovers</a>
             <a class="list-group-item list-group-item-action" href="#progress-bars">Progress Bars</a>
             <a class="list-group-item list-group-item-action" href="#modals">Modals</a>
-            <a class="list-group-item list-group-item-action" href="#tabs">Tabs</a>
           </div>
-          <a class="btn btn-link btn-sm" href="#" style="position:fixed;bottom:0;left:0;">Back to top</a>
+          <a class="btn btn-link btn-sm" href="#">Back to top</a>
         </div>
       </div>
-      <div class="col-lg-9">
+      <div class="col-lg-10">
         <section class="mb-5" id="typography">
           <div class="bg-light py-4 mb-5">
             <div class="container">
@@ -306,7 +310,7 @@ Bootstrap 4.1 components
                 <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
               </div>
               <div class="col-md-4">
-                <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+                <div class="p-3 mb-2 bg-secondary text-dark">.bg-secondary</div>
               </div>
               <div class="col-md-4">
                 <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
@@ -360,34 +364,6 @@ Bootstrap 4.1 components
                   <img src="http://via.placeholder.com/300x200" class="figure-img img-fluid rounded" alt="Figure">
                   <figcaption class="figure-caption">A caption for the above image.</figcaption>
                 </figure>
-              </div>
-              <div class="col-12">
-                <h3 class="mt-5">Images with Placeholder area</h3>
-                <p>These images will always fill the entire width of it's parent container. The image height is static to prevent a jumping or jittery effect as the page loads.</p>
-                <div class="row mb-4">
-                  <div class="col-sm-6">
-                    <h4>1:1 Ratio <small>500x500</small></h4>
-                    <hr>
-                    <figure class="image image-1by1" style="background-color:#eee">
-                      <img src="https://unsplash.it/500?random" alt="1:1 Ratio">
-                    </figure>
-                    <hr>
-                  </div>
-                  <div class="col-sm-6">
-                    <h4>4:3 Ratio <small>640x480</small></h4>
-                    <hr>
-                    <figure class="image image-4by3" style="background-color:#eee">
-                      <img src="https://unsplash.it/640/480?random" alt="4:3 Ratio">
-                    </figure>
-                    <hr>
-                  </div>
-                </div>
-                <h4>16:9 Ratio <small>1920x1080</small></h4>
-                <hr>
-                <figure class="image image-16by9" style="background-color:#eee">
-                  <img src="http://unsplash.it/1920/1080?random" alt="16:9 Ratio">
-                </figure>
-                <hr>
               </div>
               <div class="col-12">
                 <h3 class="mt-5">Media</h3>
@@ -1267,7 +1243,7 @@ Bootstrap 4.1 components
                 </div>
               </div>
               <div class="col-sm-6 col-md-4 col-xl-3">
-                <div class="card text-white bg-secondary mb-3" style="max-width: 20rem;">
+                <div class="card text-dark bg-secondary mb-3" style="max-width: 20rem;">
                   <div class="card-header">Header</div>
                   <div class="card-body">
                     <h4 class="card-title">Secondary card</h4>
@@ -1486,16 +1462,16 @@ Bootstrap 4.1 components
                     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
                   </div>
                   <div class="form-group">
-                    <input type="password" class="form-control" placeholder="Password" aria-label="Password">
+                    <input type="password" class="form-control" placeholder="Password">
                   </div>
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Read-only input" readonly aria-label="Read-only input">
+                    <input class="form-control" type="text" placeholder="Readonly input" readonly>
                   </div>
                   <div class="form-group">
-                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Read-only input as plain text" aria-label="Read-only input as static text">
+                    <input type="text" readonly class="form-control-plaintext" id="staticEmail" value="Readonly input as plain text">
                   </div>
                   <div class="form-group">
-                    <input type="text" class="form-control" placeholder="Disabled input" disabled aria-label="Disabled input">
+                    <input type="text" class="form-control" placeholder="Disabled input" disabled>
                   </div>
                   <div class="form-group">
                     <label for="validText">Valid input</label>
@@ -1507,13 +1483,13 @@ Bootstrap 4.1 components
                     <div class="invalid-feedback">Please provide a valid value.</div>
                   </div>
                   <div class="form-group">
-                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg" aria-label="Large input">
+                    <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
                   </div>
                   <div class="form-group">
-                    <input class="form-control" type="text" placeholder="Default input" aria-label="Default input">
+                    <input class="form-control" type="text" placeholder="Default input">
                   </div>
                   <div class="form-group">
-                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label="Small input">
+                    <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
                   </div>
                   <div class="form-group">
                     <div class="input-group input-group-lg">
@@ -1571,20 +1547,20 @@ Bootstrap 4.1 components
                   <div class="form-group">
                     <div class="row">
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="Row / input 1" aria-label="Row / input 1">
+                        <input type="text" class="form-control" placeholder="Row / input 1">
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="Row / input 2" aria-label="Row / input 2">
+                        <input type="text" class="form-control" placeholder="Row / input 2">
                       </div>
                     </div>
                   </div>
                   <div class="form-group">
                     <div class="form-row">
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="Form row / input 1" aria-label="Form row / input 1">
+                        <input type="text" class="form-control" placeholder="Form row / input 1">
                       </div>
                       <div class="col">
-                        <input type="text" class="form-control" placeholder="Form row / input 2" aria-label="Form row / input 2">
+                        <input type="text" class="form-control" placeholder="Form row / input 2">
                       </div>
                     </div>
                   </div>
@@ -1596,12 +1572,12 @@ Bootstrap 4.1 components
                   </div>
                   <div class="form-group">
                     <div class="form-inline">
-                      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Inline input 1" aria-label="Inline input 1">
+                      <input type="text" class="form-control mb-2 mr-sm-2 mb-sm-0" placeholder="Inline input 1">
                       <div class="input-group mb-2 mr-sm-2 mb-sm-0">
                         <div class="input-group-prepend">
                           <div class="input-group-text">@</div>
                         </div>
-                        <input type="text" class="form-control" placeholder="Inline input 2" aria-label="Inline input 2">
+                        <input type="text" class="form-control" placeholder="Inline input 2">
                       </div>
                     </div>
                   </div>
@@ -1638,22 +1614,22 @@ Bootstrap 4.1 components
                     </select>
                   </div>
                   <div class="form-group">
-                    <select class="form-control form-control-lg" aria-label="Large select">
+                    <select class="form-control form-control-lg">
                       <option>Large select</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <select class="form-control" aria-label="Default select">
+                    <select class="form-control">
                       <option>Default select</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <select class="form-control form-control-sm" aria-label="Small select">
+                    <select class="form-control form-control-sm">
                       <option>Small select</option>
                     </select>
                   </div>
                   <div class="form-group">
-                    <select class="custom-select" aria-label="Custom select">
+                    <select class="custom-select">
                       <option selected>Custom select</option>
                       <option value="1">One</option>
                       <option value="2">Two</option>
@@ -2507,106 +2483,24 @@ Bootstrap 4.1 components
           <div class="container">
             <div class="row">
               <div class="col-12">
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modalDemo">
+                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                   Launch demo modal
                 </button>
-                <div class="modal fade" id="modalDemo" tabindex="-1" role="dialog" aria-labelledby="modalDemoLabel" aria-hidden="true">
+                <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
                   <div class="modal-dialog" role="dialog">
                     <div class="modal-content">
                       <div class="modal-header">
-                        <div class="modal-title h2 subheading" id="modalDemoLabel">Modal title</div>
+                        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                           <span aria-hidden="true">&times;</span>
                         </button>
                       </div>
                       <div class="modal-body">
-                        <div class="wysiwyg">
-                          <p>Modal body text goes here.</p>
-                          <h3>Heading Level 3</h3>
-                          <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
-                          <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
-                          <h4>Heading Level 4</h4>
-                          <p>{% include "partials/wysiwyg/list-ordered.njk" %}</p>
-                          <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
-                        </div>
+                        {% include "partials/wysiwyg/wysiwyg.njk" %}
                       </div>
                       <div class="modal-footer">
                         <button type="button" class="btn btn-primary">Save changes</button>
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section class="mb-5 pt-5" id="tabs">
-          <div class="bg-light py-4 mb-5">
-            <div class="container">
-              <div class="d-flex justify-content-between">
-                <h2>
-                  <span class="fa fa-window-restore mr-1"></span>
-                  Tabs
-                </h2>
-              </div>
-            </div>
-          </div>
-          <div class="container">
-            <div class="row">
-              <div class="col-12">
-                <h3>Horizontal Tabs</h3>
-                <ul class="nav nav-tabs mb-3" id="tabDemo" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Profile</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Contact</a>
-                  </li>
-                </ul>
-                <div class="tab-content" id="tabDemoContent">
-                  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                    <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
-                    <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
-                  </div>
-                  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                    <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
-                    <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
-                  </div>
-                  <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                    <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
-                  </div>
-                </div>
-                <hr class="my-5">
-                <h3>Vertical Pill Tabs</h3>
-                <div class="row">
-                  <div class="col-sm-3">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <a class="nav-link active" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="true">Home</a>
-                      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</a>
-                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Messages</a>
-                      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false">Settings</a>
-                    </div>
-                  </div>
-                  <div class="col-sm-9">
-                    <div class="tab-content" id="v-pills-tabContent">
-                      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                        <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
-                        <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
-                      </div>
-                      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                        <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
-                        <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
-                      </div>
-                      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                        <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
-                      </div>
-                      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">
-                        <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
-                        <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
                       </div>
                     </div>
                   </div>

@@ -1,0 +1,46 @@
+{% extends "layout.njk" %}
+{% set pageTitle = 'Search' %}
+{% set pageType = 'Layout' %}
+{% block head %}
+<title>{{ pageTitle }} | {{ siteName }}</title>
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        {% include "partials/hero/hero-interior.njk" %}
+    </section>
+
+    <section aria-label="Photo overlap, Stats 2x2 grid, Stats row">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- LEFT COLUMN: WYSIWYG Demo -->
+                    <div class="col-md-8 col-lg-9 order-md-2">
+                        {% include "partials/form/search-form.njk" %}
+                        {% include "partials/component/search-results.njk" %}
+                        {% include "partials/snippet/pagination.njk" %}
+                    </div>
+                    <!-- /.col-md-8 .col-lg-9 -->
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-4 col-lg-3 order-md-1">
+                        <aside class="sidebar">
+                            <div class="heading h4">Filter results:</div>
+                            {% include "partials/form/search-filters.njk" %}
+                            {% include "partials/component/cta-sidebar.njk" %}
+                        </aside>
+                    </div><!-- /.col-md-4 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+{% endblock %}

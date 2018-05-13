@@ -1,0 +1,17 @@
+<div class="stats stats-col">
+    <div class="row">
+        {% for i in range(0,4) %}
+        <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="stats__item">
+                <img class="stats__icon" src="https://placehold.it/50" alt="" />
+                <div class="stats__bold">Highest Rankings</div>
+                <div class="stats__text">{% include "partials/wysiwyg/sentence-sm.njk" %}</div>
+            </div>
+            <!-- /.stats__item -->
+        </div>
+        <!-- /.col-sm-6 .col-md-12 .col-lg-6 -->
+        {% endfor %}
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.stats .stats-col -->

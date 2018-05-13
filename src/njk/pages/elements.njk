@@ -1,0 +1,219 @@
+{% extends "layout.njk" %}
+{% set pageTitle = 'All Elements' %}
+{% set pageType = 'Layout' %}
+{% block head %}
+<title>{{ pageTitle }} | {{ siteName }}</title>
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        {% include "partials/hero/hero-interior.njk" %}
+    </section>
+
+    <section aria-label="WYSIWYG Demo">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- LEFT COLUMN: WYSIWYG Demo -->
+                    <div class="col-md-8 col-lg-9">
+
+                        <div class="wysiwyg">
+                            <h1 id="section1">Heading Level 1</h1>
+                            <p class="lead"><strong>Starting with some Lead Text:</strong> {% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                            <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+
+                        {% include "partials/wysiwyg/wysiwyg.njk" %}
+
+                        <strong>List with Checks:</strong>
+                        <ul class="list-checks">
+                            <li>This is a list with checks instead of bullets. Use <code>.list-checks</code> to activate.</li>
+                            <li>{% include "partials/wysiwyg/sentence-sm.njk" %}</li>
+                            <li>This is a list with checks</li>
+                        </ul>
+
+                        <br>
+                        <hr>
+                        <br>
+
+                        {% include "partials/snippet/heading-group.njk" %}
+
+                        {% include "partials/component/tabs.njk" %}
+
+                    </div>
+                    <!-- /.col-md-8 -->
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-4 col-lg-3">
+                        {% include "partials/section/sidebar.njk" %}
+                    </div><!-- /.col-md-4 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper .wrapper-overlap -->
+    </section>
+
+    <section aria-label="Simple Tabs, overlapping photos, and stats variations">
+        <div class="wrapper bg-light">
+            <div class="container">
+
+                <div class="row">
+
+                    <div class="col-lg-6 order-2">
+                        <h2 class="heading">Dramatically syndicate competitive initiatives</h2>
+                        <div class="wysiwyg">
+                            <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                            <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+                            <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+                            <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+                            <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+
+                    <div class="col-lg-6 order-1 align-self-center">
+                        {% include "partials/snippet/photo-overlap.njk" %}
+                    </div>
+                    <!-- /.col-lg-6 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper .bg-light -->
+        <div class="wrapper">
+            <div class="container">
+                {% include "partials/component/stats-row.njk" %}
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <div class="wrapper bg-light">
+            <div class="container">
+
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <h2 class="heading">Dramatically syndicate competitive initiatives</h2>
+                        <div class="wysiwyg">
+                            <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                        </div>
+                        {% include "partials/component/stats-col.njk" %}
+                    </div>
+
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="https://placehold.it/480x640" alt="placeholder"/>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper .bg-light -->
+    </section>
+
+    <section class="gradient-hz-blue pinch pinch-blue" aria-label="Card links">
+        <div class="bg-effects">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10">
+
+                        <div class="text-center my-5">
+                            <h2 class="heading text-white">Browse our Offerings</h2>
+                        </div>
+                        {% include "partials/component/card-links.njk" %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-label="Card variations, sidebar, call-to-action, testimonial carousel">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row justify-content-between">
+
+                    <div class="col-md-8">
+                        {% include "partials/component/card-info.njk" %}
+                        {% include "partials/component/card-highlight.njk" %}
+                    </div>
+                    <!-- /.col-md-8 -->
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-4 col-lg-3">
+                        <aside class="sidebar">
+                            {% include "partials/component/sidebar-menu.njk" %}
+                        </aside>
+                    </div><!-- /.col-md-4 -->
+
+                </div>
+                <!-- /.row -->
+
+                <br>
+                <hr>
+                <br>
+
+                {% include "partials/component/cta-sm.njk" %}
+                {% include "partials/component/cta.njk" %}
+
+                <br>
+                <hr>
+                <br>
+
+                {% include "partials/component/carousel-testimonial.njk" %}
+
+                <br>
+                <hr>
+                <br>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+    <section aria-label="Card icons, News feed, Events feed ">
+        <div class="wrapper bg-fractal-frame">
+            <div class="container">
+
+                <div class="text-center">
+                    <h2 class="heading">Offering Value to Our Students</h2>
+                </div>
+                {% include "partials/component/card-icons.njk" %}
+
+                <br>
+                <hr>
+                <br>
+
+                <div class="row">
+
+                    <div class="col-lg-4">
+                        <h2 class="heading mb-3">Latest News</h2>
+                        {% include "partials/component/feed-news.njk" %}
+                    </div>
+
+                    <div class="col-lg-4">
+                        <h2 class="heading mb-3">Upcoming Events</h2>
+                        {% include "partials/component/feed-events.njk" %}
+                    </div>
+
+                    <div class="col-md-10 col-lg-7 col-xl-6">
+                        {% include "partials/component/card-actions.njk" %}
+                    </div>
+
+                </div><!-- /.row -->
+            </div>
+        </div>
+    </section>
+
+</main>
+{% endblock %}

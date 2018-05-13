@@ -1,0 +1,70 @@
+<div class="accordion" id="accordion">
+
+    <div class="card">
+        <div class="card-header" id="headingOne">
+            <div class="h5 mb-0">
+                <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">Accordion item #1</button>
+            </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body">
+                <div class="wysiwyg">
+                    <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                    <h3>Heading level three</h3>
+                    <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+                    <h4>Heading level four</h4>
+                    <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+                </div>
+                <!-- /.wysiwyg -->
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.collapse -->
+    </div>
+    <!-- /.card -->
+
+    <div class="card">
+        <div class="card-header" id="headingTwo">
+            <div class="h5 mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">{% include "partials/wysiwyg/sentence-md.njk" %}</button>
+            </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+            <div class="card-body">
+                <div class="wysiwyg">
+                    <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                    <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+                </div>
+                <!-- /.wysiwyg -->
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.collapse -->
+    </div>
+    <!-- /.card -->
+
+    <div class="card">
+        <div class="card-header" id="headingThree">
+            <div class="h5 mb-0">
+                <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">{% include "partials/wysiwyg/sentence-sm.njk" %}</button>
+            </div>
+        </div>
+        <!-- /.card-header -->
+        <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+            <div class="card-body">
+                <div class="wysiwyg">
+                    <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+                    <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+                </div>
+                <!-- /.wysiwyg -->
+            </div>
+            <!-- /.card-body -->
+        </div>
+        <!-- /.collapse -->
+    </div>
+    <!-- /.card -->
+
+</div>
+<!-- /.accordion -->

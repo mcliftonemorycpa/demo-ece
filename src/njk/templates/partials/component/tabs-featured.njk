@@ -1,0 +1,52 @@
+<!-- Tabs Featured -->
+<div class="tabs tabs-featured">
+
+    <!-- Tab menu-->
+    <ul class="nav nav-tabs" id="tabFeatured" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">First tab</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Second tab</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">Third tab</a>
+        </li>
+    </ul>
+
+    <!-- Tab content-->
+    <div class="tab-content" id="tabFeaturedContent">
+        <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+            <img src="{{ includePath }}images/icons/earth-y.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">Professionally utilize turnkey e-tailers</h3>
+            <div class="wysiwyg">
+                <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-secondary" href="#">Call to action</a>
+        </div>
+        <!-- /.tab-pane -->
+        <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+            <img src="{{ includePath }}images/icons/earth-y.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">Conveniently enhance exceptional</h3>
+            <div class="wysiwyg">
+                <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-secondary" href="#">Call to action with longer text</a>
+        </div>
+        <!-- /.tab-pane -->
+        <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+            <img src="{{ includePath }}images/icons/earth-y.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">Energistically unleash principle-centered leadership without premier expertise</h3>
+            <div class="wysiwyg">
+                <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-secondary" href="#">Call to action</a>
+        </div>
+        <!-- /.tab-pane -->
+    </div>
+    <!-- /.tab-content -->
+</div>
+<!-- /.tabs .tabs-featured -->
