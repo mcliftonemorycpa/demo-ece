@@ -1,8 +1,77 @@
 @import
     // Custom Bootstrap 4.1 Framework
-    "vendor/bootstrap/custom",
+    "../../template-ece/src/scss/vendor/bootstrap/custom",
 
     // Emory Things!
-    "abstracts/abstracts",
-    "base/base",
-    "components/components";
+    "../../template-ece/src/scss/abstracts/abstracts",
+    "../../template-ece/src/scss/base/base",
+    "../../template-ece/src/scss/components/components";
+
+/* Template overrides */
+
+// Add letter-spacing to all instances of Barlow Condensed that don't have it already
+.subheading, .heading-hr, .wysiwyg h4, .wysiwyg h5, .wysiwyg h6, .btn, .card-highlight .card-highlight__title, .card-icons .card-icons__text, .card-links .card-links__title, #site-nav .navbar-nav .nav-item, .search-filters .search-filters__legend, .stats.stats-row .stats__text, .stats.stats-col .stats__bold {
+	letter-spacing: .06em;
+}
+
+// Increase small font size
+small, .small {
+	font-size: 87.5%;
+}
+
+// Increase default button font sizes
+.btn {
+	font-size: 1.125rem;
+}
+.btn-sm, .btn-group-sm > .btn {
+	font-size: .93rem;
+}
+
+// Increase nav link size
+.navbar-nav .nav-link {
+	font-size: 1.125rem;
+}
+
+// Even up space between nav login and search
+#site-nav .navbar__search {
+	margin-left: 0;
+}
+
+#site-nav .navbar-nav .nav-item .dropdown-toggle::after {
+	// Compensate for larger parent font size
+	font-size: 1rem;
+	// Change nav arrow color to match revised mockup
+	border-top-color: $sky-blue;
+}
+
+// Sidebar card
+.sidebar-card {
+	.sidebar-card__item {
+		// Fill available width
+		width: auto;
+	}
+	.sidebar-card__item {
+		// Align icons top
+		align-items: flex-start;
+	}
+	.sidebar-card__icon {
+		// Add padding to align icons with text top
+		padding-top: .125rem;
+	}
+}
+
+// Links card
+.card-links {
+	// Increase margin below title
+	.card-links__title {
+		margin-bottom: 1rem;
+	}
+	// Increase link listing font size and adjust item spacing
+	.card-links__link .card-links__list {
+		font-size: 1rem;
+		line-height: 1.5;
+		li {
+			margin-bottom: .5rem;
+		}
+	}
+}
