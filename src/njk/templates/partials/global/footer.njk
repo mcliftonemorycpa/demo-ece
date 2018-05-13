@@ -1,2 +1,84 @@
-<footer id="site-footer">
+<footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo">
+                    <img src="https://placehold.it/475x225/ffffff" alt="placeholder" class="img-fluid" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="{{ includePath }}images/icons/facebook.svg" alt="placeholder" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="{{ includePath }}images/icons/instagram.svg" alt="placeholder" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="{{ includePath }}images/icons/twitter.svg" alt="placeholder" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    {% for i in range(0,10) %}
+                    <li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Footer Link Item</a>
+                    </li>
+                    {% endfor %}
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="text-right d-block d-lg-none">
+                    <a href="#">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="{{ includePath }}images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
 </footer>

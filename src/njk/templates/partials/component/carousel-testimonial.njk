@@ -1,0 +1,67 @@
+<div id="carouselTestimonial" class="carousel slide carousel-fade carousel-testimonial" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#carouselTestimonial" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="1"></li>
+        <li data-target="#carouselTestimonial" data-slide-to="2"></li>
+    </ol>
+
+    <div class="row justify-content-center">
+        <div class="col-9">
+
+            <div class="carousel-inner text-center">
+
+                <div class="carousel-item active">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="wysiwyg">
+                            {% include "partials/wysiwyg/sentence-md.njk" %}
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__name">Eduardo Woods</div>
+                        <div class="carousel-testimonial__title">Co &amp; Founder IS Studio</div>
+                    </blockquote>
+                </div>
+                <!-- /.carousel-item -->
+
+                <div class="carousel-item">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="wysiwyg">
+                            {% include "partials/wysiwyg/sentence-sm.njk" %}
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__name">Joanna Newsom</div>
+                        <div class="carousel-testimonial__title">Harper &amp; Vocalist</div>
+                    </blockquote>
+                </div>
+                <!-- /.carousel-item -->
+
+                <div class="carousel-item">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="wysiwyg">
+                            {% include "partials/wysiwyg/sentence-md.njk" %}
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__name">McKenzie Washington</div>
+                        <div class="carousel-testimonial__title">Very Important Title</div>
+                    </blockquote>
+                </div>
+                <!-- /.carousel-item -->
+
+            </div>
+            <!-- /.carousel-inner -->
+        </div>
+        <!-- /.col-9 -->
+    </div>
+    <!-- /.row .justify-content-center -->
+
+    <a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
+        <img src="{{ includePath }}images/icons/chevron-left-circle.svg" alt="" class="carousel-control-prev-icon" />
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselTestimonial" role="button" data-slide="next">
+        <img src="{{ includePath }}images/icons/chevron-right-circle.svg" alt="" class="carousel-control-next-icon" />
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+<!-- /.carousel -->

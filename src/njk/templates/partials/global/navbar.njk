@@ -1,47 +1,81 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
 
-  <a class="navbar-brand" href="#">{{ siteName }}</a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarMain"
-    aria-controls="navbarMain"
-    aria-expanded="false"
-    aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
+  <div class="logo-wrapper">
 
-  <div class="collapse navbar-collapse" id="navbarMain">
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="{{ includePath }}images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
 
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item{% if pageTitle == 'Home' %} active{% endif %}">
-        <a class="nav-link" href="index.html">Home{% if pageTitle == 'Home' %} <span class="sr-only">(current)</span>{% endif %}</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
-        </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li>
-    </ul>
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="{{ includePath }}images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
 
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
-    </form>
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
 
   </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown{% if pageType == 'Layout' %} active{% endif %}">
+        <a class="nav-link dropdown-toggle" href="#" id="layoutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Layouts &amp; Components
+        </a>
+        <div class="dropdown-menu" aria-labelledby="layoutDropdown">
+          <a class="dropdown-item{% if pageTitle == 'Home' %} active{% endif %}" href="index.html">Home page</a>
+          <a class="dropdown-item{% if pageTitle == 'Interior' %} active{% endif %}" href="interior.html">Interior page</a>
+          <a class="dropdown-item{% if pageTitle == 'Interior with Sidebar' %} active{% endif %}" href="interior-sidebar.html">Interior page - Sidebar</a>
+          <a class="dropdown-item{% if pageTitle == 'Search' %} active{% endif %}" href="search.html">Search &amp; filters</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item{% if pageTitle == 'All Elements' %} active{% endif %}" href="elements.html">All elements page</a>
+          <a class="dropdown-item{% if pageTitle == 'Kitchen Sink' %} active{% endif %}" href="kitchensink.html">Bootstrap 4 Kitchen Sink</a>
+        </div>
+      </li>
+
+      {% for i in range(0,3) %}
+      <li class="nav-item{% if pageTitle == 'Events' %} active{% endif %}">
+        <a class="nav-link" href="#">Nav item{% if pageTitle == 'Events' %}
+          <span class="sr-only">(current)</span>{% endif %}</a>
+      </li>
+      {% endfor %}
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="genericDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Dropdown Nav item
+        </a>
+        <div class="dropdown-menu" aria-labelledby="genericDropdown">
+          {% for i in range(0,3) %}
+          <a class="dropdown-item" href="#">Dropdown Link</a>
+          {% endfor %}
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Another Link</a>
+        </div>
+      </li>
+
+      <li class="nav-item ml-3 mr-2">
+        <a class="btn btn-sm btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    {% include "partials/form/search-navbar.njk" %}
+
+  </div>
+  <!-- /.collapse -->
 
 </nav>

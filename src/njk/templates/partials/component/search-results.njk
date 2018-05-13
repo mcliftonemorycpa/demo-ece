@@ -1,0 +1,86 @@
+<ul class="search-results">
+
+    {% for i in range(0,3) %}
+    <li class="search-results__group">
+
+        <div class="search-results__heading">
+            <span class="search-results__heading-cat">Course Category Name - </span>
+            <span class="search-results__heading-sub">Subject Name</span>
+        </div>
+        <!-- /.search-results__heading -->
+
+        <ul class="search-results__list">
+            {% for i in range(0,2) %}
+            <li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Title of search result - Course Name</div>
+                        <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="{{ includePath }}images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+            {% endfor %}
+            <li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">This course is Sold Out - Course Name</div>
+                        <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-warning">Join waitlist</button>
+                            <button type="button" class="btn btn-outline-warning">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <div class="alert alert-warning small" role="alert">Notification text - Sold out.</div>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="{{ includePath }}images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Wed, November 4</div>
+                                <div>4 PM - 8 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+        </ul>
+        <!-- /.search-results__list -->
+
+    </li>
+    <!-- /.search-results__group -->
+    {% endfor %}
+
+</ul>
