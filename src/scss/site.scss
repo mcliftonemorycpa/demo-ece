@@ -9,9 +9,11 @@
 
 /* Template overrides */
 
-// Adjust wrapper edges to align neatly with grid on xl screens
 .wrapper {
+	// Adjust wrapper edges to align neatly with grid on xl screens
 	max-width: 1295px;
+	// Decrease y padding
+	padding: 3rem 0;
 }
 
 // Add letter-spacing to all instances of Barlow Condensed that don't have it already
@@ -30,6 +32,31 @@ small, .small {
 }
 .btn-sm, .btn-group-sm > .btn {
 	font-size: .93rem;
+}
+
+// Change .btn-primary color
+.btn-primary {
+	background-color: $emory-blue;
+    border-color: $emory-blue;
+}
+
+// Darken .btn-outline-secondary hover color to match .btn-secondary hover color
+.btn-outline-secondary:hover {
+	background-color: #a00066;
+    border-color: #930067;
+}
+
+// Increase quote size
+.carousel.carousel-testimonial .carousel-testimonial__quote::before {
+	background-size: 65px 65px;
+	height: 65px;
+	width: 65px;
+	margin-bottom: 1rem;
+}
+
+// Add gradients to light cards to match mockups
+.card-highlight, .sidebar-card__section, .card-links .card-links__link, .tabs .tab-content, .wysiwyg blockquote, .card-icons .card-icons__link:nth-of-type(even), .links-feed .links-feed__link, .card-actions {
+	background: linear-gradient(to right, #f2f8fa 0%, #fff 100%);
 }
 
 // Increase nav link size
@@ -56,12 +83,26 @@ small, .small {
 		width: auto;
 	}
 	.sidebar-card__item {
-		// Align icons top
-		align-items: flex-start;
+		// Increase font size
+		font-size: 1rem;
 	}
 	.sidebar-card__icon {
-		// Add padding to align icons with text top
-		padding-top: .125rem;
+		// Increase size
+		width: 3rem;
+		img {
+			width: 2rem;
+		}
+	}
+}
+// Increase icon size
+.icon-md {
+	min-width: 3.75rem;
+    min-height: 3.75rem;
+}
+.sidebar-cta, .sidebar-card__section {
+	font-size: 1.125rem;
+	h6, .h6 {
+		font-size: inherit;
 	}
 }
 
@@ -72,6 +113,8 @@ small, .small {
 		margin-bottom: 1rem;
 	}
 	.card-links__link {
+		// Increase top padding
+		padding-top: 30px;
 		.card-links__list {
 			// Increase list font size and adjust item spacing
 			font-size: 1rem;
@@ -80,5 +123,55 @@ small, .small {
 				margin-bottom: .5rem;
 			}
 		}
+	}
+}
+
+.sidebar-card .sidebar-card__section {
+	font-size: 1.125rem;
+	.subheading {
+		font-size: 1.5rem;
+	}
+}
+
+@include media-breakpoint-up(sm) {
+	// Increase quote size
+	.wysiwyg blockquote {
+		margin-left: 85px;
+		&::before {
+			left: -85px;
+			width: 65px;
+			height: 51px;
+		}
+	}
+}
+
+@include media-breakpoint-up(md) {
+	// Increase hero H1 size
+	.hero .hero__heading {
+		font-size: 4.5rem;
+	}
+}
+
+@include media-breakpoint-up(lg) {
+	#site-nav {
+		// Increase space between shield and logo to comply with identity guidelines
+		.logo-wrapper {
+			margin-right: 1.5rem;
+		}
+		.logo__emory {
+			left: -1.5rem;
+		}
+		// Logo bigger
+		.logo__ece img {
+			width: 416px;
+			max-width: 100%;
+			height: 28px;
+			transition: all .2s ease-in-out;
+		}
+	}
+	// Decrease logo size on header collapse
+	#site-header.scroll #site-nav .logo__ece img {
+		width: 320px;
+		height: 28px;
 	}
 }
