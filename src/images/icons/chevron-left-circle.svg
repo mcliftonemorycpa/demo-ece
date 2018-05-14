@@ -1,1 +1,13 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"><path fill="#666" d="M2.782 3.782C4.576 1.988 6.962 1 9.5 1s4.923.988 6.718 2.782S19 7.962 19 10.499s-.988 4.923-2.782 6.718-4.18 2.782-6.718 2.782-4.923-.988-6.718-2.782S0 13.037 0 10.499s.988-4.923 2.782-6.717zM9.5 19c4.687 0 8.5-3.813 8.5-8.5S14.187 2 9.5 2C4.813 2 1 5.813 1 10.5S4.813 19 9.5 19z"/><path d="M11 16a.5.5 0 0 0 .354-.853l-4.646-4.646 4.646-4.646a.5.5 0 0 0-.707-.707l-5 5a.5.5 0 0 0 0 .707l5 5a.498.498 0 0 0 .354.146z"/></svg>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="20px" height="20px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#212529;}
+</style>
+<path class="st0" d="M2.8,3.8C4.6,2,7,1,9.5,1s4.9,1,6.7,2.8S19,8,19,10.5s-1,4.9-2.8,6.7S12,20,9.5,20s-4.9-1-6.7-2.8S0,13,0,10.5
+	S1,5.6,2.8,3.8z M9.5,19c4.7,0,8.5-3.8,8.5-8.5S14.2,2,9.5,2S1,5.8,1,10.5S4.8,19,9.5,19z"/>
+<path class="st0" d="M11,16c0.3,0,0.5-0.2,0.5-0.5c0-0.1-0.1-0.3-0.1-0.4l-4.6-4.6l4.6-4.6c0.2-0.2,0.2-0.5,0-0.7
+	c-0.2-0.2-0.5-0.2-0.7,0l-5,5c-0.2,0.2-0.2,0.5,0,0.7l5,5C10.7,15.9,10.9,16,11,16L11,16z"/>
+</svg>
