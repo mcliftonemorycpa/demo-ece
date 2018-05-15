@@ -9,6 +9,11 @@
 
 /* Template overrides */
 
+// Align body background top so position doesn't shift as elements change height
+body {
+	background-position: center top;
+}
+
 .wrapper {
 	// Adjust wrapper edges to align neatly with grid on xl screens
 	max-width: 1295px;
@@ -27,23 +32,32 @@ small, .small {
 }
 
 // Increase default button font sizes
-.btn {
+.btn:not(.btn-lg) {
 	font-size: 1.125rem;
 }
 .btn-sm, .btn-group-sm > .btn {
 	font-size: .93rem;
 }
 
-// Change .btn-primary color
-.btn-primary {
-	background-color: $emory-blue;
-    border-color: $emory-blue;
-}
-
-// Darken .btn-outline-secondary hover color to match .btn-secondary hover color
+// Darken .btn-outline-secondary hover color to match .btn-secondary hover color, to differentiate it from un-hovered .btn-secondary in button groups
 .btn-outline-secondary:hover {
 	background-color: #a00066;
     border-color: #930067;
+}
+
+// Increase fractal background size
+.bg-fractal-frame {
+	&::before, &::after {
+		width: 500px;
+	}
+	&::before {
+		top: -180px;
+		left: -220px;
+	}
+	&::after {
+		bottom: -100px;
+		right: -220px;
+	}
 }
 
 // Increase quote size
@@ -55,7 +69,8 @@ small, .small {
 }
 
 // Add gradients to light cards to match mockups
-.card-highlight, .sidebar-card__section, .card-links .card-links__link, .tabs .tab-content, .wysiwyg blockquote, .card-icons .card-icons__link:nth-of-type(even), .links-feed .links-feed__link, .card-actions {
+// Including accordion titles so they match
+.card-highlight, .sidebar-card__section, .card-links .card-links__link, .tabs .tab-content, .wysiwyg blockquote, .card-icons .card-icons__link:nth-of-type(even), .links-feed .links-feed__link, .card-actions, .accordion .card-header {
 	background: linear-gradient(to right, #f2f8fa 0%, #fff 100%);
 }
 
@@ -74,6 +89,19 @@ small, .small {
 	font-size: 1rem;
 	// Change nav arrow color to match revised mockup
 	border-top-color: $sky-blue;
+	// Reduce separation from text
+	margin-left: 0;
+}
+
+// Increase y padding on dropdown items for readability and tappabilty
+.dropdown-item {
+	padding-top: .5rem;
+	padding-bottom: .5rem;
+}
+
+// Correct purple card gradient
+.card-icons .card-icons__link:nth-of-type(6n + 3), .gradient-hz-purple {
+	@include gradient-horizontal( darken($purple, 25%), $purple );
 }
 
 // Sidebar card
@@ -126,11 +154,50 @@ small, .small {
 	}
 }
 
+// Increase sidebar CTA font size
 .sidebar-card .sidebar-card__section {
 	font-size: 1.125rem;
 	.subheading {
 		font-size: 1.5rem;
 	}
+}
+
+// Increase icon card font size
+.card-icons .card-icons__text {
+	font-size: 1.5rem;
+}
+
+// Increase z-index elements with hover/focus outlines so outline isn't partially covered by other cards
+.links-feed .links-feed__link:hover, .accordion .card-header .btn:focus {
+	z-index: +1;
+}
+
+.card-link-arrow::after {
+	// Add gradient to circle arrow button
+	background-image: url("../images/icons/chevron-right-w.svg"), linear-gradient(to bottom, #ffd83b 0%, $yellow 100%);
+	// Deepen drop shadow
+	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+.accordion .card-header .btn {
+	// Adjust accordion header text to match body style more closely
+	letter-spacing: 0;
+    font-size: 1rem;
+}
+
+// Larger logo shield on nav collapse to fill slightly increased bar height
+#site-header.scroll #site-nav .logo__emory img {
+    width: 56px;
+    height: 56px;
+}
+
+// Adjust carousel testimonial name formatting
+.carousel-testimonial-photos__name {
+	font-size: 1.125rem;
+}
+.carousel-testimonial-photos__title {
+	font-size: .875rem;
+	letter-spacing: .1em;
 }
 
 @include media-breakpoint-up(sm) {
