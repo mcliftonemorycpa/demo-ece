@@ -19,15 +19,40 @@ body {
 	max-width: 1295px;
 }
 
+.btn {
+	// Reduce line-height 
+	line-height: 1.1;
+	// Add letter-spacing
+	letter-spacing: .06em;
+}
+
+// Remove letter-spacing from accordion buttons
+.accordion .card-header .btn {
+	letter-spacing: normal;
+}
+
+.btn-lg, .btn-group-lg > .btn {
+	// For some reason, .btn-lg size is being overidden by .btn. Override the override.
+	font-size: 1.25rem;
+	// Increase y padding 
+	padding-top: .75rem;
+	padding-bottom: .75rem;
+}
+
 // Darken .btn-outline-secondary hover color to match .btn-secondary hover color, to differentiate it from un-hovered .btn-secondary in button groups
 .btn-outline-secondary:hover {
 	background-color: #a00066;
     border-color: #930067;
 }
 
-// Reduce nav arrow size to ompensate for larger parent font size
+// Reduce nav arrow size to compensate for larger parent font size
 #site-nav .navbar-nav .nav-item .dropdown-toggle::after {
 	font-size: .875rem;
+}
+
+// Let dropdown text wrap
+.dropdown-item {
+	white-space: normal;
 }
 
 // Correct purple card gradient
@@ -54,6 +79,10 @@ body {
 	}
 }
 
+// Decrease bottom padding of card with bottom arrow, to compensate for arrow offset 
+.card-links .card-links__link.card-link-arrow-bottom {
+	padding-bottom: 18px;
+}
 
 // Increase z-index elements with hover/focus outlines so outline isn't partially covered by other cards
 .links-feed .links-feed__link:hover, .accordion .card-header .btn:focus {
@@ -65,10 +94,39 @@ body {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
 }
 
+// Increase hero heading size
+.hero.hero-home .hero__heading, .hero .hero__heading {
+	font-size: 2.5rem;
+}
+
+// Increase stat sizes
+.stats.stats-col .stats__bold {
+	font-size: 1.5rem;
+}
+.stats.stats-row {
+	.stats__bold {
+		font-size: 3.75rem;
+	}
+	.stats__text {
+		font-size: 1.25rem;
+	}
+}
+
+@include media-breakpoint-down(sm) {
+	// Reduce H2 size on mobile, because long words overflow
+	h2, .h2 {
+		font-size: 2.25rem;
+	}
+}
+
 @include media-breakpoint-up(md) {
-	// Increase hero H1 size
-	.hero.hero-home .hero__heading {
-		//font-size: 4.5rem;
+	// Increase hero heading size
+	.hero.hero-home .hero__heading, .hero .hero__heading {
+		font-size: 3rem;
+	}
+	// Negative bottom margin on shift photos to compensate for offset 
+	.photo-overlap .photo.photo-shift {
+		margin-bottom: -30px;
 	}
 }
 
@@ -77,5 +135,21 @@ body {
 	#site-header.scroll #site-nav .logo__ece img {
 		width: 320px;
 		height: 28px;
+	}
+	// Control width of dropdowns, since auto sizing with wrap seems to make them too narrow
+	#site-nav {
+		.dropdown-menu {
+			width: 16rem;
+			&.dropdown-menu-2col {
+			width: 27rem;
+			}
+		}
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	// Increase hero heading size
+	.hero.hero-home .hero__heading, .hero .hero__heading {
+		font-size: 4.5rem;
 	}
 }

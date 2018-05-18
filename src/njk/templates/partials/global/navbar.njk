@@ -31,39 +31,69 @@
 
     <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
 
-      <li class="nav-item dropdown{% if pageType == 'Layout' %} active{% endif %}">
-        <a class="nav-link dropdown-toggle" href="#" id="layoutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+      <li class="nav-item dropdown{% if pageType == 'Courses' %} active{% endif %}">
+        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
-          Layouts &amp; Components
+          Courses{% if pageTitle == 'Courses' %}
+          <span class="sr-only">(current)</span>{% endif %}
         </a>
-        <div class="dropdown-menu" aria-labelledby="layoutDropdown">
-          <a class="dropdown-item{% if pageTitle == 'Home' %} active{% endif %}" href="index.html">Home page</a>
-          <a class="dropdown-item{% if pageTitle == 'Interior' %} active{% endif %}" href="interior.html">Interior page</a>
-          <a class="dropdown-item{% if pageTitle == 'Interior with Sidebar' %} active{% endif %}" href="interior-sidebar.html">Interior page - Sidebar</a>
-          <a class="dropdown-item{% if pageTitle == 'Search' %} active{% endif %}" href="search.html">Search &amp; filters</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item{% if pageTitle == 'All Elements' %} active{% endif %}" href="elements.html">All elements page</a>
-          <a class="dropdown-item{% if pageTitle == 'Kitchen Sink' %} active{% endif %}" href="kitchensink.html">Bootstrap 4 Kitchen Sink</a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item{% if pageTitle == 'Courses' %} active{% endif %}" href="courses.html">Courses by Subject{% if pageTitle == 'Courses' %}<span class="sr-only">(current)</span>{% endif %}</a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="#">OLLI (Ages 50+)</a>
         </div>
       </li>
 
-      {% for i in range(0,3) %}
-      <li class="nav-item{% if pageTitle == 'Events' %} active{% endif %}">
-        <a class="nav-link" href="#">Nav item{% if pageTitle == 'Events' %}
+	  <li class="nav-item dropdown{% if pageType == 'Certificate Programs' %} active{% endif %}">
+        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Certificate Programs{% if pageTitle == 'Certificate Programs' %}
+          <span class="sr-only">(current)</span>{% endif %}
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item{% if pageTitle == 'Certificate Programs' %} active{% endif %}" href="courses.html">All Certificate Programs{% if pageTitle == 'Certificate Programs' %}<span class="sr-only">(current)</span>{% endif %}</a>
+			<a class="dropdown-item" href="#">Big Data</a>
+			<a class="dropdown-item" href="#">Business Intelligence</a>
+			<a class="dropdown-item" href="#">Cybersecurity and Information Security</a>
+			<a class="dropdown-item" href="#">Health IT (AT-HIT)</a>
+			<a class="dropdown-item" href="#">Au Pair</a>
+			<a class="dropdown-item" href="#">Business Communications</a>
+			<a class="dropdown-item" href="#">Creative Writing</a>
+			<a class="dropdown-item" href="#">Digital Photography</a>
+			<a class="dropdown-item" href="#">Event Planning</a>
+			<a class="dropdown-item" href="#">Fundraising</a>
+			<a class="dropdown-item" href="#">Graphic Design</a>
+			<a class="dropdown-item" href="#">Health Coach</a>
+			<a class="dropdown-item" href="#">Essentials of HR Management</a>
+			<a class="dropdown-item" href="#">Landscape Design</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma</a>
+			<a class="dropdown-item" href="#">Essentials of Management</a>
+			<a class="dropdown-item" href="#">Paralegal Studies</a>
+			<a class="dropdown-item" href="#">Project Management</a>
+			<a class="dropdown-item" href="#">Web Certificates</a>
+        </div>
+      </li>
+
+      <li class="nav-item{% if pageType == 'Info Sessions' %} active{% endif %}">
+        <a class="nav-link" href="#">Info Sessions{% if pageTitle == 'Info Sessions' %}
           <span class="sr-only">(current)</span>{% endif %}</a>
       </li>
-      {% endfor %}
 
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="genericDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
-          aria-expanded="false">
-          Two-Col Dropdown Nav
-        </a>
-        <div class="dropdown-menu dropdown-menu-right dropdown-menu-2col" aria-labelledby="genericDropdown">
-          {% for i in range(0,13) %}
-          <a class="dropdown-item" href="#">Dropdown Link</a>
-          {% endfor %}
-        </div>
+	  <li class="nav-item{% if pageType == 'About' %} active{% endif %}">
+        <a class="nav-link" href="about.html">About{% if pageTitle == 'About ECE' %}
+          <span class="sr-only">(current)</span>{% endif %}</a>
+      </li>
+
+	  <li class="nav-item{% if pageType == 'Contact' %} active{% endif %}">
+        <a class="nav-link" href="#">Contact{% if pageTitle == 'Contact' %}
+          <span class="sr-only">(current)</span>{% endif %}</a>
       </li>
 
       <li class="nav-item">

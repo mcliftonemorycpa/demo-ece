@@ -1,6 +1,6 @@
 {% extends "layout.njk" %} 
-{% set pageTitle = 'Interior' %}
-{% set pageType = 'Layout' %}
+{% set pageTitle = 'About ECE' %}
+{% set pageType = 'About' %}
 {% block head %}
 <title>{{ pageTitle }} | {{ siteName }}</title>
 {% endblock %} 
@@ -17,18 +17,16 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 order-2">
-                        <h2 class="heading">Section with Photo Overlap Component</h2>
+                        <h2 class="heading">Enriching Lives and Enhancing Careers since 1951</h2>
                         <div class="wysiwyg">
-                            <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
-                            <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
-                            <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
-                            <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+							<p>For more than 65 years, Emory Continuing Education (ECE) has served as Emory’s noncredit division. Each year, thousands of students enroll in ECE courses from throughout the metro Atlanta area. Our mission is “to enrich the lives and enhance the careers of nontraditional students by providing excellence in education, advancing Emory's commitment to create, preserve, teach, and apply knowledge in the service of humanity.”</p>
+							<p>ECE offers a wide range of <a href="certificate-programs.html">certificate programs</a> and <a href="courses.html">open enrollment courses</a> (including online and hybrid options) for both professional development and personal enrichment. Areas of study include data analysis and business intelligence, management fundamentals, Lean Six Sigma, information technology and graphic/web design, communications, human resources and project management, health coach, foreign languages, English as a Second Language (ESL), professional and academic test preparation, and much more. Our <a href="#">Osher Lifelong Learning Institute</a> (ages 50+) offers classes and social programs that nourish the mind, body, and soul. <a href="#">Professional development courses</a> can be tailored and delivered onsite to corporate clients.</p>
                         </div>
                         <!-- /.wysiwyg -->
                     </div>
                     <!-- /.col-lg-6 -->
 
-                    <div class="col-lg-6 order-1 align-self-center">
+                    <div class="col-lg-6 order-1">
                         {% include "partials/snippet/photo-overlap.njk" %}
                     </div>
                     <!-- /.col-lg-6 -->
@@ -42,9 +40,9 @@
             <div class="container">
                 <div class="row justify-content-between">
                     <div class="col-md-6">
-                        <h2 class="heading">Stats with icons in 2x2 grid</h2>
+                        <h2 class="heading">Choose a Proven Leader</h2>
                         <div class="wysiwyg">
-                            <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                            <p class="lead">The end of formal education begins a lifetime of learning. ECE provides superior instruction and a variety of courses to suit every interest.</p>
                         </div>
                         <!-- /.wysiwyg -->
                         {% include "partials/component/stats-col.njk" %}
@@ -77,8 +75,8 @@
                         <!-- Heading Group -->
                         <div class="heading-group heading-group-dark">
                             <h2>
-                                <span class="heading-group__secondary">Tabs - Featured</span>
-                                <span class="heading-group__primary">Title for Featured Tabs Component</span>
+                                <span class="heading-group__secondary">Learn More Here</span>
+                                <span class="heading-group__primary">Improve Your Life. Reinvigorate Your Career.</span>
                             </h2>
                         </div>
                         <!-- /.heading-group .heading-group-dark -->
@@ -93,7 +91,13 @@
         <div class="wrapper">
             <div class="container">
                 <!-- Heading Group -->
-                {% include "partials/snippet/heading-group.njk" %}
+                <div class="heading-group">
+					<h2>
+						<span class="heading-group__secondary">Frequently Asked Questions (FAQ)</span>
+						<span class="heading-group__primary">Need an Answer?</span>
+					</h2>
+				</div>
+				<!-- /.heading-group -->
                 {% include "partials/component/accordion.njk" %}
             </div>
             <!-- /.container -->

@@ -4,13 +4,16 @@
     <!-- Tab menu-->
     <ul class="nav nav-tabs" id="tabFeatured" role="tablist">
         <li class="nav-item">
-            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">First tab</a>
+            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Open Enrollment Courses</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Second tab</a>
+            <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Certificates</a>
         </li>
         <li class="nav-item">
-            <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">Third tab</a>
+            <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">Corporate Learning</a>
+        </li>
+		<li class="nav-item">
+            <a class="nav-link" id="fourth-tab" data-toggle="tab" href="#fourth" role="tab" aria-controls="fourth" aria-selected="false">OLLI (Ages 50+)</a>
         </li>
     </ul>
 
@@ -18,32 +21,42 @@
     <div class="tab-content" id="tabFeaturedContent">
         <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
             <img src="{{ includePath }}images/icons/earth-y.svg" alt="" class="mb-3 icon-lg" />
-            <h3 class="heading">Professionally utilize turnkey e-tailers</h3>
+            <h3 class="heading">Invest in Yourself</h3>
             <div class="wysiwyg">
-                <p>{% include "partials/wysiwyg/sentence-sm.njk" %}</p>
+                <p>Hundreds of professional and personal development courses and programs designed to maximize your learning and fit your busy schedule. Classes offered every month of the year, weekdays and weekends.</p>
             </div>
             <!-- /.wysiwyg -->
-            <a class="btn btn-secondary" href="#">Call to action</a>
+            <a class="btn btn-lg btn-secondary" href="#">View Open Enrollment Courses</a>
         </div>
         <!-- /.tab-pane -->
         <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
             <img src="{{ includePath }}images/icons/earth-y.svg" alt="" class="mb-3 icon-lg" />
-            <h3 class="heading">Conveniently enhance exceptional</h3>
+            <h3 class="heading">Build Your Skills</h3>
             <div class="wysiwyg">
-                <p>{% include "partials/wysiwyg/sentence-lg.njk" %}</p>
+                <p>Credentials are critical for your career—ECE presents a multitude of certificate programs ranging in duration from 5 days to a year, including many with flexible scheduling and payment options.</p>
             </div>
             <!-- /.wysiwyg -->
-            <a class="btn btn-secondary" href="#">Call to action with longer text</a>
+            <a class="btn btn-lg btn-secondary" href="#">View Certificate Programs</a>
         </div>
         <!-- /.tab-pane -->
         <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
             <img src="{{ includePath }}images/icons/earth-y.svg" alt="" class="mb-3 icon-lg" />
-            <h3 class="heading">Energistically unleash principle-centered leadership without premier expertise</h3>
+            <h3 class="heading">At <em>Your</em> Location. On <em>Your</em> Schedule.</h3>
             <div class="wysiwyg">
-                <p>{% include "partials/wysiwyg/sentence-md.njk" %}</p>
+                <p>Discover the convenience of training when, how and where you need it. Emory Corporate Learning designs and delivers tailored professional development courses onsite to meet your company’s specific needs.</p>
             </div>
             <!-- /.wysiwyg -->
-            <a class="btn btn-secondary" href="#">Call to action</a>
+            <a class="btn btn-lg btn-secondary" href="#">More About Corporate Learning</a>
+        </div>
+        <!-- /.tab-pane -->
+		<div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+            <img src="{{ includePath }}images/icons/earth-y.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">For Adults 50+ Who Learn for Fun</h3>
+            <div class="wysiwyg">
+                <p>Classes and social programs that nourish the mind, body and soul. Build friendships with others who live in the spirit of learning and personal growth.</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-lg btn-secondary" href="#">View OLLI Classes</a>
         </div>
         <!-- /.tab-pane -->
     </div>
