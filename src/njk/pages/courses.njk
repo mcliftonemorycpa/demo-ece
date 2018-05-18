@@ -12,36 +12,71 @@
         {% include "partials/hero/hero-interior.njk" %}
     </section>
 
-    <section aria-label="Photo overlap, Stats 2x2 grid, Stats row">
+    <section aria-label="Course subjects">
         <div class="wrapper wrapper-overlap">
             <div class="container">
-                <div class="row">
 
-                    <!-- LEFT COLUMN: WYSIWYG Demo -->
-                    <div class="col-md-8 col-lg-9">
-                        {% include "partials/wysiwyg/wysiwyg.njk" %}
-                        <strong>List with Checks:</strong>
-                        <ul class="list-checks">
-                            <li>This is a list with checks instead of bullets. Use <code>.list-checks</code> to activate.</li>
-                            <li>{% include "partials/wysiwyg/sentence-sm.njk" %}</li>
-                            <li>This is a list with checks</li>
-                        </ul>
-                    </div>
-                    <!-- /.col-md-8 .col-lg-9 -->
+				<!-- Subject Cards -->
+				<div class="card-icons card-icons--subjects">
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Management and Supervision</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Lean Six Sigma and Project Management</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Test Preparation</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Fine Arts</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Microsoft Office</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Personal Enrichment</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Foreign Languages</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="{{ includePath }}images/icons/book-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">OLLI (Ages 50+)</div>
+					</a>
+				</div>
+				<!-- /.card-icons -->
 
-                    <!-- RIGHT COLUMN: Sidebar Demo -->
-                    <div class="col-md-4 col-lg-3">
-                        <aside class="sidebar">
-                            {% include "partials/component/sidebar-menu.njk" %}
-                            {% include "partials/component/cta-sidebar-bio.njk" %}
-                        </aside>
-                    </div><!-- /.col-md-4 -->
-
-                </div>
-                <!-- /.row -->
-                {% include "partials/snippet/heading-group.njk" %}
+                <div class="heading-group mt-5">
+					<h2>
+						<span class="heading-group__primary">Explore Course Offerings</span>
+					</h2>
+				</div>
+				<!-- /.heading-group -->
                 {% include "partials/component/list-row.njk" %}
-            </div>
+
+				<!-- Testimonials -->
+				<div class="cta bg-facets-yellow mt-5">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-md-6 col-lg-8">
+							<h2 class="cta__text">Can’t find it? Reach out.</h2>
+						</div>
+						<!-- /.col-lg-8 -->
+						<div class="col-md-6 col-lg-4">
+							<a href="#" class="btn btn-primary btn-lg btn-block">Contact us</a>
+						</div>
+						<!-- /.col-lg-4 -->
+					</div>
+					<!-- /.row .align-items-center -->
+				</div>
+				<!-- /.cta .bg-facets-yellow -->
+			</div>
             <!-- /.container -->
         </div>
         <!-- /.wrapper -->
@@ -51,9 +86,6 @@
         <div class="bg-facets-gray">
             <div class="container">
                 {% include "partials/component/carousel-testimonial-2x.njk" %}
-                <div class="text-center pt-3 pb-5">
-                    <a href="#" class="btn btn-lg btn-primary">View all Testimonials</a>
-                </div>
             </div>
             <!-- /.container -->
         </div>

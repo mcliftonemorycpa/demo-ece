@@ -39,7 +39,11 @@ body {
 	padding-bottom: .75rem;
 }
 
-// Darken .btn-outline-secondary hover color to match .btn-secondary hover color, to differentiate it from un-hovered .btn-secondary in button groups
+// Darken outline button hover colors to match solid hover color, to differentiate it from un-hovered solid buttons in button groups
+.btn-outline-primary:hover {
+	background-color: #006394;
+    border-color: #005b87;
+}
 .btn-outline-secondary:hover {
 	background-color: #a00066;
     border-color: #930067;
@@ -55,6 +59,13 @@ body {
 	white-space: normal;
 }
 
+.card-icons.card-icons--subjects {
+	// Prevent subject cards from changing width if there's an uneven number in a row
+	justify-content: center;
+	.card-icons__link {
+		flex-grow: 0;
+	}
+}
 // Correct purple card gradient
 .card-icons .card-icons__link:nth-of-type(6n + 3), .gradient-hz-purple {
 	@include gradient-horizontal( darken($purple, 25%), $purple );
@@ -112,10 +123,32 @@ body {
 	}
 }
 
+.list-row {
+	.list-row__item {
+		// Reduce margin to bring everything closer together
+    	margin-bottom: 15px;
+	}
+	.list-row__text {
+		// Just a bit more line-height
+		line-height: 1.25;
+		// Use global link color
+		color: $link-color;
+		// Increase padding so text works without an icon
+		padding: calc(30px / 2);
+	}
+}
+
 @include media-breakpoint-down(sm) {
 	// Reduce H2 size on mobile, because long words overflow
 	h2, .h2 {
 		font-size: 2.25rem;
+	}
+}
+
+@include media-breakpoint-down(md) {
+	// Dropdown toggle arrow
+	.dropdown-toggle::after {
+		display: none !important;
 	}
 }
 

@@ -21,6 +21,15 @@
     let scrollTimeout;
     let resizeTimeout;
 
+    //Add attribute to activate header nav dropdowns on large screens only
+    const activateDropdownsFn = function () {
+        if (lg == true || xl == true) {
+            $dropdownToggles.attr("role", "button").attr("data-toggle", "dropdown").attr("aria-haspopup", "true").attr("aria-expanded", "false");
+        } else {
+            $dropdownToggles.removeAttr("role").removeAttr("data-toggle").removeAttr("aria-haspopup").removeAttr("aria-expanded");
+        }
+    }
+
     //scrollFn
     const scrollFn = function () {
         //Modify header class when scrolling down
@@ -36,6 +45,8 @@
     const resizeFn = function () {
         //Push body away from fixed header
         $body.css("padding-top", $siteHeader.height());
+        //Detect screen width and activate header nav dropdowns accordingly
+        activateDropdownsFn();
     }
 
     //Setup listeners

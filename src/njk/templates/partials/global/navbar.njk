@@ -32,13 +32,14 @@
     <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
 
       <li class="nav-item dropdown{% if pageType == 'Courses' %} active{% endif %}">
-        <a class="nav-link dropdown-toggle" href="#" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
           Courses{% if pageTitle == 'Courses' %}
           <span class="sr-only">(current)</span>{% endif %}
         </a>
         <div class="dropdown-menu" aria-labelledby="coursesDropdown">
 		  	<a class="dropdown-item{% if pageTitle == 'Courses' %} active{% endif %}" href="courses.html">Courses by Subject{% if pageTitle == 'Courses' %}<span class="sr-only">(current)</span>{% endif %}</a>
+			<a class="dropdown-item{% if pageTitle == 'Course Catalog' %} active{% endif %}" href="search.html">Search Courses{% if pageTitle == 'Course Catalog' %}<span class="sr-only">(current)</span>{% endif %}</a>
 			<a class="dropdown-item" href="#">Management and Supervision</a>
 			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
 			<a class="dropdown-item" href="#">IT, Design and Development</a>
@@ -52,13 +53,13 @@
       </li>
 
 	  <li class="nav-item dropdown{% if pageType == 'Certificate Programs' %} active{% endif %}">
-        <a class="nav-link dropdown-toggle" href="#" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
           aria-expanded="false">
           Certificate Programs{% if pageTitle == 'Certificate Programs' %}
           <span class="sr-only">(current)</span>{% endif %}
         </a>
         <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
-			<a class="dropdown-item{% if pageTitle == 'Certificate Programs' %} active{% endif %}" href="courses.html">All Certificate Programs{% if pageTitle == 'Certificate Programs' %}<span class="sr-only">(current)</span>{% endif %}</a>
+			<a class="dropdown-item{% if pageTitle == 'Certificate Programs' %} active{% endif %}" href="certificate-programs.html">All Certificate Programs{% if pageTitle == 'Certificate Programs' %}<span class="sr-only">(current)</span>{% endif %}</a>
 			<a class="dropdown-item" href="#">Big Data</a>
 			<a class="dropdown-item" href="#">Business Intelligence</a>
 			<a class="dropdown-item" href="#">Cybersecurity and Information Security</a>

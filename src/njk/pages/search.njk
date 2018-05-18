@@ -1,6 +1,6 @@
 {% extends "layout.njk" %} 
-{% set pageTitle = 'Search' %}
-{% set pageType = 'Layout' %}
+{% set pageTitle = 'Course Catalog' %}
+{% set pageType = 'Courses' %}
 {% block head %}
 <title>{{ pageTitle }} | {{ siteName }}</title>
 {% endblock %} 
@@ -26,11 +26,16 @@
                     <!-- /.col-md-8 .col-lg-9 -->
 
                     <!-- RIGHT COLUMN: Sidebar Demo -->
-                    <div class="col-md-4 col-lg-3 order-md-1">
+                    <div class="col-md-4 col-lg-3 order-md-1 mt-5 mt-md-0">
                         <aside class="sidebar">
-                            <div class="heading h4">Filter results:</div>
+                            <div class="heading h4 mb-4">Filter Results</div>
                             {% include "partials/form/search-filters.njk" %}
-                            {% include "partials/component/cta-sidebar.njk" %}
+                            <div class="sidebar-cta">
+								<img src="{{ includePath }}images/icons/license-w.svg" alt="" class="img-fluid mb-3 icon-md">
+								<p class="h6">Can’t find what you’re looking for?</p>
+								<a href="#" class="btn btn-warning btn-lg btn-block mt-3">Contact Us</a>
+							</div>
+							<!-- /.sidebar-cta -->
                         </aside>
                     </div><!-- /.col-md-4 -->
 
