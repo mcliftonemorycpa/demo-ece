@@ -1,0 +1,84 @@
+.footer {
+    padding: 6rem 0 2rem 0;
+    a,
+    address,
+    small,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    span,
+    div {
+        color: $white;
+    }
+    hr {
+        border-color: $white;
+        margin: 2rem auto;
+    }
+    .footer__logo {
+        display: block;
+        margin-bottom: 1rem;
+        img {
+            width:475px;
+            height:61px;
+            max-width:100%;
+        }
+    }
+    .footer__social {
+        .nav-link img {
+            width: 35px;
+            height: 35px;
+            transition: opacity .2s ease-in-out;
+        }
+        .nav-link:hover,
+        .nav-link:focus {
+            img {
+                opacity: .65;
+            }
+        }
+    }
+    .footer__nav {
+        list-style: none;
+        padding-left: 0;
+        margin-bottom: 0;
+    }
+    .footer__nav-link {
+        display: block;
+        padding: .5rem 1rem;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+    .nav-link,
+    .footer__nav-link {
+        &:hover,
+        &:focus {
+            color: $yellow;
+        }
+    }
+    
+    // Back to top button
+    .footer__btn-top {
+        position: absolute;
+        bottom: $grid-gutter-width;
+        right:calc( #{$grid-gutter-width} / 2);
+        @include box-shadow(.3);
+        img {
+            position: relative;
+            margin-bottom: 3px;
+        }
+    }
+    @include media-breakpoint-up(sm) {
+        .footer__nav {
+            column-count: 2;
+        }
+    }
+
+    // No bottom pinch effect
+    &::after {
+        content:none!important;
+    }
+}

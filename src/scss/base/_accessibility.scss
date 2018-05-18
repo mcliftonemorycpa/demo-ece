@@ -1,4 +1,4 @@
-/*
+/* 
  * Text selection color
 */
 
@@ -10,4 +10,113 @@
 ::selection {
     color: $white;
     background: theme-color("primary");
+}
+
+/*
+ * Button focus visibility
+*/
+
+.btn:focus {
+    box-shadow: 0 0 0 0.2rem $cyan;
+}
+
+/*
+ * Button contrast
+*/
+
+.btn.btn-outline-warning {
+    color: darken($yellow, 20%);
+    &:hover {
+        color:$yiq-text-dark;
+    }
+}
+
+/*
+ * Carousel control focus visibility
+*/
+
+.carousel-control-next,
+.carousel-control-prev {
+    &:focus {
+        outline: 2px solid $cyan;
+    }
+}
+
+/*
+ * Accordion button focus visibility
+*/
+
+.accordion .card-header .btn {
+    outline: 2px solid transparent;
+    transition: outline .2s ease-in-out;
+    &:focus {
+        outline-color: $cyan;
+        box-shadow: none;
+        text-decoration: none;
+    }
+}
+
+/*
+ * Navbar search toggle button
+*/
+
+.navbar__search-toggle:focus {
+    outline: 2px solid $cyan;
+}
+
+/*
+ * Form control inputs
+*/
+
+.form-control:focus {
+    border-color: $cyan;
+    box-shadow: none;
+    outline: 2px solid $cyan;
+}
+
+/*
+ * Form control inputs
+*/
+
+.form-check-input:focus {
+    border-color: $cyan;
+    box-shadow: none;
+    outline: 2px solid $cyan;
+}
+
+/*
+ * Pagination links
+*/
+
+.page-link:focus {
+    border-color: $cyan;
+    box-shadow: none;
+    outline: 2px solid $cyan;
+}
+
+/*
+ * Links feed
+*/
+
+.links-feed__link {
+    transition: outline .2s ease-in-out;
+    outline: 3px solid transparent;
+    &:hover,
+    &:focus {
+        outline-color: $yellow;
+    }
+}
+
+/*
+ * List row
+*/
+
+.list-row__link {
+    transition:outline .2s ease-in-out;
+    outline:3px solid transparent;
+    &:hover,
+    &:focus {
+        outline-color: $yellow;
+        text-decoration: none;
+    }
 }

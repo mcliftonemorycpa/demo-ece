@@ -1,0 +1,44 @@
+.stats {
+    // Stats in a row
+    &.stats-row {
+        padding: 1.5rem 0;
+        color: $emory-blue;
+        .stats__item {
+            text-align: center;
+            line-height: 1.75em;
+        }
+        .stats__icon {
+            margin-bottom: .5rem;
+        }
+        .stats__bold {
+            @include heading;
+            font-size: 2.25rem;
+        }
+        .stats__text {
+            @include subheading;
+            font-size: .85rem;
+        }
+
+        @include media-breakpoint-only(xs) {
+            text-align:center;
+            .stats__item {
+                margin:1rem auto;
+            }
+        }
+	}
+	// Stats in a column
+    &.stats-col {
+        .stats__icon {
+            margin-bottom: .5rem;
+        }
+        .stats__item {
+            margin: 1rem auto;
+        }
+        .stats__bold {
+            @include subheading;
+            color: #012169;
+            font-size: 1.25rem;
+            margin-bottom: .5rem;
+        }
+    }
+}

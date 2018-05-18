@@ -1,23 +1,54 @@
-/*
+/* 
  * Styles specific to Cascade WYSIWYG areas
 */
 
 .wysiwyg {
-    h1 {
+    h1,
+    h2,
+    h3 {
         @include heading;
     }
-    h2,h3,h4,h5,h6 {
+    h4,
+    h5,
+    h6 {
         @include subheading;
     }
     blockquote {
-        font-style:italic;
-        margin-left:$grid-gutter-width;
+        font-style: italic;
+        border: 1px solid $gray-300;
+        border-left: 4px solid $yellow;
+        padding: calc( #{$grid-gutter-width} / 2) $grid-gutter-width;
+        @include box-shadow;
+        p:last-of-type {
+            margin-bottom: 0;
+        }
+        @include media-breakpoint-up(sm) {
+            position: relative;
+            margin: calc( #{$grid-gutter-width} / 2) auto $grid-gutter-width calc( #{$grid-gutter-width} * 2);
+            
+            p:last-of-type {
+                margin-bottom: 0;
+            }
+            &::before {
+                position: absolute;
+                top: 0;
+                left: -65px;
+                width: 50px;
+                height: 45px;
+                content: url('../images/icons/quote-left.svg');
+            }
+        }
+    }
+    ul,
+    ol {
+        li {
+            margin-bottom: .5rem;
+        }
+    }
+    ul {
+        list-style-type: circle;
     }
     a {
-        text-decoration:underline; // Accessibility
-        &:hover,
-        &:focus {
-            text-decoration:none;
-        }
+        text-decoration: underline;
     }
 }

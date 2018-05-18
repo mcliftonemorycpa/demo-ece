@@ -1,10 +1,52 @@
+/*
+ * Heading styles
+*/
+
 @mixin heading {
-    font-family:$spectral;
-    line-height:1.1em;
+    font-family: $spectral;
+    line-height: 1.1em;
+    font-weight: 700;
+    color: $emory-blue;
 }
 
 @mixin subheading {
-    font-family:$barlow-condensed;
-    line-height:1.1em;
-    text-transform:uppercase;
+    font-family: $barlow-condensed;
+    line-height: 1.1em;
+    color: $emory-blue;
+    text-transform: uppercase;
+    letter-spacing: .06em;
+}
+
+/*
+ * Box shadow - gray
+*/
+
+@mixin box-shadow( $intensity: .1) {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, $intensity);
+}
+
+/*
+ * Horizontal Gradient
+*/
+
+@mixin gradient-horizontal($start-color: $gray-200, $end-color: $gray-100, $start-percent: 0%, $end-percent: 100%) {
+    background-color: $start-color; // Fallback
+    background-image: -webkit-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+    background-image: -o-linear-gradient(left, $start-color $start-percent, $end-color $end-percent); // Opera 12
+    background-image: linear-gradient(to right, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=1); // IE9 and down
+}
+
+/*
+ * Vertical Gradient
+*/
+
+@mixin gradient-vertical($start-color: $gray-100, $end-color: $gray-200, $start-percent: 0%, $end-percent: 100%) {
+    background-color: $start-color; // Fallback
+    background-image: -webkit-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Safari 5.1-6, Chrome 10+
+    background-image: -o-linear-gradient(top, $start-color $start-percent, $end-color $end-percent); // Opera 12
+    background-image: linear-gradient(to bottom, $start-color $start-percent, $end-color $end-percent); // Standard, IE10, Firefox 16+, Opera 12.10+, Safari 7+, Chrome 26+
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#{ie-hex-str($start-color)}', endColorstr='#{ie-hex-str($end-color)}', GradientType=0); // IE9 and down
 }

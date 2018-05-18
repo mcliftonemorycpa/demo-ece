@@ -1,0 +1,48 @@
+.sidebar-cta {
+    
+    $thumb-size: 115px;
+
+    margin:3rem auto;
+    padding:$grid-gutter-width;
+    width:100%;
+    color:$white;
+    font-size: 1.125rem;
+    @include gradient-horizontal( $emory-blue, $light-blue ); // Default
+    text-align:center;
+
+    // Color variations
+    &.sidebar-cta-magenta {
+        @include gradient-horizontal( darken($magenta, 10%), $magenta );
+    }
+    &.sidebar-cta-yellow {
+        @include gradient-horizontal( lighten($yellow, 10%), lighten($yellow, 30%) );
+        color:$yiq-text-dark;
+    }
+    &.sidebar-cta-gray {
+        @include gradient-vertical( $gray-100, $gray-300 );
+        color:$yiq-text-dark;
+    }
+
+    // Biography
+    &.sidebar-cta-bio {
+        position: relative;
+        padding-top: calc( (#{$thumb-size} / 2) + (#{$grid-gutter-width} / 2) );
+        margin-top: calc( 3rem + ( #{$thumb-size} / 4));
+        margin-bottom: 3rem;
+        @include gradient-horizontal( lighten($yellow, 10%), lighten($yellow, 35%) );
+        color:$yiq-text-dark;
+    }
+    .sidebar-bio__thumb {
+        width: $thumb-size;
+        height: $thumb-size;
+        position: absolute;
+        top: calc( -#{$thumb-size} / 2);
+        left: 50%;
+        transform: translateX(-50%);
+        img {
+            border-radius: 50%;
+            border: 5px solid $yellow;
+            background-color: $white;
+        }
+    }
+}

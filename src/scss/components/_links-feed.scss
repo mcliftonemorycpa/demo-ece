@@ -1,0 +1,32 @@
+.links-feed {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+        border: 1px solid $gray-300;
+        margin-bottom: -1px;
+    }
+    .links-feed__link {
+        display: block;
+        margin-bottom: 0;
+        color: $yiq-text-dark;
+        padding:calc( #{$grid-gutter-width} / 2);
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .links-feed__title {
+        font-family: $noto-sans;
+        font-size: 1rem;
+        font-weight: 700;
+        color: $light-blue;
+        text-transform: none;
+        text-decoration: underline;
+    }
+    @include media-breakpoint-up(md) {
+        margin-bottom: 2rem;
+        @include box-shadow;
+        border: none;
+        border-bottom: 1px solid $gray-300;
+    }
+}

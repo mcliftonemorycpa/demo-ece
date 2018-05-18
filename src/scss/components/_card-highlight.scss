@@ -1,0 +1,11 @@
+.card-highlight {
+    @include gradient-horizontal( $pale-blue-1, $white );
+    @include box-shadow;
+    border: 1px solid $gray-300;
+    padding:calc( #{$grid-gutter-width} / 1.25) $grid-gutter-width;
+    margin: calc( #{$grid-gutter-width} / 2) auto $grid-gutter-width auto;
+    .card-highlight__title {
+        @include subheading;
+        font-size: 1.25rem;
+    }
+}

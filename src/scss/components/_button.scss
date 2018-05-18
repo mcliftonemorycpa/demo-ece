@@ -1,0 +1,42 @@
+.btn {
+    text-transform: uppercase;
+    font-family: $barlow-condensed;
+    white-space:normal;
+    font-size: 1.125rem;
+    // Plain white text button
+    &.btn-white {
+        color: $white;
+        &:hover {
+            background-color: $white;
+            color: $yiq-text-dark;
+        }
+        img {
+            transition: all .2s ease;
+        }
+        &:hover img {
+            filter: brightness(0%);
+        }
+    }
+    &.btn-sm,
+    &.btn-group-sm .btn {
+        font-size: .93rem;
+    }
+}
+
+// Make large button groups display each button stacked to avoid x-axis overflow
+.btn-group-lg {
+    @include media-breakpoint-only(xs) {
+        .btn {
+            font-size:$font-size-sm;
+            padding:5px;
+            .icon-sm,
+            .icon-md,
+            .icon-lg {
+                min-width:15px;
+                min-height:15px;
+                width:15px;
+                height:15px;
+            }
+        }
+    }
+}

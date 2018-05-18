@@ -1,6 +1,5 @@
 {% set siteName = "Emory Continuing Education" %}
 {% set includePath = "includes/" %}
-{% set templateIncludePath = "includes/template-ece/" %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -18,7 +17,7 @@
     <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
 
     {% block content %}{% endblock %}
-
+    
     {% include "partials/global/footer.njk" %}
     {% include "partials/js.njk" %}
 </body>

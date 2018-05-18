@@ -1,0 +1,9 @@
+.list-checks {
+    list-style: none;
+    padding-left: 0;
+    li {
+        background: url('../images/icons/check-circle.svg') 12px 4px/15px no-repeat;
+        padding-left: 2em;
+        margin-bottom: .5rem;
+    }
+}

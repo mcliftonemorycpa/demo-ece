@@ -1,0 +1,26 @@
+.cta {
+    padding: 4rem $grid-gutter-width;
+    margin:calc( #{$grid-gutter-width} / 2) auto;
+    .cta__text {
+        @include heading;
+        font-size: 1.75rem;
+        color: $yiq-text-dark;
+        margin-bottom: 1rem;
+    }
+    @include media-breakpoint-up(md) {
+        padding:6rem calc( #{$grid-gutter-width} * 2);
+        .cta__text {
+            font-size: 2rem;
+            margin-bottom: 0;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .cta__text {
+            font-size: 2.75rem;
+        }
+        // Smaller CTA
+        &.cta-sm .cta__text {
+            font-size: 2rem;
+        }
+    }
+}

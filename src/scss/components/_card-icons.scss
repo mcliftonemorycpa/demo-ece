@@ -1,0 +1,80 @@
+.card-icons {
+    text-align: center;
+    list-style: none;
+    padding-left: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    .card-icons__item {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto $grid-gutter-width auto;
+        flex-grow: 1;
+    }
+    .card-icons__link {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 0 auto $grid-gutter-width auto;
+        padding:calc( #{$grid-gutter-width} * 2) $grid-gutter-width;
+        outline: 3px solid transparent;
+        transition: outline .2s ease-in-out;
+        flex-grow: 1;
+        border: 1px solid transparent;
+        &:hover,
+        &:focus {
+            outline-color: $yellow;
+            text-decoration: none;
+        }
+        // Card colors
+        &:nth-of-type(even) {
+            @include gradient-horizontal( $pale-blue-1, $white );
+            @include box-shadow;
+            border-color: $gray-300;
+        }
+        &:nth-of-type(odd) {
+            @include box-shadow(.3);
+            .card-icons__text {
+                color: $white;
+            }
+        }
+        &:nth-of-type(6n + 1) {
+            @include gradient-horizontal( $emory-blue, $light-blue );
+        }
+        &:nth-of-type(6n + 3) {
+            @include gradient-horizontal( $emory-blue, $medium-blue );
+        }
+        &:nth-of-type(6n + 5) {
+            @include gradient-horizontal( darken($magenta, 10%), $magenta );
+        }
+    }
+    .card-icons__icon {
+        margin-bottom: 2rem;
+        width: auto;
+        height: auto;
+        min-width: 60px;
+        min-height: 60px;
+    }
+    .card-icons__text {
+        @include subheading;
+        font-size: 1.5rem;
+        width:100%; // IE needs this
+    }
+    @include media-breakpoint-up(sm) {
+        .card-icons__link {
+            width:calc( 100% - #{$grid-gutter-width} );
+        }
+    }
+    @include media-breakpoint-up(md) {
+        margin: 0 calc( -#{$grid-gutter-width} / 2 );
+        .card-icons__link {
+            width:calc( 33.3333% - ( #{$grid-gutter-width} / 1) );
+            margin:calc( #{$grid-gutter-width} / 2 );
+        }
+    }
+}

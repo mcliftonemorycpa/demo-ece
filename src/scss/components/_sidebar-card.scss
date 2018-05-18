@@ -1,0 +1,46 @@
+.sidebar-card {
+    display: flex;
+    flex-flow: column nowrap;
+    border: 1px solid $gray-300;
+    border-top: 4px solid $yellow;
+    @include box-shadow(.3);
+    .sidebar-card__section {
+        margin-bottom: 0;
+        padding:calc( #{$grid-gutter-width} / 1.5) $grid-gutter-width;
+        font-size: 1.125rem;
+        background-color: $pale-blue-2;
+    }
+    .sidebar-card__item {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        &:not(:last-child) {
+            margin-bottom: .75rem;
+        }
+    }
+    .sidebar-card__icon {
+        width: 2rem;
+        img {
+            width: 25px;
+        }
+    }
+    .sidebar-card__info {
+        width: 75%;
+        address {
+            margin-bottom: 0;
+        }
+    }
+    // Sidebar menu
+    .nav .nav-link {
+        padding: .35rem 0;
+        &:hover {
+            text-decoration: underline;
+        }
+        &.active {
+            font-weight: 700;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+    }
+}

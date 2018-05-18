@@ -1,45 +1,197 @@
 .carousel {
-
-    /*
-     * Accessibility
-    */
-
-    // Larger touchpoint for indicators
-    .carousel-indicators li,
-    .carousel-indicators li.active {
-        height: 18px;
-        width: 18px;
-        border-width: 2px;
-        position: relative;
-    }
-
-    // Focus effects
-    .carousel-tablist-highlight {
-        display: block;
-        position: absolute;
-        outline: 2px solid transparent;
-        background-color: transparent;
-
-        &.focus {
-            outline: 2px solid $sky-blue;
-        }
-    }
-
-    .carousel-control-next:focus .carousel-control-next-icon,
-    .carousel-control-prev:focus .carousel-control-prev-icon {
-        outline: 2px solid $sky-blue;
-    }
-
     // Hide position of pause/resume button
     .carousel-pause-button {
         position: absolute;
         top: -30em;
         left: -300em;
-        display: block;
+        display: block
+    }
+    .carousel-pause-button.focus {
+        top: 0.5em;
+        left: 0.5em
+    }
+    // Plain Testimonial Carousel
+    &.carousel-testimonial {
+        .carousel-testimonial__quote {
+            position: relative;
+            &::before {
+                position: relative;
+                content: '';
+                background-image: url('../images/icons/quote-left.svg');
+                background-size: 50px 50px;
+                width: 50px;
+                height: 50px;
+                display: inline-block;
+            }
+        }
+        .carousel-testimonial__name {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        .carousel-testimonial__title {
+            @include subheading;
+            color: $yiq-text-dark;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: auto;
+            height: auto;
+            min-width: 30px;
+            min-height: 30px;
+        }
+        // Hide indicators offscreen (needed for accessibility)
+        .carousel-indicators {
+            position: absolute;
+            z-index:-1;
+            top: -30em;
+            left: -300em;
+            display: block
+        }
+    }
+    // Testimonial carousel with photos
+    &.carousel-testimonial-photos {
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            width: 75px;
+            height: 75px;
+            background-image: url('../images/icons/chevron.svg');
+        }
+        .carousel-control-next-icon {
+            transform: scaleX(-1);
+        }
+        // Hide indicators offscreen (needed for accessibility)
+        .carousel-indicators {
+            position: absolute;
+            z-index:-1;
+            top: -30em;
+            left: -300em;
+            display: block
+        }
+        .carousel-testimonial__name {
+            margin-top: 1rem;
+            font-weight: bold;
+        }
+        .carousel-testimonial__title {
+            @include subheading;
+            color: $yiq-text-dark;
+        }
+        .carousel__thumb {
+            position: relative;
+            padding:22px 0 0 30px;
+            &::before {
+                position:absolute;
+                z-index:-1;
+                width:100%;
+                height:100%;
+                
+                content:url('../images/thumb-bg.svg');
+                transform:translate(-30px, -22px);
+            }
+            img {
+                border-radius:6px;
+            }
+        }
+    }
 
-        &.focus {
-            top: 0.5em;
-            left: 0.5em
+    // Testimonial carousel with 2 cards per slide
+    &.carousel-testimonial-2x {
+        $thumbSize: 100px;
+        padding:6rem 0;
+        .carousel-item {
+            margin: calc( #{$thumbSize} / 2 ) auto 20px auto; 
+        }
+        .carousel-testimonial__quote {
+            margin-bottom:0;
+            background-color:$white;
+            padding:$grid-gutter-width;
+            height:100%;
+            position:relative;
+            line-height:1.75rem;
+
+            &::after {
+                top: 100%;
+                left: 20%;
+                border: solid transparent;
+                content: " ";
+                height: 0;
+                width: 0;
+                position: absolute;
+                z-index:999;
+                pointer-events: none;
+                border-top-color: $white;
+                border-width: 20px;
+                margin-left: -20px;
+            }
+        }
+        .carousel-testimonial__thumb {
+            width: $thumbSize;
+            height: $thumbSize;
+            position:absolute;
+            bottom: calc( 100% - (#{$thumbSize} / 2) );
+            right:10%;
+            img {
+                border-radius:50%;
+            }
+        }
+        .carousel-testimonial__name,
+        .carousel-testimonial__title {
+            max-width:70%;
+        }
+        .carousel-testimonial__name {
+            font-weight:700;
+            font-size:1.25rem;
+            line-height:1.25rem;
+            margin-bottom:.35rem;
+        }
+        .carousel-testimonial__title {
+            @include subheading;
+            color:$light-blue;
+            font-size:$font-size-sm;
+            margin-bottom:1.5rem;
+        }
+        .carousel-indicators {
+            display:flex;
+            align-items:center;
+            li {
+                width:15px;
+                height:15px;
+                border-radius:50%;
+                border:1px solid $gray-500;
+                cursor:pointer;
+                &.active {
+                    width:20px;
+                    height:20px;
+                    background-color:$light-blue;
+                    border-color:$light-blue;
+                }
+            }
+        }
+
+        @include media-breakpoint-only(md) {
+            .carousel-testimonial__name,
+            .carousel-testimonial__title {
+                max-width:50%;
+            }
+        }
+
+        @include media-breakpoint-down(sm) {
+            padding-bottom:3rem;
+            .carousel-testimonial__quote {
+                text-align:center;
+                margin-bottom: calc( #{$thumbSize} / 1.5 );
+                height:auto;
+            }
+            .carousel-testimonial__thumb {
+                transform: translateX(50%);
+                right:50%;
+            }
+            .carousel-testimonial__name,
+            .carousel-testimonial__title {
+                max-width:100%;
+            }
+            .carousel-testimonial__name {
+                margin-top: calc( #{$thumbSize} / 2.5 );
+            }
         }
     }
 }

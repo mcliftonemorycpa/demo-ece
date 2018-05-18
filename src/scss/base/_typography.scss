@@ -5,3 +5,67 @@
 .subheading {
     @include subheading;
 }
+
+.lead {
+    font-family: $spectral;
+    font-weight: 400;
+    color: $gray-700;
+}
+
+/*
+ * Add a gray <hr> behind centered text
+*/
+
+.heading-hr {
+    @include subheading;
+    margin-bottom: 0;
+    display: table;
+    white-space: nowrap;
+    padding: $grid-gutter-width 0;
+    overflow: hidden;
+    &::before,
+    &::after {
+        border-top: 1px solid $cool-gray-1;
+        content: '';
+        display: table-cell;
+        position: relative;
+        top: 0.5em;
+        width: 45%;
+    }
+    &::before {
+        right: calc( #{$grid-gutter-width} / 2);
+    }
+    &::after {
+        left: calc( #{$grid-gutter-width} / 2);
+    }
+}
+
+/*
+ * Heading group - contains small and large heading text in 2 colors
+*/
+
+.heading-group {
+    text-align: center;
+    .heading-group__primary {
+        @include heading;
+        display:block;
+        font-size: 2.5rem;
+        margin-bottom: 3rem;
+    }
+    .heading-group__secondary {
+        @include subheading;
+        display:block;
+        font-size: 1.25rem;
+        color: $light-blue;
+        margin-bottom: .5rem;
+    }
+    // For dark backgrounds
+    &.heading-group-dark {
+        .heading-group__primary {
+            color: $white;
+        }
+        .heading-group__secondary {
+            color: $yellow;
+        }
+    }
+}

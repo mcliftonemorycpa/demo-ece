@@ -1,0 +1,28 @@
+.card-info {
+    @include gradient-horizontal( $emory-blue, $light-blue);
+    @include box-shadow(.3);
+    color: $white;
+    padding:calc( #{$grid-gutter-width} / 1.25) $grid-gutter-width;
+    margin: calc( #{$grid-gutter-width} / 2) auto $grid-gutter-width auto;
+    font-size: $font-size-sm;
+    address {
+        margin-bottom: 0;
+    }
+    .btn {
+        white-space: normal;
+    }
+    .card-info__item {
+        display: flex;
+        flex-flow: row nowrap;
+        margin-bottom: 1rem;
+    }
+    .card-info__icon {
+        margin-right: .5rem;
+    }
+    @include media-breakpoint-up(lg) {
+        .card-info__item {
+            margin-right: .5rem;
+            margin-bottom: 0;
+        }
+    }
+}

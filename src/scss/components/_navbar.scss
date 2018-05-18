@@ -1,0 +1,180 @@
+#site-nav {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .15);
+    // LOGO AREA
+    .logo-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        width:100%;
+    }
+    .logo__emory {
+        position: relative;
+        left: -1rem;
+        img {
+            transition:all .2s ease-in-out;
+            width: 55px;
+            height: 55px;
+        }
+        a {
+            display: block;
+        }
+    }
+    .logo__ece {
+        width: 100%;
+        img {
+            width: 100%;
+            max-width: 300px;
+            height: 30px;
+        }
+    }
+    .navbar-toggler {
+        margin-left: 1rem;
+        font-size: $font-size-sm;
+    }
+    // NAV MENU
+    .navbar-nav {
+        width: 100%;
+        .nav-item {
+            @include subheading;
+            padding-left: .5rem;
+            padding-right: .5rem;
+            width: 100%;
+            .nav-link {
+                padding-left: 0;
+                padding-right: 0;
+                font-size: 1.125rem;
+            }
+            // Dropdown toggle arrow
+            .dropdown-toggle::after {
+                border-top: 0.3em solid $sky-blue;
+                margin-left: 0;
+            }
+            // Hover state
+            &:hover {
+                .nav-link {
+                    color: $light-blue;
+                }
+            }
+            // Active state
+            &.active .nav-link {
+                box-shadow: inset 0 -3px 0 0 $yellow; // border-bottom
+            }
+        }
+    }
+    // Dropdown menu
+    .dropdown-menu {
+        .dropdown-item {
+            padding-top: .5rem;
+            padding-bottom: .5rem;
+            &:hover {
+                color: $light-blue;
+            }
+            &.active,
+            &:active {
+                background-color: $magenta;
+                color: $white;
+            }
+        }
+        @include media-breakpoint-up(sm) {
+            // List split into 2 columns
+            &.dropdown-menu-2col {
+                column-count: 2;
+                .dropdown-item {
+                    display:inline-block;
+                }
+            }
+        }
+    }
+    // Search form
+    .navbar__search {
+        position: relative;
+        margin-left: 1rem;
+        .navbar__search-toggle {
+            border-left: 1px solid $cool-gray-1;
+            background-color: transparent;
+            box-shadow: none;
+            img {
+                width: 20px;
+                height: 20px;
+            }
+        }
+        // Input
+        .input-group {
+            width: 100%;
+        }
+        .input-group-append {
+            margin-left: 0;
+        }
+        .navbar__search-toggle {
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: 50%;
+            width: 50px;
+            height: 38px; // Focus
+            &:hover {
+                background-color: $gray-200;
+            }
+            // Search icon
+            &.icon-magnifier {
+                background-image: url('../images/icons/magnifier.svg');
+            }
+            // Close icon
+            &.icon-cross {
+                background-image: url('../images/icons/cross.svg');
+            }
+        }
+    }
+    // Make elements on top layer during animations
+    #main-menu,
+    .navbar__search-submit {
+        position: relative;
+        z-index: 3;
+    }
+
+    @include media-breakpoint-down(md) {
+        // Dropdown menu
+        .dropdown-menu {
+            border:none;
+            border-left:1px solid $cool-gray-1;
+            border-radius:0;
+            margin-bottom:.5rem;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        .logo-wrapper {
+            width:auto;
+            margin-right:1rem;
+        }
+        .logo__emory img {
+            width: 85px;
+            height: 85px;
+        }
+        .logo__ece img {
+            width: 350px;
+            max-width: 350px;
+            height: 30px;
+        }
+        // Nav menu
+        .navbar-nav {
+            .nav-item {
+                width: auto; // Active state
+                &.active .nav-link {
+                    box-shadow: inset 0 3px 0 0 $yellow; // border-top
+                }
+            }
+        }
+        // Dropdown menu
+        .dropdown-menu {
+            &.show {
+                @include box-shadow(.35);
+            }
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        .logo__ece img {
+            width: 400px;
+            max-width: 400px;
+            height: 40px;
+        }
+    }
+}

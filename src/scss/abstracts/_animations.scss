@@ -1,0 +1,18 @@
+/*
+ * Slide and fade from right to left
+*/
+
+@keyframes slide-horiz-l {
+    0% { 
+        transform: translateX(100%);
+        opacity:0;
+    }
+    100% { 
+        transform: translateX(0%);
+        opacity:1;
+    }
+}
+
+.slide-horiz-l {
+    animation: slide-horiz-l 0.5s forwards;
+}

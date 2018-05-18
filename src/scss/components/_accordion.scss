@@ -1,0 +1,38 @@
+.accordion {
+    @include box-shadow;
+    border: 1px solid $gray-300;
+    margin-bottom: $grid-gutter-width;
+    .card {
+        border-radius: 0;
+    }
+    .card-header {
+        @include gradient-horizontal( $pale-blue-1, $white );
+        padding: 0;
+    }
+    .card-header .btn {
+        display: block;
+        width: 100%;
+        cursor: pointer;
+        text-align: left;
+        position: relative;
+        white-space: normal;
+        padding:calc( #{$grid-gutter-width} / 2) calc( #{$grid-gutter-width} * 2) calc( #{$grid-gutter-width} / 2) $grid-gutter-width;
+        text-transform: none;
+        font-size: 1rem;
+        font-weight: 700;
+        font-family: $noto-sans;
+        &::after {
+            content: '-';
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            right: $grid-gutter-width;
+            color: $yellow;
+            font-size: 1.25rem;
+        }
+        // Icon when collapsed
+        &.collapsed::after {
+            content: '+';
+        }
+    }
+}

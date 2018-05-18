@@ -1,0 +1,103 @@
+body {
+    background-color:transparent;
+    background-size:603px 170px;
+    background-position:center;
+    background-image: url('../images/bg-grid.svg');
+}
+
+.gradient-hz-blue {
+    @include gradient-horizontal( $emory-blue, $light-blue );
+}
+
+.gradient-hz-yellow {
+    @include gradient-horizontal( lighten($yellow, 10%), lighten($yellow, 35%) );
+}
+
+.gradient-hz-purple {
+    @include gradient-horizontal( darken($purple, 25%), $purple );
+}
+
+.gradient-hz-magenta {
+    @include gradient-horizontal( darken($magenta, 10%), $magenta );
+}
+
+.gradient-hz-white {
+    @include gradient-horizontal( $pale-blue-1, $white );
+}
+
+.gradient-v-yellow {
+    @include gradient-vertical( darken($yellow, 10%), $yellow );
+}
+
+.gradient-v-gray {
+    @include gradient-vertical( $pale-green-1, $pale-blue-3 );
+}
+
+.bg-facets-yellow {
+    background: $yellow url('../images/bg-facets-yellow.jpg') center/cover no-repeat;
+}
+
+.bg-facets-gray {
+    background: $cool-gray-1 url('../images/bg-facets-gray.jpg') center/cover no-repeat;
+}
+
+.bg-gray-200 {
+    background-color: $gray-200;
+}
+
+// Include Line Arrow and Diagonal Lines effect
+.bg-effects {
+    position: relative;
+    height: 100%;
+    &::before,
+    &::after {
+        position: absolute;
+    }
+    &::before {
+        opacity: .05;
+        left: $grid-gutter-width;
+        top: 0;
+        width: 100px;
+        content: url('../images/line-arrow.svg');
+    }
+    &::after {
+        opacity: .1;
+        z-index: 2;
+        right: 0;
+        bottom: 0;
+        width: 200px;
+        content: url('../images/diagonal-lines.svg');
+    }
+}
+
+.bg-fractal-frame {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+    &::before,
+    &::after {
+        position: absolute;
+        width: 400px;
+        height: 400px;
+    }
+    &::before {
+        opacity: .05;
+        left: $grid-gutter-width;
+        top: 0;
+        left: -180px;
+        content: url('../images/fractal-frame.svg');
+    }
+    &::after {
+        opacity: .05;
+        right: -$grid-gutter-width;
+        bottom: 0;
+        right: -180px;
+        content: url('../images/fractal-frame.svg');
+    }
+    
+    // Next div needs to be on top
+    >div {
+        position: relative;
+        z-index: 1;
+    }
+}

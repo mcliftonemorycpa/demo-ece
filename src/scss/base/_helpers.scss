@@ -1,4 +1,4 @@
-/*
+/* 
  * Create a placeholder space for images
  * to prevent content shifting around
  * while they load or if the image is broken
@@ -11,23 +11,18 @@ figure.image {
 
 .image {
     display: block;
-    position: relative;
-
-    // 1:1 aspect ratio (square)
+    position: relative; // 1:1 aspect ratio (square)
     &.image-1by1 {
         padding-top: 100%;
     }
-
     // 4:3 aspect ratio
     &.image-4by3 {
         padding-top: 75%;
     }
-
     // 16:9 aspect ratio
     &.image-16by9 {
         padding-top: 56.25%;
     }
-
     img {
         bottom: 0;
         left: 0;
@@ -36,5 +31,208 @@ figure.image {
         top: 0;
         width: 100%;
         height: 100%;
+    }
+}
+
+/*
+ * Base containers, sections, body
+*/
+
+/*
+ * Make the special width wrapper that goes
+ * behind .container content
+*/
+
+@function wrapper($key: "xl") {
+    @return map-get($container-max-widths,
+    $key);
+}
+
+.wrapper {
+    padding: 4rem 0;
+    margin: 0 auto;
+    width: calc( 100% - (#{$grid-gutter-width} * 2));
+    max-width:calc( #{wrapper("xl")} + 8rem);
+    border-right: 1px solid $cool-gray-1;
+    border-left: 1px solid $cool-gray-1;
+    background-color: $white;
+    // Use this modifier if this section occurs right after a .hero or needs more padding on top
+    &.wrapper-overlap {
+        padding-top: 6rem;
+        margin-top: -3rem;
+    }
+    @include media-breakpoint-only(xs) {
+        width: calc( 100% - (#{$grid-gutter-width} / 2));
+    }
+    @include media-breakpoint-only(sm) {
+        width: calc( 100% - #{$grid-gutter-width} );
+    }
+}
+
+/*
+ * Icon sizes
+*/
+
+.icon-sm {
+    min-width: 25px;
+    min-height: 25px;
+}
+
+.icon-md {
+    min-width: 3.75rem;
+    min-height: 3.75rem;
+}
+
+.icon-lg {
+    min-width: 65px;
+    min-height: 65px;
+}
+
+/*
+ * Pinched in section effects
+*/
+
+.pinch {
+    position: relative;
+    &::before,
+    &::after {
+        width:100%;
+        position: absolute;
+        left: 0;
+        z-index: 1;
+        display: block;
+    }
+    &::before {
+        top:0;
+    }
+    &::after {
+        bottom: 0;
+    }
+    @include media-breakpoint-between(xs,sm) {
+        &::before {
+            transform: translateY(-70%);
+        }
+        &::after {
+            transform: scaleX(-1) rotate(180deg) translateY(-70%);
+        }
+    }
+    @include media-breakpoint-between(md,lg) {
+        &::before {
+            transform: translateY(-70%)
+        }
+        &::after {
+            transform: scaleX(-1) rotate(180deg) translateY(-70%);
+        }
+    }
+    @include media-breakpoint-up(xl) {
+        &::before {
+            transform: translateY(-81%)
+        }
+        &::after {
+            transform: scaleX(-1) rotate(180deg) translateY(-81%);
+        }
+    }
+}
+
+/*
+ * Pinched in section effect - BLUE
+*/
+
+.pinch.pinch-blue {
+    &::before,
+    &::after {
+        content: url('../images/pinch-blue.svg');
+    }
+}
+
+/*
+ * Pinched in section effect - GRAY
+*/
+
+.pinch.pinch-gray {
+    &::before {
+        content: url('../images/pinch-gray-top.svg');
+    }
+    &::after {
+        content: url('../images/pinch-gray-bottom.svg');
+    }
+}
+
+/*
+ * Photo overlap
+*/
+
+.photo-overlap {
+    .photo {
+        max-width: 65%;
+        @include box-shadow(.35);
+        background-color: $white;
+        &.photo-shift {
+            transform: translate(50%, -25%);
+        }
+    }
+}
+
+/*
+ * Yellow link arrows that appear
+ * at the bottom center of cards
+*/
+
+.card-link-arrow {
+    position: relative; // Icon
+    &::before {
+        position: absolute;
+        content: '';
+        @include gradient-vertical( $light-yellow, $yellow );
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        box-shadow: 0 8px 8px rgba(0, 0, 0, .3);
+    }
+    &::after {
+        position: absolute;
+        z-index: 1;
+        content: url('../images/icons/chevron-right-w.svg');
+    }
+    &.card-link-arrow-bottom {
+        &::before,
+        &::after {
+            bottom: -17.5px;
+        }
+        &::before {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        &::after {
+            left: 50%;
+            transform: translateX(-35%);
+        }
+    }
+    &.card-link-arrow-right {
+        &::before,
+        &::after {
+            top: 50%;
+        }
+        &::before {
+            transform: translateY(-50%);
+            right: -17.5px;
+        }
+        &::after {
+            transform: translateY(-35%);
+            right: -12.5px;
+        }
+    }
+    @include media-breakpoint-between(xs,
+    sm) {
+        &.card-link-arrow-right {
+            &::before {
+                width: 30px;
+                height: 30px;
+                right: -13.5px;
+            }
+            &::after {
+                right: -10.5px;
+            }
+        }
     }
 }

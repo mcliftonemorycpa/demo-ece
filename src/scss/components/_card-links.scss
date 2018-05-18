@@ -1,0 +1,39 @@
+.card-links {
+    margin-bottom: 3rem;
+    .card-links__link {
+        position: relative;
+        display: block;
+        width: 100%;
+        height: 100%;
+        @include gradient-horizontal( $pale-blue-1, $white );
+        text-decoration: none;
+        @include box-shadow;
+        border: 1px solid $gray-300;
+        color: $yiq-text-dark;
+        padding:calc( #{$grid-gutter-width} / 2);
+        margin-bottom: 2rem;
+        outline: 3px solid transparent;
+        transition: outline .2s ease-in-out;
+        flex-grow: 1;
+        &:hover,
+        &:focus {
+            outline-color: $yellow;
+            text-decoration: none;
+        }
+        // List
+        .card-links__list {
+            list-style: none;
+            padding-left: 0;
+            li {
+                margin-bottom: .5rem;
+            }
+        }
+        @include media-breakpoint-up(sm) {
+            padding:$grid-gutter-width;
+        }
+    }
+    .card-links__title {
+        @include subheading;
+        font-size: 1.25rem;
+    }
+}

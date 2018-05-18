@@ -1,0 +1,96 @@
+.hero {
+    position: relative;
+    .hero__heading {
+        @include heading;
+        color: $white;
+        font-size:2.5rem;
+    }
+    .hero__heading-primary,
+    .hero__heading-secondary {
+        display:block;
+    }
+    .hero__heading-secondary {
+        color:$yellow;
+    }
+    // Home page
+    &.hero-home {
+        background-color: $emory-blue;
+        background-repeat: no-repeat;
+        background-position:top left;
+        background-image: url('../images/hero-home-bg-flat.jpg');
+        width: 100%;
+        min-height: 425px;
+        height: 500px;
+        position: relative;
+        z-index: 1;
+        .hero__heading {
+            font-size: 1.75rem;
+            margin-bottom: 1rem;
+        }
+    }
+    // Interior page
+    &.hero-interior {
+        background: transparent url('../images/hero-interior.png') top/cover no-repeat;
+        width: 100%;
+        min-height: 250px;
+        height: 250px;
+        position: relative;
+    }
+    .hero__lead {
+        color: $white;
+        a {
+            color: $yellow;
+        }
+    }
+
+    // Next section button
+    .hero__btn-next {
+        display:none;
+        background-color:$gray-100;
+        width:40px;
+        height:40px;
+        border-radius:50%;
+        position:absolute;
+        bottom:$grid-gutter-width;
+        left:50%;
+        transform:  translateX(-50%) rotate(-90deg);
+        background-image: url('../images/icons/chevron.svg');
+        background-size: 30px 30px;
+        background-repeat: no-repeat;
+        background-position: 90% 95%;
+        @include box-shadow(.3);
+        }
+
+    @include media-breakpoint-up(md) {
+        // Home page
+        &.hero-home {
+            background-position:top right;
+            height: 681px;
+            position:relative;
+            .hero__heading {
+                font-size: 3rem;
+                margin-bottom:1.5rem;
+            }
+            &::before {
+                content:'';
+                @include gradient-horizontal( rgba(1, 33, 105 ,1), rgba(255, 255, 255, 0), 50%, 60% );
+                background-color:transparent;
+                position:absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: .5;
+            }
+        }
+        // Interior page
+        &.hero-interior {
+            min-height: 425px;
+            height: 425px;
+        }
+        // Next section button
+        .hero__btn-next {
+            display:block;
+        }
+    }
+}

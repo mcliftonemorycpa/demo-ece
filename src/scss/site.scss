@@ -17,26 +17,6 @@ body {
 .wrapper {
 	// Adjust wrapper edges to align neatly with grid on xl screens
 	max-width: 1295px;
-	// Decrease y padding
-	padding: 3rem 0;
-}
-
-// Add letter-spacing to all instances of Barlow Condensed that don't have it already
-.subheading, .heading-hr, .wysiwyg h4, .wysiwyg h5, .wysiwyg h6, .btn, .card-highlight .card-highlight__title, .card-icons .card-icons__text, .card-links .card-links__title, #site-nav .navbar-nav .nav-item, .search-filters .search-filters__legend, .stats.stats-row .stats__text, .stats.stats-col .stats__bold {
-	letter-spacing: .06em;
-}
-
-// Increase small font size
-small, .small {
-	font-size: 87.5%;
-}
-
-// Increase default button font sizes
-.btn:not(.btn-lg) {
-	font-size: 1.125rem;
-}
-.btn-sm, .btn-group-sm > .btn {
-	font-size: .93rem;
 }
 
 // Darken .btn-outline-secondary hover color to match .btn-secondary hover color, to differentiate it from un-hovered .btn-secondary in button groups
@@ -45,58 +25,9 @@ small, .small {
     border-color: #930067;
 }
 
-// Increase fractal background size
-.bg-fractal-frame {
-	&::before, &::after {
-		width: 500px;
-	}
-	&::before {
-		top: -180px;
-		left: -220px;
-	}
-	&::after {
-		bottom: -100px;
-		right: -220px;
-	}
-}
-
-// Increase quote size
-.carousel.carousel-testimonial .carousel-testimonial__quote::before {
-	background-size: 65px 65px;
-	height: 65px;
-	width: 65px;
-	margin-bottom: 1rem;
-}
-
-// Add gradients to light cards to match mockups
-// Including accordion titles so they match
-.card-highlight, .sidebar-card__section, .card-links .card-links__link, .tabs .tab-content, .wysiwyg blockquote, .card-icons .card-icons__link:nth-of-type(even), .links-feed .links-feed__link, .card-actions, .accordion .card-header {
-	background: linear-gradient(to right, #f2f8fa 0%, #fff 100%);
-}
-
-// Increase nav link size
-.navbar-nav .nav-link {
-	font-size: 1.125rem;
-}
-
-// Even up space between nav login and search
-#site-nav .navbar__search {
-	margin-left: 0;
-}
-
+// Reduce nav arrow size to ompensate for larger parent font size
 #site-nav .navbar-nav .nav-item .dropdown-toggle::after {
-	// Compensate for larger parent font size
-	font-size: 1rem;
-	// Change nav arrow color to match revised mockup
-	border-top-color: $sky-blue;
-	// Reduce separation from text
-	margin-left: 0;
-}
-
-// Increase y padding on dropdown items for readability and tappabilty
-.dropdown-item {
-	padding-top: .5rem;
-	padding-bottom: .5rem;
+	font-size: .875rem;
 }
 
 // Correct purple card gradient
@@ -111,131 +42,37 @@ small, .small {
 		width: auto;
 	}
 	.sidebar-card__item {
-		// Increase font size
+		// Match body font size
 		font-size: 1rem;
 	}
 	.sidebar-card__icon {
-		// Increase size
+		// Increase icon size
 		width: 3rem;
 		img {
 			width: 2rem;
 		}
 	}
 }
-// Increase icon size
-.icon-md {
-	min-width: 3.75rem;
-    min-height: 3.75rem;
-}
-.sidebar-cta, .sidebar-card__section {
-	font-size: 1.125rem;
-	h6, .h6 {
-		font-size: inherit;
-	}
-}
 
-// Links card
-.card-links {
-	// Increase margin below title
-	.card-links__title {
-		margin-bottom: 1rem;
-	}
-	.card-links__link {
-		// Increase top padding
-		padding-top: 30px;
-		.card-links__list {
-			// Increase list font size and adjust item spacing
-			font-size: 1rem;
-			line-height: 1.5;
-			li {
-				margin-bottom: .5rem;
-			}
-		}
-	}
-}
-
-// Increase sidebar CTA font size
-.sidebar-card .sidebar-card__section {
-	font-size: 1.125rem;
-	.subheading {
-		font-size: 1.5rem;
-	}
-}
-
-// Increase icon card font size
-.card-icons .card-icons__text {
-	font-size: 1.5rem;
-}
 
 // Increase z-index elements with hover/focus outlines so outline isn't partially covered by other cards
 .links-feed .links-feed__link:hover, .accordion .card-header .btn:focus {
 	z-index: +1;
 }
 
-.card-link-arrow::after {
-	// Add gradient to circle arrow button
-	background-image: url("../images/icons/chevron-right-w.svg"), linear-gradient(to bottom, #ffd83b 0%, $yellow 100%);
-	// Deepen drop shadow
+// More diffuse drop shadow on arrow buttons
+.card-link-arrow::before {
 	box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-}
-
-.accordion .card-header .btn {
-	// Adjust accordion header text to match body style more closely
-	letter-spacing: 0;
-    font-size: 1rem;
-}
-
-// Larger logo shield on nav collapse to fill slightly increased bar height
-#site-header.scroll #site-nav .logo__emory img {
-    width: 56px;
-    height: 56px;
-}
-
-// Adjust carousel testimonial name formatting
-.carousel-testimonial-photos__name {
-	font-size: 1.125rem;
-}
-.carousel-testimonial-photos__title {
-	font-size: .875rem;
-	letter-spacing: .1em;
-}
-
-@include media-breakpoint-up(sm) {
-	// Increase quote size
-	.wysiwyg blockquote {
-		margin-left: 85px;
-		&::before {
-			left: -85px;
-			width: 65px;
-			height: 51px;
-		}
-	}
 }
 
 @include media-breakpoint-up(md) {
 	// Increase hero H1 size
-	.hero .hero__heading {
-		font-size: 4.5rem;
+	.hero.hero-home .hero__heading {
+		//font-size: 4.5rem;
 	}
 }
 
 @include media-breakpoint-up(lg) {
-	#site-nav {
-		// Increase space between shield and logo to comply with identity guidelines
-		.logo-wrapper {
-			margin-right: 1.5rem;
-		}
-		.logo__emory {
-			left: -1.5rem;
-		}
-		// Logo bigger
-		.logo__ece img {
-			width: 416px;
-			max-width: 100%;
-			height: 28px;
-			transition: all .2s ease-in-out;
-		}
-	}
 	// Decrease logo size on header collapse
 	#site-header.scroll #site-nav .logo__ece img {
 		width: 320px;
