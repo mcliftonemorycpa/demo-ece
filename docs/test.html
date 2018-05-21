@@ -1,0 +1,994 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+#########################################
+THEME COLOR
+This color determines the color of the
+web address bar in certain mobile
+browsers including Firefox OS, Chrome,
+Vivaldi, and Opera
+#########################################
+-->
+<meta name="theme-color" content="#012169"> <!-- $emory-blue -->
+
+<title>test | Emory Continuing Education</title>
+
+    <!--
+#########################################
+EXTERNAL LIBRARIES / CDN
+Place links to externally hosted
+CSS libraries below.
+#########################################
+-->
+
+<!--
+#########################################
+PRIMARY SITE STYLESHEET
+This stylesheet is a combination of all
+locally imported SCSS files.
+#########################################
+-->
+<link href="includes/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <header id="site-header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
+
+  <div class="logo-wrapper">
+
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="includes/images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
+
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="includes/images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
+
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="subheading">Menu</span>
+    </button>
+
+  </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item" href="courses.html">Browse Courses by Subject</a>
+			<a class="dropdown-item" href="search.html">Search Courses</a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="olli.html">OLLI (Ages 50+)</a>
+        </div>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificate Programs
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item" href="certificate-programs.html">All Certificate Programs</a>
+			<a class="dropdown-item" href="program.html">Big Data</a>
+			<a class="dropdown-item" href="program.html">Business Intelligence</a>
+			<a class="dropdown-item" href="program.html">Cybersecurity</a>
+			<a class="dropdown-item" href="program.html">Health IT</a>
+			<a class="dropdown-item" href="program.html">Au Pair</a>
+			<a class="dropdown-item" href="program.html">Business Communications</a>
+			<a class="dropdown-item" href="program.html">Creative Writing</a>
+			<a class="dropdown-item" href="program.html">Digital Photography</a>
+			<a class="dropdown-item" href="program.html">Event Planning</a>
+			<a class="dropdown-item" href="program.html">Fundraising</a>
+			<a class="dropdown-item" href="program.html">Graphic Design</a>
+			<a class="dropdown-item" href="program.html">Health Coach</a>
+			<a class="dropdown-item" href="program.html">HR Management</a>
+			<a class="dropdown-item" href="program.html">Landscape Design</a>
+			<a class="dropdown-item" href="program.html">Lean Six Sigma</a>
+			<a class="dropdown-item" href="program.html">Management</a>
+			<a class="dropdown-item" href="program.html">Supervision</a>
+			<a class="dropdown-item" href="program.html">Paralegal</a>
+			<a class="dropdown-item" href="program.html">Project Management</a>
+			<a class="dropdown-item" href="program.html">Web Design and Development</a>
+			<a class="dropdown-item" href="program.html">Digital Marketing</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info Sessions</a>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			About</a>
+		  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+		  	<a class="dropdown-item" href="about.html">About ECE</a>
+			 <a class="dropdown-item" href="corporate.html">Corporate Learning</a>
+		  </div>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-3 my-lg-0 navbar__search">
+
+    <div class="input-group mx-auto">
+
+        <!-- Search input box -->
+        <input
+            id="search-input"
+            type="text"
+            class="form-control navbar__search-input d-block d-lg-none"
+            placeholder="Enter keywords..."
+            aria-label="Enter keywords">
+
+        <!-- Search submit -->
+        <div class="input-group-append">
+            <input
+                id="search-submit"
+                type="submit"
+                name="search"
+                aria-label="Submit search query"
+                value="Search"
+                class="btn btn-primary navbar__search-submit d-block d-lg-none">
+        </div>
+
+        <!-- Search toggle -->
+        <div class="input-group-append d-none d-lg-block">
+            <button
+                id="search-toggle"
+                class="btn navbar__search-toggle icon-magnifier"
+                type="button"
+                aria-label="Toggle between search and menu"
+                title="Toggle between search and menu">
+            </button>
+        </div>
+
+    </div>
+    <!-- /.input-group -->
+
+</form>
+
+  </div>
+  <!-- /.collapse -->
+
+</nav>
+
+</header>
+
+    <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
+
+
+<main id="main">
+
+
+
+    <section aria-label="Photo overlap, Stats 2x2 grid, Stats row">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 order-2">
+                        <h2 class="heading">Section with Photo Overlap Component</h2>
+                        <div class="wysiwyg">
+                            <p>Dramatically expedite resource-leveling bandwidth with corporate results. Dramatically promote resource-leveling.</p>
+                            <p>Efficiently simplify unique platforms before best-of-breed processes. Authoritatively orchestrate ethical methodologies with customized value. Objectively leverage other's technically sound e-commerce through efficient markets. Seamlessly benchmark clicks-and-mortar best practices via open-source.</p>
+                            <p>Quickly optimize enabled process improvements for an expanded array of manufactured products. Compellingly incubate market-driven services and resource-leveling scenarios. Intrinsicly.</p>
+                            <p>Efficiently simplify unique platforms before best-of-breed processes. Authoritatively orchestrate ethical methodologies with customized value. Objectively leverage other's technically sound e-commerce through efficient markets. Seamlessly benchmark clicks-and-mortar best practices via open-source.</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+
+                    <div class="col-lg-6 order-1 align-self-center">
+                        <div class="photo-overlap">
+    <div class="photo">
+        <figure class="image image-16by9">
+            <img src="includes/images/placeholders/class-laughing.jpg" alt="placeholder" />
+        </figure>
+    </div>
+    <div class="photo photo-shift">
+        <figure class="image image-16by9">
+            <img src="includes/images/placeholders/instructor-pointing.jpg" alt="placeholder" />
+        </figure>
+    </div>
+</div>
+<!-- /.photo-overlap -->
+
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <div class="wrapper bg-light">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-md-6">
+                        <h2 class="heading">Stats with icons in 2x2 grid</h2>
+                        <div class="wysiwyg">
+                            <p>Dramatically expedite resource-leveling bandwidth with corporate results. Dramatically promote resource-leveling.</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="stats stats-col">
+    <div class="row">
+        <div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="stats__item">
+                <img class="stats__icon" src="includes/images/icons/clock-m.svg" alt="" />
+                <div class="stats__bold">Half-day Workshops</div>
+                <div class="stats__text">A new lineup of workshops that pack a big punch in half the time</div>
+            </div>
+            <!-- /.stats__item -->
+        </div>
+        <!-- /.col-sm-6 .col-md-12 .col-lg-6 -->
+		<div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="stats__item">
+                <img class="stats__icon" src="includes/images/icons/license-m.svg" alt="" />
+                <div class="stats__bold">Certificate Programs</div>
+                <div class="stats__text">Learn a skill in-depth to augment or change your career</div>
+            </div>
+            <!-- /.stats__item -->
+        </div>
+        <!-- /.col-sm-6 .col-md-12 .col-lg-6 -->
+		<div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="stats__item">
+                <img class="stats__icon" src="includes/images/icons/briefcase-m.svg" alt="" />
+                <div class="stats__bold">Professional Development</div>
+                <div class="stats__text">Technology, design, management, and communications courses that build skills</div>
+            </div>
+            <!-- /.stats__item -->
+        </div>
+        <!-- /.col-sm-6 .col-md-12 .col-lg-6 -->
+		<div class="col-sm-6 col-md-12 col-lg-6">
+            <div class="stats__item">
+                <img class="stats__icon" src="includes/images/icons/sun-m.svg" alt="" />
+                <div class="stats__bold">OLLI</div>
+                <div class="stats__text">Learning doesn’t stop at retirement either; courses to enrich the mind, body and soul</div>
+            </div>
+            <!-- /.stats__item -->
+        </div>
+        <!-- /.col-sm-6 .col-md-12 .col-lg-6 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.stats .stats-col -->
+
+                    </div>
+                    <!-- /.col-md-6 -->
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="https://placehold.it/480x640" alt="placeholder"/>
+                    </div>
+                    <!-- /.col-md-5 -->
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+        <div class="wrapper">
+            <div class="container">
+                <!-- Quick Stats -->
+<div class="stats stats-row">
+    <div class="row">
+        <div class="col-lg-3 mb-3 mb-lg-0">
+            <h2 class="heading text-center text-lg-left">
+				Comprehensive.<br>
+				Accessible.<br>
+				Reputable.
+			</h2>
+        </div>
+        <!-- /.col-md-3 -->
+        <div class="col-sm-4 col-lg-3">
+            <div class="stats__item">
+                <img class="stats__icon" src="includes/images/icons/book-p.svg" alt="" />
+                <div class="stats__bold">515</div>
+                <div class="stats__text">Classes</div>
+            </div>
+            <!-- /.stats_item -->
+        </div>
+        <!-- /.col-sm-4 .col-md-3 -->
+		<div class="col-sm-4 col-lg-3">
+            <div class="stats__item">
+                <img class="stats__icon" src="includes/images/icons/users-p.svg" alt="" />
+                <div class="stats__bold">20k+</div>
+                <div class="stats__text">Alumni</div>
+            </div>
+            <!-- /.stats_item -->
+        </div>
+        <!-- /.col-sm-4 .col-md-3 -->
+		<div class="col-sm-4 col-lg-3">
+            <div class="stats__item">
+                <img class="stats__icon" src="includes/images/icons/license-p.svg" alt="" />
+                <div class="stats__bold">XX</div>
+                <div class="stats__text">Certificate Courses</div>
+            </div>
+            <!-- /.stats_item -->
+        </div>
+        <!-- /.col-sm-4 .col-md-3 -->
+    </div>
+    <!-- /.row -->
+</div>
+<!-- /.stats .stats-row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+    <section class="gradient-hz-blue pinch pinch-blue" aria-label="Featured Tabs">
+        <div class="">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-10 py-5">
+                        <!-- Heading Group -->
+                        <div class="heading-group heading-group-dark">
+                            <h2>
+                                <span class="heading-group__secondary">Tabs - Featured</span>
+                                <span class="heading-group__primary">Title for Featured Tabs Component</span>
+                            </h2>
+                        </div>
+                        <!-- /.heading-group .heading-group-dark -->
+                        <!-- Tabs Featured -->
+<div class="tabs tabs-featured">
+
+    <!-- Tab menu-->
+    <ul class="nav nav-tabs" id="tabFeatured" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="first-tab" data-toggle="tab" href="#first" role="tab" aria-controls="first" aria-selected="true">Open Enrollment Courses</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="second-tab" data-toggle="tab" href="#second" role="tab" aria-controls="second" aria-selected="false">Certificates</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="third-tab" data-toggle="tab" href="#third" role="tab" aria-controls="third" aria-selected="false">Corporate Learning</a>
+        </li>
+		<li class="nav-item">
+            <a class="nav-link" id="fourth-tab" data-toggle="tab" href="#fourth" role="tab" aria-controls="fourth" aria-selected="false">OLLI (Ages 50+)</a>
+        </li>
+    </ul>
+
+    <!-- Tab content-->
+    <div class="tab-content" id="tabFeaturedContent">
+        <div class="tab-pane fade show active" id="first" role="tabpanel" aria-labelledby="first-tab">
+            <img src="includes/images/icons/rocket-p.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">Invest in Yourself</h3>
+            <div class="wysiwyg">
+                <p>Hundreds of professional and personal development courses and programs designed to maximize your learning and fit your busy schedule. Classes offered every month of the year, weekdays and weekends.</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-lg btn-secondary" href="courses.html">View Open Enrollment Courses</a>
+        </div>
+        <!-- /.tab-pane -->
+        <div class="tab-pane fade" id="second" role="tabpanel" aria-labelledby="second-tab">
+            <img src="includes/images/icons/cog-p.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">Build Your Skills</h3>
+            <div class="wysiwyg">
+                <p>Credentials are critical for your career—ECE presents a multitude of certificate programs ranging in duration from 5 days to a year, including many with flexible scheduling and payment options.</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-lg btn-secondary" href="certificate-programs.html">View Certificate Programs</a>
+        </div>
+        <!-- /.tab-pane -->
+        <div class="tab-pane fade" id="third" role="tabpanel" aria-labelledby="third-tab">
+            <img src="includes/images/icons/briefcase-p.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">At <em>Your</em> Location. On <em>Your</em> Schedule.</h3>
+            <div class="wysiwyg">
+                <p>Discover the convenience of training when, how and where you need it. Emory Corporate Learning designs and delivers tailored professional development courses onsite to meet your company’s specific needs.</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-lg btn-secondary" href="corporate.html">More About Corporate Learning</a>
+        </div>
+        <!-- /.tab-pane -->
+		<div class="tab-pane fade" id="fourth" role="tabpanel" aria-labelledby="fourth-tab">
+            <img src="includes/images/icons/leaf-p.svg" alt="" class="mb-3 icon-lg" />
+            <h3 class="heading">For Adults 50+ Who Learn for Fun</h3>
+            <div class="wysiwyg">
+                <p>Classes and social programs that nourish the mind, body and soul. Build friendships with others who live in the spirit of learning and personal growth.</p>
+            </div>
+            <!-- /.wysiwyg -->
+            <a class="btn btn-lg btn-secondary" href="olli.html">View OLLI Classes</a>
+        </div>
+        <!-- /.tab-pane -->
+    </div>
+    <!-- /.tab-content -->
+</div>
+<!-- /.tabs .tabs-featured -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section aria-label="Accordion">
+        <div class="wrapper">
+            <div class="container">
+                <!-- Heading Group -->
+                <div class="heading-group">
+    <h2>
+        <span class="heading-group__secondary">Heading Group - Secondary</span>
+        <span class="heading-group__primary">Heading Group - Primary Title Text</span>
+    </h2>
+</div>
+<!-- /.heading-group -->
+                <div class="accordion" id="accordion">
+	<div class="card">
+		<div class="card-header" id="headingOne">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">Why do I need to create an account, and how do I create one?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Creating an account allows you to view personalized information relevant to your student experience at ECE. You can quickly create an account <a href="#">here</a>.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingTwo">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">How do I find the location and/or schedule of my class, print my certificate of completion, or find a listing of classes that I have completed?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseTwo" aria-labelledby="headingTwo" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Log into your <a href="#">student account</a> and click on your student profile &gt;&gt;&gt; main menu tabs to see your personal information (you may have to scroll down.)</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingThree">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">How can I find more information about an instructor?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>For certificate programs, you can click on the instructor tab on the left hand navigation menu. For open enrollment classes currently available for registration, links to the individual instructors&#8217; biographies can be found in the search results for a particular subject or in the course collection displays throughout our website.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingFour">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">How do I purchase a class for someone else?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseFour" aria-labelledby="headingFour" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Please call <a href="tel:404-727-6000">404-727-6000</a> and an Enrollment Services Associate will be happy to assist with this process.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingFive">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">How do I get a receipt for a class that I purchased?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseFive" aria-labelledby="headingFive" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Confirmations and invoice receipts are automatically emailed upon enrollment; if you do not receive yours, please email <a href="mailto:learn@emory.edu">learn@emory.edu</a> for assistance.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingSix">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">Does Emory Continuing Education offer any online courses?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseSix" aria-labelledby="headingSix" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Emory Continuing Education currently offers a number of hybrid courses combining classroom and online education; please check individual course descriptions to see additional details.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingSeven">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">How do I select electives if I am enrolled in a certificate program?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseSeven" aria-labelledby="headingSeven" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Please log into your ECE <a href="#">student account</a> and click on the <strong>Academics</strong> tab to wait for your Applications, Enrollments, and Upcoming Courses to display. You may now register for courses required to complete the certificate. If a program and/or course does not appear open for enrollment, please contact your student advisor or call <a href="tel:404-727-6000">404-727-6000</a> for more details.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingEight">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">Will I get credit towards my degree if I take these classes?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseEight" aria-labelledby="headingEight" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>At this time, ECE courses offer continuing education units, but not credit towards a degree.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingNine">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseNine" aria-expanded="false" aria-controls="collapseNine">I am a CDC employee. How can I use my ILA to pay for my classes?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseNine" aria-labelledby="headingNine" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Please contact Gerald Clay at <a href="tel:404-727-9543">404-727-9543</a> or <a href="mailto:gclay@emory.edu">gclay@emory.edu</a> for details regarding this method of payment.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingTen">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTen" aria-expanded="false" aria-controls="collapseTen">I am a veteran, how can I find information on which classes I can attend with my VA benefits?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseTen" aria-labelledby="headingTen" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Please visit <a href="#">www.ece.emory.edu/military/</a> for details, or contact Gerald Clay at <a href="tel:404-727-9543">404-727-9543</a> / <a href="mailto:gclay@emory.edu">gclay@emory.edu</a>.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingEleven">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven">What are the steps to become an instructor?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseEleven" aria-labelledby="headingEleven" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<ul>
+						<li>If you wish to submit a proposal to be considered for inclusion in our program, please email a current CV or resume, including the <span>topic</span> for your proposal, to <a href="mailto:learn@emory.edu">learn@emory.edu</a>.</li>
+					</ul>
+					<ul>
+						<li>Should your proposal topic be accepted, you will be contacted by a member of the programming team who will work with you through the next steps of the proposal process at ECE.</li>
+					</ul>
+					<ul>
+						<li>Please allow up to 4 weeks for initial response.</li>
+					</ul>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingTwelve">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve">How can I purchase a class using a Smartkey?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseTwelve" aria-labelledby="headingTwelve" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Please complete the following <a href="#">form</a> and follow instructions.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingThirteen">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseThirteen" aria-expanded="false" aria-controls="collapseThirteen">How do I get my Emory Staff/Employee Discount?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseThirteen" aria-labelledby="headingThirteen" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Emory faculty, staff and students can visit <a href="#">this page</a> for the current promo codes.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingFourteen">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFourteen" aria-expanded="false" aria-controls="collapseFourteen">Do I have to be an Emory student or Alum to attend the classes?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseFourteen" aria-labelledby="headingFourteen" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>All classes and certificate programs are open to the public.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingFifteen">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseFifteen" aria-expanded="false" aria-controls="collapseFifteen">Where is the schedule and/or price for certificate?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseFifteen" aria-labelledby="headingFifteen" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Cohort program prices are generally available by clicking on the Curriculum tab on the left navigation menu for each certificate. For open enrollment certificate programs, your costs may vary depending on your selection of core and elective courses.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingSixteen">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseSixteen" aria-expanded="false" aria-controls="collapseSixteen">What Au Pair electives are available?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseSixteen" aria-labelledby="headingSixteen" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Please visit the <a href="#">Au Pair page</a> for more details and to browse current electives.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingSeventeen">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseSeventeen" aria-expanded="false" aria-controls="collapseSeventeen">When will the next ECE catalog be available?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseSeventeen" aria-labelledby="headingSeventeen" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Winter/Spring 2016 catalogs are currently scheduled to be mailed in late December/early January 2016.</p>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+	<div class="card">
+		<div class="card-header" id="headingEighteen">
+			<div class="h5 mb-0">
+				<button class="btn btn-link" data-toggle="collapse" data-target="#collapseEighteen" aria-expanded="false" aria-controls="collapseEighteen">What are the OLLI dates for 2017?</button>
+			</div>
+		</div>
+		<!-- /.card-header -->
+		<div class="collapse" id="collapseEighteen" aria-labelledby="headingEighteen" data-parent="#accordion">
+			<div class="card-body">
+				<div class="wysiwyg">
+					<p>Osher Lifelong Learning Institute (OLLI - classes designed for students ages 50 and older) sessions for 2017 are currently scheduled as follows:</p>
+					<ul>
+						<li>Winter 2017: Jan 9 - March 2, 2017</li>
+						<li>Spring 2017: April 3 - May 25, 2017</li>
+						<li>Summer 2017: July 10 - August 17, 2017</li>
+						<li>Fall 2017: September 11 - November 2, 2017</li>
+					</ul>
+				</div>
+				<!-- /.wysiwyg -->
+			</div>
+			<!-- /.card-body -->
+		</div>
+		<!-- /.collapse -->
+	</div>
+	<!-- /.card -->
+</div>
+<!-- /.accordion -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+    <!-- Footer Hat - collage -->
+    <div class="footer-hat" role="presentation"></div>
+
+</main>
+
+
+    <footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo mb-5">
+                    <img src="includes/images/logo-ece-footer.svg" alt="Emory University | Emory Continuing Education" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/facebook.svg" alt="Facebook" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/instagram.svg" alt="Instagram" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/twitter.svg" alt="Twitter" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="courses.html" class="footer__nav-link">Courses</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="certificate-programs.html" class="footer__nav-link">Certificate Programs</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Info Sessions</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">About</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contact</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Student Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Instructor Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Policies & Procedures</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="olli.html" class="footer__nav-link">OLLI</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="corporate.html" class="footer__nav-link">Corporate</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Military</a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-md-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="mt-4 text-md-right d-block d-lg-none">
+                    <a href="#" class="btn btn-dark">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="includes/images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
+</footer>
+
+    <!--
+#########################################
+JQUERY 3.3.1
+Bootstrap dependency
+#########################################
+-->
+<script src="includes/js/vendor/jquery/jquery.min.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP 4.1 COMPONENTS
+Include only the JS components needed
+for the website to function
+#########################################
+-->
+<script src="includes/js/vendor/bootstrap/util.js"></script>
+<script src="includes/js/vendor/popper/popper.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/popper/popper-utils.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/bootstrap/tooltip.js"></script>
+<script src="includes/js/vendor/bootstrap/alert.js"></script>
+<script src="includes/js/vendor/bootstrap/button.js"></script>
+<script src="includes/js/vendor/bootstrap/carousel.js"></script>
+<script src="includes/js/vendor/bootstrap/collapse.js"></script>
+<script src="includes/js/vendor/bootstrap/dropdown.js"></script>
+<script src="includes/js/vendor/bootstrap/index.js"></script>
+<script src="includes/js/vendor/bootstrap/modal.js"></script>
+<script src="includes/js/vendor/bootstrap/popover.js"></script>
+<script src="includes/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="includes/js/vendor/bootstrap/tab.js"></script>
+
+<!--
+#########################################
+PAYPAL - BOOTSTRAP ACCESSBILITY SUITE
+This trimmed down file contains
+BS carousel accessibility features
+#########################################
+-->
+<script src="includes/js/vendor/paypal/bootstrap-accessibility.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP BREAKPOINTS
+#########################################
+-->
+<script src="includes/js/if-b4-breakpoint.min.js"></script>
+
+<!--
+#########################################
+PRIMARY SITE JAVASCRIPT
+This javascript is a combination of all
+locally imported JS files.
+#########################################
+-->
+<script src="includes/js/site.js"></script>
+</body>
+
+</html>

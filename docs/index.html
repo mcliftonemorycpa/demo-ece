@@ -1,0 +1,836 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+#########################################
+THEME COLOR
+This color determines the color of the
+web address bar in certain mobile
+browsers including Firefox OS, Chrome,
+Vivaldi, and Opera
+#########################################
+-->
+<meta name="theme-color" content="#012169"> <!-- $emory-blue -->
+
+<title>Home | Emory Continuing Education</title>
+
+    <!--
+#########################################
+EXTERNAL LIBRARIES / CDN
+Place links to externally hosted
+CSS libraries below.
+#########################################
+-->
+
+<!--
+#########################################
+PRIMARY SITE STYLESHEET
+This stylesheet is a combination of all
+locally imported SCSS files.
+#########################################
+-->
+<link href="includes/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <header id="site-header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
+
+  <div class="logo-wrapper">
+
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="includes/images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
+
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="includes/images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
+
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="subheading">Menu</span>
+    </button>
+
+  </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item" href="courses.html">Browse Courses by Subject</a>
+			<a class="dropdown-item" href="search.html">Search Courses</a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="olli.html">OLLI (Ages 50+)</a>
+        </div>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificate Programs
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item" href="certificate-programs.html">All Certificate Programs</a>
+			<a class="dropdown-item" href="program.html">Big Data</a>
+			<a class="dropdown-item" href="program.html">Business Intelligence</a>
+			<a class="dropdown-item" href="program.html">Cybersecurity</a>
+			<a class="dropdown-item" href="program.html">Health IT</a>
+			<a class="dropdown-item" href="program.html">Au Pair</a>
+			<a class="dropdown-item" href="program.html">Business Communications</a>
+			<a class="dropdown-item" href="program.html">Creative Writing</a>
+			<a class="dropdown-item" href="program.html">Digital Photography</a>
+			<a class="dropdown-item" href="program.html">Event Planning</a>
+			<a class="dropdown-item" href="program.html">Fundraising</a>
+			<a class="dropdown-item" href="program.html">Graphic Design</a>
+			<a class="dropdown-item" href="program.html">Health Coach</a>
+			<a class="dropdown-item" href="program.html">HR Management</a>
+			<a class="dropdown-item" href="program.html">Landscape Design</a>
+			<a class="dropdown-item" href="program.html">Lean Six Sigma</a>
+			<a class="dropdown-item" href="program.html">Management</a>
+			<a class="dropdown-item" href="program.html">Supervision</a>
+			<a class="dropdown-item" href="program.html">Paralegal</a>
+			<a class="dropdown-item" href="program.html">Project Management</a>
+			<a class="dropdown-item" href="program.html">Web Design and Development</a>
+			<a class="dropdown-item" href="program.html">Digital Marketing</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info Sessions</a>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			About</a>
+		  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+		  	<a class="dropdown-item" href="about.html">About ECE</a>
+			 <a class="dropdown-item" href="corporate.html">Corporate Learning</a>
+		  </div>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-3 my-lg-0 navbar__search">
+
+    <div class="input-group mx-auto">
+
+        <!-- Search input box -->
+        <input
+            id="search-input"
+            type="text"
+            class="form-control navbar__search-input d-block d-lg-none"
+            placeholder="Enter keywords..."
+            aria-label="Enter keywords">
+
+        <!-- Search submit -->
+        <div class="input-group-append">
+            <input
+                id="search-submit"
+                type="submit"
+                name="search"
+                aria-label="Submit search query"
+                value="Search"
+                class="btn btn-primary navbar__search-submit d-block d-lg-none">
+        </div>
+
+        <!-- Search toggle -->
+        <div class="input-group-append d-none d-lg-block">
+            <button
+                id="search-toggle"
+                class="btn navbar__search-toggle icon-magnifier"
+                type="button"
+                aria-label="Toggle between search and menu"
+                title="Toggle between search and menu">
+            </button>
+        </div>
+
+    </div>
+    <!-- /.input-group -->
+
+</form>
+
+  </div>
+  <!-- /.collapse -->
+
+</nav>
+
+</header>
+
+    <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
+
+
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        <div class="hero hero-home">
+    <div class="hero__btn-next" role="presentation"></div>
+    <div class="container d-flex h-100 flex-column justify-content-center">
+        <div class="row">
+            <div class="col-md-6">
+
+                <h1 class="hero__heading" id="page-title">
+                    <span class="hero__heading-primary">Build Skills</span>
+                    <span class="hero__heading-secondary">for <span class="font-italic">Your</span> Future</span>
+                </h1>
+
+                <div class="hero__lead">
+                    <div class="wysiwyg">
+                        <p>ECE offers a wide range of certificate programs and open enrollment courses — including online and hybrid options — for both professional development as well as personal enrichment.</p>
+                    </div>
+                    <!-- /.wysiwyg -->
+                </div>
+                <!-- /.hero__lead -->
+                <a href="courses.html" class="btn btn-block btn-lg btn-secondary">Browse Our Courses</a>
+                <a href="#" class="btn btn-block btn-lg btn-accent-1">RSVP to an Upcoming Info Session/Webinar</a>
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.hero .hero-home -->
+
+    </section>
+
+    <section class="gradient-v-gray pinch pinch-gray" aria-label="Testimonial carousel with photos">
+        <div class="container py-5">
+            <div id="carouselTestimonialPhotos" class="carousel slide carousel-testimonial-photos" data-ride="carousel">
+
+    <ol class="carousel-indicators">
+        <li data-target="#carouselTestimonialPhotos" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselTestimonialPhotos" data-slide-to="1"></li>
+        <li data-target="#carouselTestimonialPhotos" data-slide-to="2"></li>
+    </ol>
+
+    <div class="row justify-content-center">
+        <div class="col-9 col-md-8">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-7 col-md-4 col-lg-3 mx-auto mb-3 mb-md-0 d-block">
+                             <a href="https://youtu.be/toDyEVIFph4?t=1m54s" target="_blank" rel="noopener" class="carousel__thumb">
+                                <figure class="image image-1by1">
+									<img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                                </figure>
+							</a>
+                        </div>
+                        <!-- /.col-md-4 col-lg-3 -->
+                        <div class="col-md-8 col-lg-9">
+                            <div class="wysiwyg">
+                                <p>“I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”</p>
+                            </div>
+                            <!-- /.wysiwyg -->
+                            <div class="carousel-testimonial__name">Alex Hvostik</div>
+                            <div class="carousel-testimonial__title">Business Intelligence</div>
+                        </div>
+                        <!-- /.col-md-8 col-lg-9 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.carousel-item -->
+
+				<div class="carousel-item">
+                    <div class="row">
+                        <div class="col-7 col-md-4 col-lg-3 mx-auto mb-3 mb-md-0 d-block">
+                             <a href="https://youtu.be/toDyEVIFph4?t=1m54s" target="_blank" rel="noopener" class="carousel__thumb">
+                                <figure class="image image-1by1">
+                                    <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- /.col-md-4 col-lg-3 -->
+                        <div class="col-md-8 col-lg-9">
+                            <div class="wysiwyg">
+                                <p>“I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”</p>
+                            </div>
+                            <!-- /.wysiwyg -->
+                            <div class="carousel-testimonial__name">Alex Hvostik</div>
+                            <div class="carousel-testimonial__title">Business Intelligence</div>
+                        </div>
+                        <!-- /.col-md-8 col-lg-9 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.carousel-item -->
+
+				<div class="carousel-item">
+                    <div class="row">
+                        <div class="col-7 col-md-4 col-lg-3 mx-auto mb-3 mb-md-0 d-block">
+                            <a href="https://youtu.be/toDyEVIFph4?t=1m54s" target="_blank" rel="noopener" class="carousel__thumb">
+                                <figure class="image image-1by1">
+                                    <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                                </figure>
+                            </a>
+                        </div>
+                        <!-- /.col-md-4 col-lg-3 -->
+                        <div class="col-md-8 col-lg-9">
+                            <div class="wysiwyg">
+                                <p>“I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”</p>
+                            </div>
+                            <!-- /.wysiwyg -->
+                            <div class="carousel-testimonial__name">Alex Hvostik</div>
+                            <div class="carousel-testimonial__title">Business Intelligence</div>
+                        </div>
+                        <!-- /.col-md-8 col-lg-9 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /.carousel-item -->
+
+            </div>
+            <!-- /.carousel-inner -->
+        </div>
+        <!-- /.col-md-8 -->
+    </div>
+    <!-- /.row .justify-content-center -->
+
+    <a class="carousel-control-prev" href="#carouselTestimonialPhotos" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselTestimonialPhotos" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+
+</div>
+<!-- /.carousel -->
+
+        </div>
+    </section>
+
+    <section aria-label="Card icons">
+        <div class="wrapper bg-fractal-frame">
+            <div class="container">
+                <div class="text-center pb-5">
+                    <h2 class="heading">Proven Value to Our Students</h2>
+                </div>
+                <div class="card-icons">
+    <a href="certificate-programs.html" class="card-icons__link">
+        <img src="includes/images/icons/license-w.svg" alt="" class="img-fluid card-icons__icon" />
+        <div class="card-icons__text">Certificate Programs</div>
+    </a>
+    <a href="courses.html" class="card-icons__link">
+        <img src="includes/images/icons/book-b.svg" alt="" class="img-fluid card-icons__icon" />
+        <div class="card-icons__text">Individual Courses</div>
+    </a>
+	<a href="#" class="card-icons__link">
+        <img src="includes/images/icons/film-play-w.svg" alt="" class="img-fluid card-icons__icon" />
+        <div class="card-icons__text">Webinars and Info Sessions</div>
+    </a>
+	<a href="olli.html" class="card-icons__link">
+        <img src="includes/images/icons/sun-b.svg" alt="" class="img-fluid card-icons__icon" />
+        <div class="card-icons__text">OLLI (ages 50+)</div>
+    </a>
+	<a href="corporate.html" class="card-icons__link">
+        <img src="includes/images/icons/apartment-w.svg" alt="" class="img-fluid card-icons__icon" />
+        <div class="card-icons__text">Corporate Training</div>
+    </a>
+	<a href="#" class="card-icons__link">
+        <img src="includes/images/icons/star-b.svg" alt="" class="img-fluid card-icons__icon" />
+        <div class="card-icons__text">Military Service Members</div>
+    </a>
+</div>
+<!-- /.card-icons -->
+
+            </div>
+        </div>
+    </section>
+
+    <section class="gradient-hz-blue pinch pinch-blue" aria-label="Courses and programs">
+        <div class="bg-effects">
+            <div class="container">
+                <div class="text-center py-5">
+                    <h2 class="heading text-white mb-0">Browse Our Courses and Programs</h2>
+                </div>
+                <div class="card-links">
+
+    <div class="row">
+        <div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="search.html">
+                <h3 class="card-links__title">Certificate Programs</h3>
+                <ul class="card-links__list">
+					<li>Big Data</li>
+					<li>Business Intelligence</li>
+					<li>Health Coach</li>
+					<li>Web Technologies</li>
+					<li>Paralegal</li>
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+		<div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="search.html">
+                <h3 class="card-links__title">Management and Supervision</h3>
+                <ul class="card-links__list">
+                    <li>Essential of Human Resource (HR) Management</li>
+					<li>Coaching Effectively</li>
+					<li>Delegating Effectively</li>
+					<li>Dealing with Difficult People</li>
+					<li>Transformational Leadership</li>
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+		<div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="search.html">
+                <h3 class="card-links__title">Lean Six Sigma and Project Management</h3>
+                <ul class="card-links__list">
+                    <li>Lean Six Sigma White Belt</li>
+					<li>Lean Six Sigma Green Belt</li>
+					<li>Intro to Project Management</li>
+					<li>Project Management for Health Care</li>
+					<li>Project Management: Agile and Scrum Essentials</li>
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+		<div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="search.html">
+                <h3 class="card-links__title">IT, Design and Development</h3>
+                <ul class="card-links__list">
+                    <li>SQL Level 1</li>
+					<li>Foundations of Graphic Design and Production</li>
+					<li>Adobe Photoshop</li>
+					<li>HTML and CSS</li>
+					<li>Email Marketing Strategy</li>
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+		<div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="search.html">
+                <h3 class="card-links__title">Test Preparation</h3>
+                <ul class="card-links__list">
+                    <li>GRE</li>
+					<li>GMAT</li>
+					<li>LSAT</li>
+					<li>MCAT</li>
+					<li>Project Management (PMP) Exam</li>
+					<li>PHR/SPHR Certification Review</li>
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+		<div class="col-sm-6 col-lg-4 mb-5">
+            <a class="card-links__link card-link-arrow card-link-arrow-bottom" href="search.html">
+                <h3 class="card-links__title">Fine Arts</h3>
+                <ul class="card-links__list">
+                    <li>Digital Photography 1</li>
+					<li>Essentials of Creative Writing</li>
+					<li>Reinvention Workshop</li>
+					<li>Intro to Screenwriting</li>
+					<li>Poetry Workshop</li>
+                </ul>
+            </a>
+        </div><!-- /.col-md-4 -->
+
+    </div>
+    <!-- /.row -->
+
+    <div class="d-flex w-100 justify-content-center align-items-center py-3">
+        <a href="courses.html" class="btn btn-secondary mr-1">View all offerings</a>
+        <a href="search.html" class="btn btn-white ml-1">
+            <img src="includes/images/icons/magnifier-w.svg" class="icon-sm" alt=""/> Search Courses
+        </a>
+    </div>
+    <!-- /.d-flex w-100 justify-content-center align-items-center py-3 -->
+
+</div>
+<!-- /.card-links -->
+            </div>
+        </div>
+    </section>
+
+    <section aria-label="Overview, info sessions feed, news feed">
+        <div class="wrapper wrapper-overlap">
+            <div class="container mt-3">
+                <div class="row">
+                    <div class="col-lg-6 order-2">
+                        <h2 class="heading">Discover a New You</h2>
+                        <div class="wysiwyg">
+                            <p>Learn a new language, develop a finer palate for wine or hone work skills by mastering Excel or web programming. If you’re 50 or older, attend one or more of our XX OLLI classes to learn and meet new people. Enroll in certificate courses at your own pace to bolster your prospects at work or in pursuit of a new job. We also tailor onsite professional development classes for our corporate clients. Whether it’s for your own enjoyment or career needs, you’ll find a course that fits at ECE.</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <a href="about.html" class="btn btn-accent-3">About ECE</a>
+                    </div>
+                    <!-- /.col-lg-6 -->
+
+                    <div class="col-lg-6 order-1 align-self-center">
+                        <div class="photo-overlap">
+							<div class="photo">
+								<figure class="image image-16by9">
+									<img src="includes/images/placeholders/instructor-book.jpg" alt="placeholder" />
+								</figure>
+							</div>
+							<div class="photo photo-shift">
+								<figure class="image image-16by9">
+									<img src="includes/images/placeholders/student-tablet.jpg" alt="placeholder" />
+								</figure>
+							</div>
+						</div>
+						<!-- /.photo-overlap -->
+                    </div>
+                    <!-- /.col-lg-6 -->
+                </div>
+                <!-- /.row -->
+
+				<div class="my-5">
+					<h2 class="heading mb-3">Info Sessions</h2>
+					<div class="row">
+	<div class="col-md-6">
+		<ul class="links-feed">
+			<li>
+				<a class="links-feed__link card-link-arrow card-link-arrow-right" href="#">
+					<h3 class="links-feed__title">Health Coach</h3>
+					<div class="links-feed__item">
+						<div class="links-feed__icon">
+							<img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm" />
+						</div>
+						<div class="links-feed__text">
+							<span class="font-weight-bold">Tuesday, January 9</span>
+							<span>at 7:00 p.m.</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a class="links-feed__link card-link-arrow card-link-arrow-right" href="#">
+					<h3 class="links-feed__title">Digital Photography</h3>
+					<div class="links-feed__item">
+						<div class="links-feed__icon">
+							<img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm" />
+						</div>
+						<div class="links-feed__text">
+							<span class="font-weight-bold">Thursday, January 11</span>
+							<span>at 7:00 p.m.</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a class="links-feed__link card-link-arrow card-link-arrow-right" href="#">
+					<h3 class="links-feed__title">Fundraising</h3>
+					<div class="links-feed__item">
+						<div class="links-feed__icon">
+							<img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm" />
+						</div>
+						<div class="links-feed__text">
+							<span class="font-weight-bold">Tuesday, February 6</span>
+							<span>at 7:00 p.m.</span>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.-col-md-6 -->
+	<div class="col-md-6">
+		<ul class="links-feed">
+			<li>
+				<a class="links-feed__link card-link-arrow card-link-arrow-right" href="#">
+					<h3 class="links-feed__title">Au Pair</h3>
+					<div class="links-feed__item">
+						<div class="links-feed__icon">
+							<img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm" />
+						</div>
+						<div class="links-feed__text">
+							<span class="font-weight-bold">Wednesday, February 21</span>
+							<span>at 7:00 p.m.</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a class="links-feed__link card-link-arrow card-link-arrow-right" href="#">
+					<h3 class="links-feed__title">Essentials of HR Management</h3>
+					<div class="links-feed__item">
+						<div class="links-feed__icon">
+							<img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm" />
+						</div>
+						<div class="links-feed__text">
+							<span class="font-weight-bold">Thursday, March 8</span>
+							<span>at 7:00 p.m.</span>
+						</div>
+					</div>
+				</a>
+			</li>
+			<li>
+				<a class="links-feed__link card-link-arrow card-link-arrow-right" href="#">
+					<h3 class="links-feed__title">Essentials of HR Management</h3>
+					<div class="links-feed__item">
+						<div class="links-feed__icon">
+							<img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm" />
+						</div>
+						<div class="links-feed__text">
+							<span class="font-weight-bold">Friday, March 30</span>
+							<span>at 7:00 p.m.</span>
+						</div>
+					</div>
+				</a>
+			</li>
+		</ul>
+	</div>
+	<!-- /.-col-md-6 -->
+</div>
+<!-- /.row -->
+
+					<a href="#" class="btn btn-accent-1 mt-4 mt-md-0">All Info Sessions</a>
+				</div>
+
+				<div class="mt-5">
+					<h2 class="heading mb-3">Latest News</h2>
+					<div class="card-links">
+	<div class="row">
+		<div class="col-md-6 mb-5">
+			<a class="card-links__link card-link-arrow card-link-arrow-bottom" href="#">
+				<h3 class="card-links__title">New Half-Day Workshops</h3>
+				<div class="wysiwyg">
+					<p>Our new lineup of half-day workshops includes coaching, delegating, Microsoft Excel, leadership and other management/supervisory skills courses.</p>
+				</div>
+				<div class="btn btn-accent-1 mb-2">All Half-Day Workshops</div>
+			</a>
+		</div>
+		<div class="col-md-6 mb-5">
+			<a class="card-links__link card-link-arrow card-link-arrow-bottom" href="mailto:learn@emory.edu">
+				<h3 class="card-links__title">Instructor Positions Available: Test Prep and Event Planning</h3>
+				<div class="wysiwyg">
+					<p>Emory Continuing Education is currently evaluating applications and interviewing instructors for a variety of subjects, including Test Prep (SAT, GMAT, GRE, and LSAT) and Event Planning. If interested, please contact us at learn@emory.edu.</p>
+				</div>
+			</a>
+		</div>
+		<!-- /.-col-sm-6 -->
+	</div>
+	<!-- /.row -->
+	<div class="row">
+		<div class="col-md-6">
+			<a class="card-links__link card-link-arrow card-link-arrow-bottom" href="#">
+				<h3 class="card-links__title">ECE Partners with Brain Health Center</h3>
+				<div class="wysiwyg">
+					<p>This past fall, the ECE’s Osher Lifelong Learning Institute (OLLI) partnered with Emory University’s Brain Health Center (BHC) to bring helpful brain health classes to a group of life-long learners. We look forward to continuing this partnership in the fall of 2018.</p>
+				</div>
+			</a>
+		</div>
+		<!-- /.-col-sm-6 -->
+	</div>
+	<!-- /.row -->
+</div>
+<!-- /.card-links -->
+
+				</div>
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+
+
+
+    <footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo mb-5">
+                    <img src="includes/images/logo-ece-footer.svg" alt="Emory University | Emory Continuing Education" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/facebook.svg" alt="Facebook" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/instagram.svg" alt="Instagram" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/twitter.svg" alt="Twitter" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="courses.html" class="footer__nav-link">Courses</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="certificate-programs.html" class="footer__nav-link">Certificate Programs</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Info Sessions</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">About</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contact</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Student Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Instructor Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Policies & Procedures</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="olli.html" class="footer__nav-link">OLLI</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="corporate.html" class="footer__nav-link">Corporate</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Military</a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-md-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="mt-4 text-md-right d-block d-lg-none">
+                    <a href="#" class="btn btn-dark">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="includes/images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
+</footer>
+
+    <!--
+#########################################
+JQUERY 3.3.1
+Bootstrap dependency
+#########################################
+-->
+<script src="includes/js/vendor/jquery/jquery.min.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP 4.1 COMPONENTS
+Include only the JS components needed
+for the website to function
+#########################################
+-->
+<script src="includes/js/vendor/bootstrap/util.js"></script>
+<script src="includes/js/vendor/popper/popper.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/popper/popper-utils.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/bootstrap/tooltip.js"></script>
+<script src="includes/js/vendor/bootstrap/alert.js"></script>
+<script src="includes/js/vendor/bootstrap/button.js"></script>
+<script src="includes/js/vendor/bootstrap/carousel.js"></script>
+<script src="includes/js/vendor/bootstrap/collapse.js"></script>
+<script src="includes/js/vendor/bootstrap/dropdown.js"></script>
+<script src="includes/js/vendor/bootstrap/index.js"></script>
+<script src="includes/js/vendor/bootstrap/modal.js"></script>
+<script src="includes/js/vendor/bootstrap/popover.js"></script>
+<script src="includes/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="includes/js/vendor/bootstrap/tab.js"></script>
+
+<!--
+#########################################
+PAYPAL - BOOTSTRAP ACCESSBILITY SUITE
+This trimmed down file contains
+BS carousel accessibility features
+#########################################
+-->
+<script src="includes/js/vendor/paypal/bootstrap-accessibility.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP BREAKPOINTS
+#########################################
+-->
+<script src="includes/js/if-b4-breakpoint.min.js"></script>
+
+<!--
+#########################################
+PRIMARY SITE JAVASCRIPT
+This javascript is a combination of all
+locally imported JS files.
+#########################################
+-->
+<script src="includes/js/site.js"></script>
+</body>
+
+</html>

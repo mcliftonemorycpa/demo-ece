@@ -58,7 +58,7 @@ typings/
 .env
 
 # Remove this to upload to docs/ on Github for demo purposes
-docs/
+# docs/
 
 # No compressed files!
 *.z

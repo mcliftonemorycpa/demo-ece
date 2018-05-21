@@ -1,0 +1,1576 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+#########################################
+THEME COLOR
+This color determines the color of the
+web address bar in certain mobile
+browsers including Firefox OS, Chrome,
+Vivaldi, and Opera
+#########################################
+-->
+<meta name="theme-color" content="#012169"> <!-- $emory-blue -->
+
+<title>Course Catalog | Emory Continuing Education</title>
+
+    <!--
+#########################################
+EXTERNAL LIBRARIES / CDN
+Place links to externally hosted
+CSS libraries below.
+#########################################
+-->
+
+<!--
+#########################################
+PRIMARY SITE STYLESHEET
+This stylesheet is a combination of all
+locally imported SCSS files.
+#########################################
+-->
+<link href="includes/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <header id="site-header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
+
+  <div class="logo-wrapper">
+
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="includes/images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
+
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="includes/images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
+
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="subheading">Menu</span>
+    </button>
+
+  </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item" href="courses.html">Browse Courses by Subject</a>
+			<a class="dropdown-item active" href="search.html">Search Courses<span class="sr-only">(current)</span></a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="olli.html">OLLI (Ages 50+)</a>
+        </div>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificate Programs
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item" href="certificate-programs.html">All Certificate Programs</a>
+			<a class="dropdown-item" href="program.html">Big Data</a>
+			<a class="dropdown-item" href="program.html">Business Intelligence</a>
+			<a class="dropdown-item" href="program.html">Cybersecurity</a>
+			<a class="dropdown-item" href="program.html">Health IT</a>
+			<a class="dropdown-item" href="program.html">Au Pair</a>
+			<a class="dropdown-item" href="program.html">Business Communications</a>
+			<a class="dropdown-item" href="program.html">Creative Writing</a>
+			<a class="dropdown-item" href="program.html">Digital Photography</a>
+			<a class="dropdown-item" href="program.html">Event Planning</a>
+			<a class="dropdown-item" href="program.html">Fundraising</a>
+			<a class="dropdown-item" href="program.html">Graphic Design</a>
+			<a class="dropdown-item" href="program.html">Health Coach</a>
+			<a class="dropdown-item" href="program.html">HR Management</a>
+			<a class="dropdown-item" href="program.html">Landscape Design</a>
+			<a class="dropdown-item" href="program.html">Lean Six Sigma</a>
+			<a class="dropdown-item" href="program.html">Management</a>
+			<a class="dropdown-item" href="program.html">Supervision</a>
+			<a class="dropdown-item" href="program.html">Paralegal</a>
+			<a class="dropdown-item" href="program.html">Project Management</a>
+			<a class="dropdown-item" href="program.html">Web Design and Development</a>
+			<a class="dropdown-item" href="program.html">Digital Marketing</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info Sessions</a>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			About</a>
+		  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+		  	<a class="dropdown-item" href="about.html">About ECE</a>
+			 <a class="dropdown-item" href="corporate.html">Corporate Learning</a>
+		  </div>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-3 my-lg-0 navbar__search">
+
+    <div class="input-group mx-auto">
+
+        <!-- Search input box -->
+        <input
+            id="search-input"
+            type="text"
+            class="form-control navbar__search-input d-block d-lg-none"
+            placeholder="Enter keywords..."
+            aria-label="Enter keywords">
+
+        <!-- Search submit -->
+        <div class="input-group-append">
+            <input
+                id="search-submit"
+                type="submit"
+                name="search"
+                aria-label="Submit search query"
+                value="Search"
+                class="btn btn-primary navbar__search-submit d-block d-lg-none">
+        </div>
+
+        <!-- Search toggle -->
+        <div class="input-group-append d-none d-lg-block">
+            <button
+                id="search-toggle"
+                class="btn navbar__search-toggle icon-magnifier"
+                type="button"
+                aria-label="Toggle between search and menu"
+                title="Toggle between search and menu">
+            </button>
+        </div>
+
+    </div>
+    <!-- /.input-group -->
+
+</form>
+
+  </div>
+  <!-- /.collapse -->
+
+</nav>
+
+</header>
+
+    <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
+
+
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        <div class="hero hero-interior">
+    <div class="container d-flex h-100 flex-column justify-content-center">
+        <h1 class="hero__heading" id="page-title">Course Catalog</h1>
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.hero .hero-interior -->
+    </section>
+
+    <section aria-label="Photo overlap, Stats 2x2 grid, Stats row">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- LEFT COLUMN: WYSIWYG Demo -->
+                    <div class="col-md-8 col-lg-9 order-md-2">
+                        <form class="search-form" id="courseSearch">
+    <div class="input-group input-group-lg">
+        <input type="text" class="form-control" placeholder="Search for courses..." aria-label="Search for courses">
+        <div class="input-group-append">
+            <input type="submit" value="Search" class="btn btn-outline-primary"/>
+        </div>
+        <!-- /.input-group-append -->
+    </div>
+    <!-- /.input-group -->
+</form>
+<!-- /.search-form -->
+
+                        <p class="font-weight-bold">Displaying 1–25 of 125 courses</p>
+<ul class="search-results">
+
+    <li class="search-results__group">
+
+        <div class="search-results__heading">
+            <span class="search-results__heading-cat">Communications</span>
+        </div>
+        <!-- /.search-results__heading -->
+
+        <ul class="search-results__list">
+            <li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Better Business Writing</div>
+                        <p>Use concise, positive language to your advantage. Hone your writing into a more powerful communication tool.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+            <li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Communications Skills for Your Career</div>
+                        <p>Explore strategies for building, repairing, and enhancing working relationships by learning simple, effective communication techniques.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-warning">Join waitlist</button>
+                            <button type="button" class="btn btn-outline-warning">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <div class="alert alert-warning small" role="alert">Sold Out</div>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Wed, November 4</div>
+                                <div>4 PM - 8 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Emotional Intelligence</div>
+                        <p>High emotional intelligence increases resilience, enhances performance, and boosts management impact. Learn how to harness this critical factor in career success.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Executive Presence for the Non-Executive</div>
+                        <p>In this engaging two-day course, get a close look at author Sylvia Ann Hewlett’s three pillars of executive presence: how you act, speak, and look.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Good Grammar is Good Business</div>
+                        <p>Master correct punctuation, sentence structure, word choice, and spelling in this fast-paced, interactive grammar.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Improving Your Listening Skills</div>
+                        <p>Learn to understand priorities and biases in a conversation including unspoken messages as you listen along with hidden information not easily recognized.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-warning">Join waitlist</button>
+                            <button type="button" class="btn btn-outline-warning">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <div class="alert alert-warning small" role="alert">Sold Out</div>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Wed, November 4</div>
+                                <div>4 PM - 8 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Managing Your Time and Productivity</div>
+                        <p>Learn how to more effectively prioritize, plan, and focus your time while using tools and techniques to eliminate productivity bottlenecks.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Powerful Presentations: Deliver, Persuade, Inspire</div>
+                        <p>Compelling presentation skills earn respect and can take you to new heights in your professional and personal life. Rise above the rest with the power of presentation.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Powerful Presentations: Create, Design, Succeed</div>
+                        <p>Simplify and energize slide shows and capture your audience’s attention with relevant messages—a proven process that starts with creativity and ends with a polished product.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Strategic Communications in the Workplace</div>
+                        <p>Develop your skills at reading people and adapt your communication style to foster greater team and organizational engagement.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">The Power of Personal Brand</div>
+                        <p>Discover the power of having an outstanding brand—something that companies have known for years. Discover techniques for increased personal effectiveness, success and power.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-warning">Join waitlist</button>
+                            <button type="button" class="btn btn-outline-warning">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <div class="alert alert-warning small" role="alert">Sold Out</div>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Wed, November 4</div>
+                                <div>4 PM - 8 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Training Design for Trainers</div>
+                        <p>This interactive, hands-on course will introduce the basic tools you need to design effective training using the components of the ADDIE model.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-warning">Join waitlist</button>
+                            <button type="button" class="btn btn-outline-warning">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <div class="alert alert-warning small" role="alert">Sold Out</div>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Wed, November 4</div>
+                                <div>4 PM - 8 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Win-Win Negotiations</div>
+                        <p>No set of problem-solving skills is more important than negotiation. Learn to approach problems and opportunities with a win-win attitude.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Your Image as a Communication Tool</div>
+                        <p>Review the basics of nonverbal communication and better understand your own “filters,” while learning how judgments are formulated from visual impressions.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+        </ul>
+        <!-- /.search-results__list -->
+
+		<div class="search-results__heading">
+            <span class="search-results__heading-cat">Management Essentials</span>
+        </div>
+        <!-- /.search-results__heading -->
+
+        <ul class="search-results__list">
+            <li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Behavioral Interviewing for Hiring Professionals</div>
+                        <p>Get access to the resources and tools to recruit top performers and make the best hiring decisions possible.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Coaching Effectively</div>
+                        <p>Success in a changing business environment requires employees to constantly learn and adapt. Identify powerful coaching techniques to teach, correct, and motivate.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Dealing with Difficult People</div>
+                        <p>Learn to identify and handle the most common types of difficult people and turn confrontation into constructive stepping stones to conflict resolution.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Delegating Effectively</div>
+                        <p>Explore the benefits and barriers to delegation and the importance of authority and responsibility as well as strategies and tools for implementing delegation.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Emotional Intelligence</div>
+                        <p>A critical factor in career success and management effectiveness, high emotional intelligence creates increased resilience in the face of change, enhanced work performance, and greater management impact.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Essentials of Conflict Management</div>
+                        <p>Effective conflict management can distinguish good workplaces from great ones. Explore your own conflict management style and learn to resolve issues in a sensible, equitable, and efficient manner.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Essentials of Human Resource Management</div>
+                        <p>The program includes the SHRM Essentials of Human Resource Management as an introductory course, offering a comprehensive overview of human resource roles and responsibilities.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">PHR/SPHR Certification Review</div>
+                        <p>Our modular-based course is designed to prepare participants for the PHR/SPHR examination designated by the Human Resource Certification Institute (HRCI).</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Essentials of Leadership for Managers</div>
+                        <p>This highly interactive and stimulating workshop will transform how managers lead and influence people.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Essentials of Strategic Planning for Managers</div>
+                        <p>Our course offers a step-by-step guide to assist you in translating basic concepts and visions into a concrete strategic plan of action.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+			<li class="search-results__item">
+                <div class="row">
+                    <div class="col-sm-7">
+                        <div class="font-weight-bold h5">Executive Presence for the Non-Executive</div>
+                        <p>This introspective and engaging course helps you define the kind of professional presence you want to have and craft a plan to achieve it.</p>
+                        <div class="btn-group btn-group-sm mb-3 mb-sm-0" role="group" aria-label="Register or Learn more about this course">
+                            <button type="button" class="btn btn-primary">Register course</button>
+                            <button type="button" class="btn btn-outline-primary">Learn more</button>
+                        </div>
+                        <!-- /.btn-group -->
+                    </div>
+                    <!-- /.col-sm-7 -->
+                    <div class="col-sm-5">
+                        <div class="search-results__tags">
+                            <span class="badge badge-primary">First Tag</span>
+                            <span class="badge badge-warning">Second Tag</span>
+                            <span class="badge badge-secondary">Third Tag</span>
+                        </div>
+                        <!-- /.search-results__tags -->
+                        <div class="search-results__date">
+                            <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid icon-sm mr-3" />
+                            <div class="small">
+                                <div class="font-weight-bold">Sat, September 23</div>
+                                <div>12 PM - 5 PM EST</div>
+                            </div>
+                        </div>
+                        <!-- /.search-results__date -->
+                    </div>
+                    <!-- /.col-sm-5 -->
+                </div>
+                <!-- /.row -->
+            </li>
+            <!-- /.search-results__item -->
+		</ul>
+        <!-- /.search-results__list -->
+
+    </li>
+    <!-- /.search-results__group -->
+
+</ul>
+                        <nav aria-label="Pagination example">
+  <ul class="pagination pagination-sm">
+    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+    <li class="page-item"><a class="page-link" href="#">4</a></li>
+    <li class="page-item"><a class="page-link" href="#">5</a></li>
+    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+  </ul>
+</nav>
+
+                    </div>
+                    <!-- /.col-md-8 .col-lg-9 -->
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-4 col-lg-3 order-md-1 mt-5 mt-md-0">
+                        <aside class="sidebar">
+                            <div class="heading h4 mb-4">Filter Results</div>
+                            <form class="search-filters" id="searchFilters">
+
+    <button class="btn btn-sm btn-block btn-outline-primary my-4">Clear filters</button>
+
+    <fieldset class="search-filters__fieldset">
+        <legend class="search-filters__legend">Category</legend>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+            <label class="form-check-label" for="defaultCheck1">
+                Management and Supervision
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+            <label class="form-check-label" for="defaultCheck2">
+                Lean Six Sigma and Project Management
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3">
+            <label class="form-check-label" for="defaultCheck3">
+                Test Preparation
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4">
+            <label class="form-check-label" for="defaultCheck4">
+                Fine Arts
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5">
+            <label class="form-check-label" for="defaultCheck5">
+                Microsoft Office
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck6">
+            <label class="form-check-label" for="defaultCheck6">
+                Personal Enrichment
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck7">
+            <label class="form-check-label" for="defaultCheck7">
+                Foreign Languages
+            </label>
+        </div>
+    </fieldset>
+    <!-- /.search-filters__fieldset -->
+
+    <fieldset class="search-filters__fieldset">
+        <legend class="search-filters__legend">Course Type</legend>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1-2">
+            <label class="form-check-label" for="defaultCheck1-2">
+                Open Enrollment Course
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-2">
+            <label class="form-check-label" for="defaultCheck2-2">
+                Certificate Program
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3-2">
+            <label class="form-check-label" for="defaultCheck3-2">
+                Info Session
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4-2">
+            <label class="form-check-label" for="defaultCheck4-2">
+                Webinar
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5-2">
+            <label class="form-check-label" for="defaultCheck5-2">
+                OLLI (Ages 50+)
+            </label>
+        </div>
+    </fieldset>
+    <!-- /.search-filters__fieldset -->
+
+    <fieldset class="search-filters__fieldset">
+        <legend class="search-filters__legend">Course Subject</legend>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck1-3">
+            <label class="form-check-label" for="defaultCheck1-3">
+                Accounting
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck2-3">
+            <label class="form-check-label" for="defaultCheck2-3">
+                Anthropology and Archaeology
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck3-3">
+            <label class="form-check-label" for="defaultCheck3-3">
+                Biological Sciences
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck4-3">
+            <label class="form-check-label" for="defaultCheck4-3">
+                Biotechnology
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck5-3">
+            <label class="form-check-label" for="defaultCheck5-3">
+                Chemistry
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck6-3">
+            <label class="form-check-label" for="defaultCheck6-3">
+                Communication
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck7-3">
+            <label class="form-check-label" for="defaultCheck7-3">
+                Computer Science
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck8-3">
+            <label class="form-check-label" for="defaultCheck8-3">
+                Creative Writing
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck9-3">
+            <label class="form-check-label" for="defaultCheck9-3">
+                Digital Media and Design
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck10-3">
+            <label class="form-check-label" for="defaultCheck10-3">
+                Dramatic Arts
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck11-3">
+            <label class="form-check-label" for="defaultCheck11-3">
+                Economics
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck12-3">
+            <label class="form-check-label" for="defaultCheck12-3">
+                Education
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck13-3">
+            <label class="form-check-label" for="defaultCheck13-3">
+                Engineering Science
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck14-3">
+            <label class="form-check-label" for="defaultCheck14-3">
+                Enterprise Management
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck15-3">
+            <label class="form-check-label" for="defaultCheck15-3">
+                Environmental Studies
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck16-3">
+            <label class="form-check-label" for="defaultCheck16-3">
+                Expository Writing
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck17-3">
+            <label class="form-check-label" for="defaultCheck17-3">
+                Finance
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck18-3">
+            <label class="form-check-label" for="defaultCheck18-3">
+                Languages
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck19-3">
+            <label class="form-check-label" for="defaultCheck19-3">
+                Government
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck20-3">
+            <label class="form-check-label" for="defaultCheck20-3">
+                History
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck21-3">
+            <label class="form-check-label" for="defaultCheck21-3">
+                History of Art and Architecture
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck22-3">
+            <label class="form-check-label" for="defaultCheck22-3">
+                Humanities
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck23-3">
+            <label class="form-check-label" for="defaultCheck23-3">
+                Information Systems Management
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck24-3">
+            <label class="form-check-label" for="defaultCheck24-3">
+                Journalism
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck25-3">
+            <label class="form-check-label" for="defaultCheck25-3">
+                Legal Studies
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck26-3">
+            <label class="form-check-label" for="defaultCheck26-3">
+                Management
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck27-3">
+            <label class="form-check-label" for="defaultCheck27-3">
+                Mathematics
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck28-3">
+            <label class="form-check-label" for="defaultCheck28-3">
+                Medical Sciences
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck29-3">
+            <label class="form-check-label" for="defaultCheck29-3">
+                Museum Studies
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck30-3">
+            <label class="form-check-label" for="defaultCheck30-3">
+                Organizational Behavior
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck31-3">
+            <label class="form-check-label" for="defaultCheck31-3">
+                Philosophy
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck32-3">
+            <label class="form-check-label" for="defaultCheck32-3">
+                Psychology
+            </label>
+        </div>
+		<div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="defaultCheck33-3">
+            <label class="form-check-label" for="defaultCheck33-3">
+                Social Sciences
+            </label>
+        </div>
+    </fieldset>
+    <!-- /.search-filters__fieldset -->
+
+    <input type="hidden" id="updateFilters" name="updateFilters" value="#"/>
+
+</form>
+
+                            <div class="sidebar-cta sidebar-cta-purple">
+								<img src="includes/images/icons/bullhorn-w.svg" alt="" class="img-fluid mb-3 icon-md">
+								<p class="h6">Can’t find what you’re looking for?</p>
+								<a href="#" class="btn btn-accent-1 btn-lg btn-block mt-3">Contact Us</a>
+							</div>
+							<!-- /.sidebar-cta -->
+                        </aside>
+                    </div><!-- /.col-md-4 -->
+
+                </div>
+                <!-- /.row -->
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+
+
+    <footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo mb-5">
+                    <img src="includes/images/logo-ece-footer.svg" alt="Emory University | Emory Continuing Education" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/facebook.svg" alt="Facebook" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/instagram.svg" alt="Instagram" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/twitter.svg" alt="Twitter" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="courses.html" class="footer__nav-link">Courses</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="certificate-programs.html" class="footer__nav-link">Certificate Programs</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Info Sessions</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">About</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contact</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Student Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Instructor Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Policies & Procedures</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="olli.html" class="footer__nav-link">OLLI</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="corporate.html" class="footer__nav-link">Corporate</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Military</a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-md-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="mt-4 text-md-right d-block d-lg-none">
+                    <a href="#" class="btn btn-dark">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="includes/images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
+</footer>
+
+    <!--
+#########################################
+JQUERY 3.3.1
+Bootstrap dependency
+#########################################
+-->
+<script src="includes/js/vendor/jquery/jquery.min.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP 4.1 COMPONENTS
+Include only the JS components needed
+for the website to function
+#########################################
+-->
+<script src="includes/js/vendor/bootstrap/util.js"></script>
+<script src="includes/js/vendor/popper/popper.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/popper/popper-utils.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/bootstrap/tooltip.js"></script>
+<script src="includes/js/vendor/bootstrap/alert.js"></script>
+<script src="includes/js/vendor/bootstrap/button.js"></script>
+<script src="includes/js/vendor/bootstrap/carousel.js"></script>
+<script src="includes/js/vendor/bootstrap/collapse.js"></script>
+<script src="includes/js/vendor/bootstrap/dropdown.js"></script>
+<script src="includes/js/vendor/bootstrap/index.js"></script>
+<script src="includes/js/vendor/bootstrap/modal.js"></script>
+<script src="includes/js/vendor/bootstrap/popover.js"></script>
+<script src="includes/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="includes/js/vendor/bootstrap/tab.js"></script>
+
+<!--
+#########################################
+PAYPAL - BOOTSTRAP ACCESSBILITY SUITE
+This trimmed down file contains
+BS carousel accessibility features
+#########################################
+-->
+<script src="includes/js/vendor/paypal/bootstrap-accessibility.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP BREAKPOINTS
+#########################################
+-->
+<script src="includes/js/if-b4-breakpoint.min.js"></script>
+
+<!--
+#########################################
+PRIMARY SITE JAVASCRIPT
+This javascript is a combination of all
+locally imported JS files.
+#########################################
+-->
+<script src="includes/js/site.js"></script>
+</body>
+
+</html>

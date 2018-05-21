@@ -1,0 +1,729 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+#########################################
+THEME COLOR
+This color determines the color of the
+web address bar in certain mobile
+browsers including Firefox OS, Chrome,
+Vivaldi, and Opera
+#########################################
+-->
+<meta name="theme-color" content="#012169"> <!-- $emory-blue -->
+
+<title>Corporate Learning | Emory Continuing Education</title>
+
+    <!--
+#########################################
+EXTERNAL LIBRARIES / CDN
+Place links to externally hosted
+CSS libraries below.
+#########################################
+-->
+
+<!--
+#########################################
+PRIMARY SITE STYLESHEET
+This stylesheet is a combination of all
+locally imported SCSS files.
+#########################################
+-->
+<link href="includes/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <header id="site-header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
+
+  <div class="logo-wrapper">
+
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="includes/images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
+
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="includes/images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
+
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="subheading">Menu</span>
+    </button>
+
+  </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item" href="courses.html">Browse Courses by Subject</a>
+			<a class="dropdown-item" href="search.html">Search Courses</a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="olli.html">OLLI (Ages 50+)</a>
+        </div>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificate Programs
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item" href="certificate-programs.html">All Certificate Programs</a>
+			<a class="dropdown-item" href="program.html">Big Data</a>
+			<a class="dropdown-item" href="program.html">Business Intelligence</a>
+			<a class="dropdown-item" href="program.html">Cybersecurity</a>
+			<a class="dropdown-item" href="program.html">Health IT</a>
+			<a class="dropdown-item" href="program.html">Au Pair</a>
+			<a class="dropdown-item" href="program.html">Business Communications</a>
+			<a class="dropdown-item" href="program.html">Creative Writing</a>
+			<a class="dropdown-item" href="program.html">Digital Photography</a>
+			<a class="dropdown-item" href="program.html">Event Planning</a>
+			<a class="dropdown-item" href="program.html">Fundraising</a>
+			<a class="dropdown-item" href="program.html">Graphic Design</a>
+			<a class="dropdown-item" href="program.html">Health Coach</a>
+			<a class="dropdown-item" href="program.html">HR Management</a>
+			<a class="dropdown-item" href="program.html">Landscape Design</a>
+			<a class="dropdown-item" href="program.html">Lean Six Sigma</a>
+			<a class="dropdown-item" href="program.html">Management</a>
+			<a class="dropdown-item" href="program.html">Supervision</a>
+			<a class="dropdown-item" href="program.html">Paralegal</a>
+			<a class="dropdown-item" href="program.html">Project Management</a>
+			<a class="dropdown-item" href="program.html">Web Design and Development</a>
+			<a class="dropdown-item" href="program.html">Digital Marketing</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info Sessions</a>
+      </li>
+
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			About</a>
+		  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+		  	<a class="dropdown-item" href="about.html">About ECE</a>
+			 <a class="dropdown-item active" href="corporate.html">Corporate Learning<span class="sr-only">(current)</span></a>
+		  </div>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-3 my-lg-0 navbar__search">
+
+    <div class="input-group mx-auto">
+
+        <!-- Search input box -->
+        <input
+            id="search-input"
+            type="text"
+            class="form-control navbar__search-input d-block d-lg-none"
+            placeholder="Enter keywords..."
+            aria-label="Enter keywords">
+
+        <!-- Search submit -->
+        <div class="input-group-append">
+            <input
+                id="search-submit"
+                type="submit"
+                name="search"
+                aria-label="Submit search query"
+                value="Search"
+                class="btn btn-primary navbar__search-submit d-block d-lg-none">
+        </div>
+
+        <!-- Search toggle -->
+        <div class="input-group-append d-none d-lg-block">
+            <button
+                id="search-toggle"
+                class="btn navbar__search-toggle icon-magnifier"
+                type="button"
+                aria-label="Toggle between search and menu"
+                title="Toggle between search and menu">
+            </button>
+        </div>
+
+    </div>
+    <!-- /.input-group -->
+
+</form>
+
+  </div>
+  <!-- /.collapse -->
+
+</nav>
+
+</header>
+
+    <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
+
+
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        <div class="hero hero-interior">
+    <div class="container d-flex h-100 flex-column justify-content-center">
+        <h1 class="hero__heading" id="page-title">Corporate Learning</h1>
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.hero .hero-interior -->
+    </section>
+
+    <section aria-label="Course Information">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-5 col-lg-4 order-1 order-md-2">
+                        <aside class="sidebar">
+
+							<div class="sidebar-card">
+
+								<form>
+									<div class="sidebar-card__section">
+										<p class="h5 subheading mb-3">Contact Us to Get Started</p>
+										<div class="form-group">
+											<label for="firstName" class="small">First Name *</label>
+											<input type="text" class="form-control" id="firstName">
+										</div>
+										<div class="form-group">
+											<label for="lastName" class="small">Last Name *</label>
+											<input type="text" class="form-control" id="lastName">
+										</div>
+										<div class="form-group">
+											<label for="email" class="small">Email *</label>
+											<input type="email" class="form-control" id="email">
+										</div>
+										<div class="form-group">
+											<label for="tel" class="small">Telephone Number *</label>
+											<input type="tel" class="form-control" id="tel">
+										</div>
+										<div class="form-group">
+											<label for="org" class="small">Organization Name *</label>
+											<input type="text" class="form-control" id="org">
+										</div>
+										<div class="form-group">
+											<label for="comment" class="small">Comment or Question</label>
+											<textarea class="form-control" id="comment" rows="3"></textarea>
+										</div>
+										<div class="form-group">
+											<a href="#" class="btn btn-secondary btn-lg btn-block">Send Your Message</a>
+										</div>
+									</div>
+									<!-- /.sidebar-card__section -->
+								</form>
+
+							</div>
+							<!-- /.sidebar-card -->
+
+							<div class="card-info mb-3">
+								<p class="h5 subheading mb-3 text-light">Featured Courses</p>
+								<div class="wysiwyg">
+									<ul>
+										<li>Financial Management</li>
+										<li>Public Speaking</li>
+										<li>Executive Presence</li>
+										<li>Presentation Design</li>
+										<li>Social Media</li>
+										<li>Interviewing Skills</li>
+										<li>Performance Management</li>
+										<li>Coaching</li>
+										<li>Influencing Others</li>
+										<li>Strategic Communication</li>
+										<li>Leading Change</li>
+										<li>Business Writing</li>
+										<li>Project Management</li>
+										<li>Discover Your Strengths: Clifton Strengths Assessment</li>
+										<li>Technical Writing</li>
+									</ul>
+								</div>
+								<!-- /.wysiwyg -->
+							</div>
+							<!-- /.card-info -->
+
+							<div class="card-highlight">
+								<p class="h5 subheading mb-3">Corporate Resources</p>
+								<div class="wysiwyg">
+									<ul class="small">
+										<li>Emotional Intelligence (EQi)</li>
+										<li>Critical Thinking</li>
+										<li>Cultural Detective</li>
+										<li>Problem Solving Essentials</li>
+										<li>Strength Finder</li>
+										<li>Time and Productivity</li>
+									</ul>
+									<p class="small font-weight-bold">Everything DiSC Products:</p>
+									<ul class="small">
+										<li>DiSC Workplace</li>
+										<li>DiSC Management</li>
+										<li>DiSC Work of Leaders</li>
+										<li>DiSC Productive Conflict</li>
+										<li>DiSC Sales</li>
+										<li>Time Mastery</li>
+										<li>Listening Profile</li>
+									</ul>
+								</div>
+								<!-- /.wysiwyg -->
+							</div>
+							<!-- /.card-highlight -->
+
+						</aside>
+                    </div><!-- /.col-md-4 -->
+
+                    <!-- LEFT COLUMN -->
+                    <div class="col-md-7 col-lg-8 order-2 order-md-1">
+
+						<div class="photo-overlap">
+							<div class="photo">
+								<figure class="image image-16by9">
+									<img src="includes/images/placeholders/instructor-pointing-paper.jpg" alt="placeholder" />
+								</figure>
+							</div>
+							<div class="photo photo-shift">
+								<figure class="image image-16by9">
+									<img src="includes/images/placeholders/students-listening.jpg" alt="placeholder" />
+								</figure>
+							</div>
+						</div>
+						<!-- /.photo-overlap -->
+
+						<h2 class="heading mt-4 mt-lg-0">Our Training Expertise</h2>
+						<div class="wysiwyg">
+							<p class="lead">Emory Corporate Learning creates client value through the application of our skills, experience and expertise to develop and deliver relevant learning solutions to enhance the organization's employee performance. We support our clients by providing high-quality, relevant and practical talent development programs in a variety of subject areas that can be customized to meet unique organizational needs.</p>
+						</div>
+						<!-- /.wysiwyg -->
+
+						<!-- Highlight card -->
+
+						<div class="card-highlight">
+							<div class="wysiwyg">
+								Courses can be tailored and delivered onsite to corporate clients. Please call Bob Poole at <a href="tel:404-727-9479">404-727-9479</a> or <a href="">email us</a> for more information.
+							</div>
+							<!-- /.wysiwyg -->
+						</div>
+						<!-- /.card-highlight -->
+
+						<!-- Tabs -->
+
+						<!-- Tabs Featured -->
+						<div class="tabs mt-5 mb-4">
+
+							<!-- Tab menu-->
+							<ul class="nav nav-tabs" id="details" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Our Solutions Process</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Curriculum</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Instructors</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Our Clients</a>
+								</li>
+							</ul>
+
+							<!-- Tab content-->
+							<div class="tab-content" id="tabSimpleContent">
+								<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
+									<div class="wysiwyg">
+										<p>Our goal is to properly align your learning and talent development needs with your organization’s strategic goals. We can best accomplish this by following the process below.</p>
+										<p class="text-center"><img src="includes/images/placeholders/approach-illustration.gif" alt="Solutions process diagram" class="img-fluid"></p>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab-2">
+									<div class="wysiwyg">
+										<h3 class="h4 heading mb-3">Certificate Training Programs</h3>
+										<p>Emory Corporate Learning can deliver the following programs to your organization:</p>
+										<ul class="list-columns">
+											<li>New Manager Program</li>
+											<li>Senior Manager Program</li>
+											<li>Leadership Development Program</li>
+											<li>Business Communication Program</li>
+											<li>PHR/SPHR Program</li>
+											<li>Project Management Program Certificate</li>
+											<li>Lean Six Sigma</li>
+										</ul>
+										<p>Contact Bob Poole, Business Development Manager, at <a href="tel:404-727-9379">404-727-9379</a> or <a href="">email us</a> to learn more about our certificate programs and how they can support your talent management needs.</p>
+									</div>
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab-3">
+									<div class="wysiwyg">
+										<p>Emory Corporate Learning instructors are subject-matter experts (SMEs) who provide practical business solutions anchored in relevant adult-learning principles. Our SMEs combine appropriate theoretical foundations with valuable business experience to ensure realistic knowledge and skill transfer.</p>
+										<p>Their expertise is derived from a combination of education (advanced degrees in adult education leadership, management, business administration, etc.), formal training and relevant work experience. Our instructors engage participants in skill development through expert delivery and facilitation of our training solutions.</p>
+										<p>Collectively our instructors have held executive, mid-management, and consulting positions in talent management, organizational effectiveness, human resources, and operations.</p>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab-4">
+									<div class="wysiwyg">
+										<p>As a leader in corporate and professional education in the Southeast, Emory Corporate Learning programs provide hands-on, need-specific, learning solutions to small, medium, and large organizations in the region and beyond.</p>
+										<p>Our clients all share a common need for high-quality, cost-effective and proactive professional employee development and learning solutions; they depend on Emory Corporate Learning to maximize the return on their training investment by helping employees reach their potential.</p>
+										<p><a href="">Contact us</a> to find out more about the benefits of partnering with Emory Corporate Learning.</p>
+										<h3 class="h4 heading mb-3">Some Examples of Corporate Learning Partners:</h3>
+										<ul class="list-columns">
+											<li>InterContinental Hotels Group</li>
+											<li>Jackson Healthcare</li>
+											<li>The Home Depot</li>
+											<li>Georgia Power</li>
+											<li>Auto Trader</li>
+											<li>Turner</li>
+											<li>Hartsfield-Jackson Atlanta International Airport</li>
+											<li>Southern Company</li>
+											<li>OCI Chemical Corporation</li>
+											<li>CGI</li>
+											<li>Hagemeyer North America</li>
+											<li>Arch Chemical</li>
+											<li>Barco</li>
+											<li>CDC</li>
+											<li>Cisco Systems, Inc.</li>
+											<li>DuPont</li>
+											<li>Habitat for Humanity</li>
+											<li>Emory University</li>
+											<li>Kilpatrick Townsend & Stockton</li>
+											<li>Manheim</li>
+											<li>Maxxis International</li>
+											<li>Merial</li>
+											<li>Novelis</li>
+											<li>National Peanut Board</li>
+											<li>NPI Financial</li>
+											<li>Pritchard & Jerden Insurance</li>
+											<li>Showtime</li>
+											<li>Univision</li>
+											<li>Verizon Wireless</li>
+											<li>Woodward Academy</li>
+											<li>Yamaha Corporation</li>
+											<li>Zaxby's</li>
+										</ul>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+							</div>
+						</div>
+						<!-- /.tabs -->
+
+						<!-- Testimonials -->
+						<div id="carouselTestimonial" class="carousel slide carousel-fade carousel-testimonial my-5" data-ride="carousel">
+
+							<ol class="carousel-indicators">
+								<li data-target="#carouselTestimonial" data-slide-to="0" class="active"></li>
+								<li data-target="#carouselTestimonial" data-slide-to="1"></li>
+								<li data-target="#carouselTestimonial" data-slide-to="2"></li>
+							</ol>
+
+							<div class="row justify-content-center">
+								<div class="col-9">
+
+									<div class="carousel-inner text-center">
+
+										<div class="carousel-item active">
+											<blockquote class="carousel-testimonial__quote">
+												<div class="wysiwyg">
+													“Our fears that the Emory program would not bridge well from the academic world to the bureaucratic nature of the airport were put to rest immediately. The response and participation in the program exceeded our expectations.”
+												</div>
+												<!-- /.wysiwyg -->
+												<div class="carousel-testimonial__name">D. Steven Lee</div>
+												<div class="carousel-testimonial__title">Former Director of Training, Safety & Organizational Development<br> Hartsfield-Jackson Atlanta International Airport</div>
+											</blockquote>
+										</div>
+										<!-- /.carousel-item -->
+
+										<div class="carousel-item">
+											<blockquote class="carousel-testimonial__quote">
+												<div class="wysiwyg">
+													“Scientific Atlanta was acquired by CISCO in 2006 and Bob definitely feels that the Emory Essentials of Management Certificate program has helped the organizational transition go more smoothly.”
+												</div>
+												<!-- /.wysiwyg -->
+												<div class="carousel-testimonial__name">Laura Morris</div>
+												<div class="carousel-testimonial__title">CISCO</div>
+											</blockquote>
+										</div>
+										<!-- /.carousel-item -->
+
+										<div class="carousel-item">
+											<blockquote class="carousel-testimonial__quote">
+												<div class="wysiwyg">
+													“By partnering with ECE [Emory Continuing Education], I am able to stretch our organization’s training dollars much farther and offer higher-quality programs overall than if I were using a variety of different vendors for business skills programs.”
+												</div>
+												<!-- /.wysiwyg -->
+												<div class="carousel-testimonial__name">Tina M. O’Gorman</div>
+												<div class="carousel-testimonial__title">Training Manager<br> CGI</div>
+											</blockquote>
+										</div>
+										<!-- /.carousel-item -->
+
+									</div>
+									<!-- /.carousel-inner -->
+								</div>
+								<!-- /.col-9 -->
+							</div>
+							<!-- /.row .justify-content-center -->
+
+							<a class="carousel-control-prev" href="#carouselTestimonial" role="button" data-slide="prev">
+								<img src="includes/images/icons/chevron-left-circle.svg" alt="" class="carousel-control-prev-icon" />
+								<span class="sr-only">Previous</span>
+							</a>
+							<a class="carousel-control-next" href="#carouselTestimonial" role="button" data-slide="next">
+								<img src="includes/images/icons/chevron-right-circle.svg" alt="" class="carousel-control-next-icon" />
+								<span class="sr-only">Next</span>
+							</a>
+
+						</div>
+						<!-- /.carousel -->
+
+						<!-- CTA -->
+						<div class="row">
+							<div class="col">
+								<div class="cta bg-facets-gray">
+									<div class="row align-items-center justify-content-between">
+										<div class="col-lg-8 mb-md-3">
+											<h2 class="cta__text">Interested in learning more?</h2>
+										</div>
+										<!-- /.col-lg-8 -->
+										<div class="col-lg-4">
+											<a href="#" class="btn btn-primary btn-lg btn-block">Let’s talk</a>
+										</div>
+										<!-- /.col-lg-4 -->
+									</div>
+									<!-- /.row .align-items-center -->
+								</div>
+								<!-- /.cta .bg-facets-gray -->
+							</div>
+							<!-- /.col -->
+						</div>
+						<!-- /.row -->
+
+
+
+                    </div>
+                    <!-- /.col-md-7 -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+
+
+    <footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo mb-5">
+                    <img src="includes/images/logo-ece-footer.svg" alt="Emory University | Emory Continuing Education" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/facebook.svg" alt="Facebook" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/instagram.svg" alt="Instagram" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/twitter.svg" alt="Twitter" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="courses.html" class="footer__nav-link">Courses</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="certificate-programs.html" class="footer__nav-link">Certificate Programs</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Info Sessions</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">About</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contact</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Student Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Instructor Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Policies & Procedures</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="olli.html" class="footer__nav-link">OLLI</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="corporate.html" class="footer__nav-link">Corporate</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Military</a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-md-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="mt-4 text-md-right d-block d-lg-none">
+                    <a href="#" class="btn btn-dark">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="includes/images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
+</footer>
+
+    <!--
+#########################################
+JQUERY 3.3.1
+Bootstrap dependency
+#########################################
+-->
+<script src="includes/js/vendor/jquery/jquery.min.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP 4.1 COMPONENTS
+Include only the JS components needed
+for the website to function
+#########################################
+-->
+<script src="includes/js/vendor/bootstrap/util.js"></script>
+<script src="includes/js/vendor/popper/popper.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/popper/popper-utils.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/bootstrap/tooltip.js"></script>
+<script src="includes/js/vendor/bootstrap/alert.js"></script>
+<script src="includes/js/vendor/bootstrap/button.js"></script>
+<script src="includes/js/vendor/bootstrap/carousel.js"></script>
+<script src="includes/js/vendor/bootstrap/collapse.js"></script>
+<script src="includes/js/vendor/bootstrap/dropdown.js"></script>
+<script src="includes/js/vendor/bootstrap/index.js"></script>
+<script src="includes/js/vendor/bootstrap/modal.js"></script>
+<script src="includes/js/vendor/bootstrap/popover.js"></script>
+<script src="includes/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="includes/js/vendor/bootstrap/tab.js"></script>
+
+<!--
+#########################################
+PAYPAL - BOOTSTRAP ACCESSBILITY SUITE
+This trimmed down file contains
+BS carousel accessibility features
+#########################################
+-->
+<script src="includes/js/vendor/paypal/bootstrap-accessibility.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP BREAKPOINTS
+#########################################
+-->
+<script src="includes/js/if-b4-breakpoint.min.js"></script>
+
+<!--
+#########################################
+PRIMARY SITE JAVASCRIPT
+This javascript is a combination of all
+locally imported JS files.
+#########################################
+-->
+<script src="includes/js/site.js"></script>
+</body>
+
+</html>

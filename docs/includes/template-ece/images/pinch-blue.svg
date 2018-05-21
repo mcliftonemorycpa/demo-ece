@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 50" preserveAspectRatio="none slice">
+  <defs>
+    <linearGradient id="a" x2="1920" y1="27" y2="27" gradientTransform="matrix(1 0 0 -1 0 52)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#012169"/>
+      <stop offset="1" stop-color="#007dba"/>
+    </linearGradient>
+  </defs>
+  <g data-name="Layer 2">
+    <path fill="url(#a)" d="M1920 49.77L0 50V0s403 45.83 960 45.83S1920 0 1920 0z" data-name="Layer 1"/>
+  </g>
+</svg>

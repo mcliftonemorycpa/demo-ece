@@ -1,0 +1,817 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+#########################################
+THEME COLOR
+This color determines the color of the
+web address bar in certain mobile
+browsers including Firefox OS, Chrome,
+Vivaldi, and Opera
+#########################################
+-->
+<meta name="theme-color" content="#012169"> <!-- $emory-blue -->
+
+<title>Accelerated Training in Big Data | Emory Continuing Education</title>
+
+    <!--
+#########################################
+EXTERNAL LIBRARIES / CDN
+Place links to externally hosted
+CSS libraries below.
+#########################################
+-->
+
+<!--
+#########################################
+PRIMARY SITE STYLESHEET
+This stylesheet is a combination of all
+locally imported SCSS files.
+#########################################
+-->
+<link href="includes/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <header id="site-header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
+
+  <div class="logo-wrapper">
+
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="includes/images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
+
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="includes/images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
+
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="subheading">Menu</span>
+    </button>
+
+  </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item" href="courses.html">Browse Courses by Subject</a>
+			<a class="dropdown-item" href="search.html">Search Courses</a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="olli.html">OLLI (Ages 50+)</a>
+        </div>
+      </li>
+
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificate Programs
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item" href="certificate-programs.html">All Certificate Programs</a>
+			<a class="dropdown-item active" href="program.html">Big Data<span class="sr-only">(current)</span></a>
+			<a class="dropdown-item" href="program.html">Business Intelligence</a>
+			<a class="dropdown-item" href="program.html">Cybersecurity</a>
+			<a class="dropdown-item" href="program.html">Health IT</a>
+			<a class="dropdown-item" href="program.html">Au Pair</a>
+			<a class="dropdown-item" href="program.html">Business Communications</a>
+			<a class="dropdown-item" href="program.html">Creative Writing</a>
+			<a class="dropdown-item" href="program.html">Digital Photography</a>
+			<a class="dropdown-item" href="program.html">Event Planning</a>
+			<a class="dropdown-item" href="program.html">Fundraising</a>
+			<a class="dropdown-item" href="program.html">Graphic Design</a>
+			<a class="dropdown-item" href="program.html">Health Coach</a>
+			<a class="dropdown-item" href="program.html">HR Management</a>
+			<a class="dropdown-item" href="program.html">Landscape Design</a>
+			<a class="dropdown-item" href="program.html">Lean Six Sigma</a>
+			<a class="dropdown-item" href="program.html">Management</a>
+			<a class="dropdown-item" href="program.html">Supervision</a>
+			<a class="dropdown-item" href="program.html">Paralegal</a>
+			<a class="dropdown-item" href="program.html">Project Management</a>
+			<a class="dropdown-item" href="program.html">Web Design and Development</a>
+			<a class="dropdown-item" href="program.html">Digital Marketing</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info Sessions</a>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			About</a>
+		  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+		  	<a class="dropdown-item" href="about.html">About ECE</a>
+			 <a class="dropdown-item" href="corporate.html">Corporate Learning</a>
+		  </div>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-3 my-lg-0 navbar__search">
+
+    <div class="input-group mx-auto">
+
+        <!-- Search input box -->
+        <input
+            id="search-input"
+            type="text"
+            class="form-control navbar__search-input d-block d-lg-none"
+            placeholder="Enter keywords..."
+            aria-label="Enter keywords">
+
+        <!-- Search submit -->
+        <div class="input-group-append">
+            <input
+                id="search-submit"
+                type="submit"
+                name="search"
+                aria-label="Submit search query"
+                value="Search"
+                class="btn btn-primary navbar__search-submit d-block d-lg-none">
+        </div>
+
+        <!-- Search toggle -->
+        <div class="input-group-append d-none d-lg-block">
+            <button
+                id="search-toggle"
+                class="btn navbar__search-toggle icon-magnifier"
+                type="button"
+                aria-label="Toggle between search and menu"
+                title="Toggle between search and menu">
+            </button>
+        </div>
+
+    </div>
+    <!-- /.input-group -->
+
+</form>
+
+  </div>
+  <!-- /.collapse -->
+
+</nav>
+
+</header>
+
+    <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
+
+
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        <div class="hero hero-interior">
+    <div class="container d-flex h-100 flex-column justify-content-center">
+        <h1 class="hero__heading" id="page-title">Accelerated Training in Big Data</h1>
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.hero .hero-interior -->
+    </section>
+
+    <section aria-label="Course Information">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-5 col-lg-4 order-1 order-md-2">
+                        <aside class="sidebar">
+
+    <div class="sidebar-card">
+
+    <div class="sidebar-card__section bg-gray-200">
+		<a href="#" class="btn btn-secondary btn-lg btn-block">Register Course</a>
+    </div>
+    <!-- /.sidebar-card__section -->
+
+	<ul class="sidebar-card__section">
+
+        <li class="sidebar-card__item">
+            <div class="sidebar-card__icon">
+                <img src="includes/images/icons/book.svg" alt="" class="img-fluid">
+            </div>
+            <!-- /.sidebar-card__icon -->
+            <div class="sidebar-card__info">
+                Big Data
+            </div>
+            <!-- /.sidebar-card__info -->
+        </li>
+        <!-- /.sidebar-card__item -->
+
+        <li class="sidebar-card__item">
+            <div class="sidebar-card__icon">
+                <img src="includes/images/icons/calendar.svg" alt="" class="img-fluid">
+            </div>
+            <!-- /.sidebar-card__icon -->
+            <div class="sidebar-card__info">
+                <div class="font-weight-bold">Sat, Sep 15–Nov 17, 2018</div>
+                <div>8:30 a.m.–5:30 p.m.</div>
+            </div>
+            <!-- /.sidebar-card__info -->
+        </li>
+        <!-- /.sidebar-card__item -->
+
+        <li class="sidebar-card__item">
+            <div class="sidebar-card__icon">
+                <img src="includes/images/icons/map-pin.svg" alt="" class="img-fluid">
+            </div>
+            <!-- /.sidebar-card__icon -->
+            <div class="sidebar-card__info">
+                <a href="https://goo.gl/maps/FYMoekTrmHJ2" target="_blank" rel="noopener">
+                    <address>
+                        6 Executive Park Dr NE,
+                        <br> Atlanta,
+                        <abbr title="Georgia">GA</abbr> 30329
+                    </address>
+                </a>
+            </div>
+            <!-- /.sidebar-card__info -->
+        </li>
+        <!-- /.sidebar-card__item -->
+
+        <li class="sidebar-card__item">
+            <div class="sidebar-card__icon">
+                <img src="includes/images/icons/clock.svg" alt="" class="img-fluid">
+            </div>
+            <!-- /.sidebar-card__icon -->
+            <div class="sidebar-card__info">
+                <div>80 classroom hours</div>
+                <div>(10 Saturdays)</div>
+            </div>
+            <!-- /.sidebar-card__info -->
+        </li>
+        <!-- /.sidebar-card__item -->
+
+    </ul>
+    <!-- /.sidebar-card__section -->
+
+    <div class="sidebar-card__section bg-gray-200">
+        <div class="sidebar-card__item d-flex justify-content-between">
+            <div class="font-weight-bold">Tuition Cost:</div>
+            <div>$3,995</div>
+        </div>
+        <!-- /.sidebar-card__item -->
+    </div>
+    <!-- /.sidebar-card__section -->
+
+</div>
+<!-- /.sidebar-card -->
+
+    <div class="sidebar-cta sidebar-cta-bio">
+    <div class="sidebar-bio__thumb">
+        <figure class="image image-1by1">
+            <img src="includes/images/placeholders/mahmoud-ghavi.jpg" alt="placeholder">
+        </figure>
+    </div>
+    <!-- /.sidebar-bio__thumb -->
+	<p class="h5 subheading">Instructor:</p>
+    <div class="font-weight-bold">Mahmoud Ghavi, PhD</div>
+    <div class="small font-italic mb-2">Chair, Consort Institute</div>
+    <p class="small">Mahmoud Ghavi is an accomplished scientist, educator and corporate executive with extensive experience and proven leadership in the fields of information technology, data management, data analytics, and health care informatics.</p>
+    <a href="#" class="btn btn-primary btn-block mt-3">View Full Bio</a>
+</div>
+<!-- /.sidebar-cta .sidebar-bio .gradient-hz-yellow -->
+
+    <div class="sidebar-cta sidebar-cta-purple">
+    <img src="includes/images/icons/calendar-w.svg" alt="" class="img-fluid mb-3 icon-md">
+    <p class="h5 subheading text-white">Next Course Starts:</p>
+    <div class="font-weight-bold small">Saturday, Sept 25</div>
+    <div class="small">8:30 a.m.–5:30 p.m.</div>
+</div>
+<!-- /.gradient-hz-blue -->
+
+
+</aside>
+
+                    </div><!-- /.col-md-5 -->
+
+                    <!-- LEFT COLUMN -->
+                    <div class="col-md-7 col-lg-8 order-2 order-md-1">
+
+                        <div class="wysiwyg">
+                            <h2 class="headline">A 10-Week Immersion in Data Analysis</h2>
+                            <p class="lead">Every engagement with the digital world generates data. Structured or unstructured, these huge data sets can reveal useful patterns, trends, and information about people and their habits. The demand for workers with expertise in analyzing data is high.</p>
+                            <p>Join us for 10 full-day sessions of this highly intensive course where you’ll gain a comprehensive understanding of the critical and practical elements of big data analytics. Offered in an applied format, the program includes practice and lab components to address the application of big data sets in real-world situations.</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+
+						<p><a href="#details" class="btn btn-accent-3">Learn More</a></p>
+
+						<!-- Info cards -->
+
+						<h3 class="heading mt-5 mb-4" id="webinars">Learn More About this Program</h3>
+
+						<div class="card-info">
+							<div class="row no-gutters align-items-start">
+
+								<div class="col-sm-7 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="includes/images/icons/calendar-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											<div class="font-weight-bold">Mon, May 14, 2018</div>
+											<div>12:00 p.m.</div>
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-sm-5 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="includes/images/icons/laptop-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											Webinar
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-12 col-lg-4">
+									<a href="#" class="btn btn-accent-2 btn-block ml-0 ml-lg-2">Join an info session</a>
+								</div>
+								<!-- /.col-lg-4 -->
+
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-info -->
+
+						<div class="card-info">
+							<div class="row no-gutters align-items-start">
+
+								<div class="col-sm-7 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="includes/images/icons/calendar-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											<div class="font-weight-bold">Wed, May 16, 2018</div>
+											<div>12:00 p.m.</div>
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-sm-5 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="includes/images/icons/laptop-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											Webinar
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-12 col-lg-4">
+									<a href="#" class="btn btn-accent-2 btn-block ml-0 ml-lg-2">Join an info session</a>
+								</div>
+								<!-- /.col-lg-4 -->
+
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-info -->
+
+						<!-- Highlight card -->
+
+						<div class="card-highlight">
+							<h3 class="card-highlight__title">Prerequisite</h3>
+							<div class="wysiwyg">
+								<p>ECE’s <a href="#">Business Intelligence</a> course or a degree or equivalent practical experience in business, banking and finance, supply chain, health care, pharma, science, engineering, software, IT, and/or analytics is recommended.</p>
+							</div>
+							<!-- /.wysiwyg -->
+						</div>
+						<!-- /.card-highlight -->
+
+                        <!-- Tabs -->
+
+						<!-- Tabs Featured -->
+						<div class="tabs">
+
+							<!-- Tab menu-->
+							<ul class="nav nav-tabs" id="details" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Details</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Curriculum</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Careers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Who’s This For?</a>
+								</li>
+							</ul>
+
+							<!-- Tab content-->
+							<div class="tab-content" id="tabSimpleContent">
+								<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
+									<div class="wysiwyg">
+										<div class="embed-responsive embed-responsive-16by9 mb-4">
+										  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/toDyEVIFph4?rel=0" allowfullscreen></iframe>
+										</div>
+										<p>You’ll gain a comprehensive understanding of the critical and practical elements of big data analytics. The program includes hands-on practice and lab components to address the applications of big data in real-world simulations. Topics include data structure, warehousing, data mining and analysis, pattern recognition, trends analysis, data relevancy, data modeling, predictive and descriptive analytics, data visualization techniques, and more. Students will utilize analytical tools and products such as Splunk and gain familiarity with the applications of these products.</p>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab-2">
+									<div class="wysiwyg">
+										<p class="h5 subheading">Next Course Begins:</p>
+										<p><strong>Saturday, September 15–November 17, 2018</strong><br> 8:30 a.m.–5:30 p.m.</p>
+										<p class="h5 subheading">Required:</p>
+										<p>80 hours, classroom (10 Saturdays)</p>
+										<p class="h5 subheading">Optional (no extra cost, highly recommended):</p>
+										<ul>
+											<li>2 hours pre-program preparation</li>
+											<li>26 hours weekday online help sessions (remote access)</li>
+											<li>16 hours Python training (two Saturdays)</li>
+											<li>9 hours Tableau capstone project (three Saturdays)</li>
+											<li>9 hours R language capstone project (three Saturdays)</li>
+											<li>9 hours Splunk training (three Saturdays)</li>
+											<li>3 hours career enhancement training (one Saturday)</li>
+											<li>Total: 154 available hours of instruction (80 required; 74 optional)</li>
+										</ul>
+									</div>
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab-3">
+									<div class="wysiwyg">
+										<p>Big data applications are commonplace. Most large companies have one or more of these applications, providing fast access to large stores of customer and sales data. As the IT organization grows to install, support and maintain these applications, new job categories and new tasks are added to the mix. These can include:</p>
+										<ul>
+											<li>big data hardware and software support</li>
+											<li>business analysts (using analytics to probe and explore the data)</li>
+											<li>managers who must supervise and prioritize job tasks</li>
+										</ul>
+										<p>Hardware/software support positions often center on the technical nature of big data. The emphasis of our program focuses on the analyst and manager roles regarding business management of big data.</p>
+										<p>The following links provide example salaries of big data professionals. <em>Please note: These numbers do not reflect entry-level salaries; however, the articles may offer relative comparisons.</em></p>
+										<ul>
+											<li><a href="http://www.computersupportspecialist.org/computer-support-specialist-salary-what-areas-pay-the-big-bucks/" target="_blank" rel="noopener">Big Data Salary</a></li>
+											<li><a href="https://www.indeed.com/salaries/Business+Analytics-Salaries,-Atlanta" target="_blank" rel="noopener">Business Analytics Salary in Atlanta</a></li>
+										</ul>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab-4">
+									<div class="wysiwyg">
+										<p>The Accelerated Training in Big Data certificate is best suited for individuals and college graduates interested in big data and data-related analytics careers; managers considering big data projects; and individuals who want to advance their business career.</p>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+							</div>
+						</div>
+						<!-- /.tabs -->
+
+                    </div>
+                    <!-- /.col-md-7 -->
+
+                </div>
+                <!-- /.row -->
+
+				<!-- Testimonials -->
+				<div id="carouselTestimonialPhotos" class="carousel slide carousel-testimonial-photos my-5" data-ride="carousel">
+
+					<ol class="carousel-indicators">
+						<li data-target="#carouselTestimonialPhotos" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselTestimonialPhotos" data-slide-to="1"></li>
+						<li data-target="#carouselTestimonialPhotos" data-slide-to="2"></li>
+					</ol>
+
+					<div class="row justify-content-center">
+						<div class="col-9 col-md-8">
+							<div class="carousel-inner">
+
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-7 col-md-4 col-lg-3 mx-auto mb-3 mb-md-0 d-block">
+											<a href="https://www.youtube.com/watch?v=WM-VH1u4hMk" target="_blank" rel="noopener" class="carousel__thumb">
+												<figure class="image image-1by1">
+													<img src="includes/images/placeholders/leleda-woldu.jpg" alt="placeholder">
+												</figure>
+											</a>
+										</div>
+										<!-- /.col-md-4 col-lg-3 -->
+										<div class="col-md-8 col-lg-9">
+											<div class="wysiwyg">
+												<p>“This has made me a lot more marketable, not only outside of my company, but also even within my company. Not a lot of people have this skill set that I’ve learned from this program, so I’ve become the go-to person to provide some insights into the data that we process on a daily basis.”</p>
+											</div>
+											<!-- /.wysiwyg -->
+											<div class="carousel-testimonial__name">Leleda Woldu</div>
+										</div>
+										<!-- /.col-md-8 col-lg-9 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.carousel-item -->
+
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-12">
+											<div class="wysiwyg">
+												<p>“I appreciate the Big Data program at Emory and the whole experience of participating in events -- and for the extra offerings of help. I felt that no other program has this type of commitment and out of the way offering of help. Just wanted to share my appreciation.”</p>
+											</div>
+											<!-- /.wysiwyg -->
+											<div class="carousel-testimonial__name">Suneetha V.</div>
+										</div>
+										<!-- /.col-md-12 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.carousel-item -->
+
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-12">
+											<div class="wysiwyg">
+												<p>“Just wanted to thank you for ultimately convincing me to go through with the big data program. Because of the program I was able to leave my sales job and will soon start a Business Intelligence role where I will be using R, Tableau, and Spotfire. Since I come from a sales background with no analytics experience, the big data program was instrumental in getting me into this field.”</p>
+											</div>
+											<!-- /.wysiwyg -->
+											<div class="carousel-testimonial__name">Andrew C.</div>
+										</div>
+										<!-- /.col-md-12 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.carousel-item -->
+
+							</div>
+							<!-- /.carousel-inner -->
+						</div>
+						<!-- /.col-md-8 -->
+					</div>
+					<!-- /.row .justify-content-center -->
+
+					<a class="carousel-control-prev" href="#carouselTestimonialPhotos" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselTestimonialPhotos" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+
+				</div>
+				<!-- /.carousel -->
+
+				<!-- CTA -->
+				<div class="row">
+					<div class="col">
+						<div class="cta bg-facets-yellow">
+							<div class="row align-items-center justify-content-between">
+								<div class="col-md-6 col-lg-8">
+									<h2 class="cta__text">Interested in this program?</h2>
+								</div>
+								<!-- /.col-lg-8 -->
+								<div class="col-md-6 col-lg-4">
+									<a href="#" class="btn btn-primary btn-lg btn-block">Register now</a>
+								</div>
+								<!-- /.col-lg-4 -->
+							</div>
+							<!-- /.row .align-items-center -->
+						</div>
+						<!-- /.cta .bg-facets-gray -->
+					</div>
+					<!-- /.col -->
+				</div>
+				<!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+
+
+    <footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo mb-5">
+                    <img src="includes/images/logo-ece-footer.svg" alt="Emory University | Emory Continuing Education" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/facebook.svg" alt="Facebook" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/instagram.svg" alt="Instagram" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/twitter.svg" alt="Twitter" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="courses.html" class="footer__nav-link">Courses</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="certificate-programs.html" class="footer__nav-link">Certificate Programs</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Info Sessions</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">About</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contact</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Student Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Instructor Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Policies & Procedures</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="olli.html" class="footer__nav-link">OLLI</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="corporate.html" class="footer__nav-link">Corporate</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Military</a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-md-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="mt-4 text-md-right d-block d-lg-none">
+                    <a href="#" class="btn btn-dark">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="includes/images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
+</footer>
+
+    <!--
+#########################################
+JQUERY 3.3.1
+Bootstrap dependency
+#########################################
+-->
+<script src="includes/js/vendor/jquery/jquery.min.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP 4.1 COMPONENTS
+Include only the JS components needed
+for the website to function
+#########################################
+-->
+<script src="includes/js/vendor/bootstrap/util.js"></script>
+<script src="includes/js/vendor/popper/popper.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/popper/popper-utils.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/bootstrap/tooltip.js"></script>
+<script src="includes/js/vendor/bootstrap/alert.js"></script>
+<script src="includes/js/vendor/bootstrap/button.js"></script>
+<script src="includes/js/vendor/bootstrap/carousel.js"></script>
+<script src="includes/js/vendor/bootstrap/collapse.js"></script>
+<script src="includes/js/vendor/bootstrap/dropdown.js"></script>
+<script src="includes/js/vendor/bootstrap/index.js"></script>
+<script src="includes/js/vendor/bootstrap/modal.js"></script>
+<script src="includes/js/vendor/bootstrap/popover.js"></script>
+<script src="includes/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="includes/js/vendor/bootstrap/tab.js"></script>
+
+<!--
+#########################################
+PAYPAL - BOOTSTRAP ACCESSBILITY SUITE
+This trimmed down file contains
+BS carousel accessibility features
+#########################################
+-->
+<script src="includes/js/vendor/paypal/bootstrap-accessibility.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP BREAKPOINTS
+#########################################
+-->
+<script src="includes/js/if-b4-breakpoint.min.js"></script>
+
+<!--
+#########################################
+PRIMARY SITE JAVASCRIPT
+This javascript is a combination of all
+locally imported JS files.
+#########################################
+-->
+<script src="includes/js/site.js"></script>
+</body>
+
+</html>

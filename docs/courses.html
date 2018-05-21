@@ -1,0 +1,913 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+#########################################
+THEME COLOR
+This color determines the color of the
+web address bar in certain mobile
+browsers including Firefox OS, Chrome,
+Vivaldi, and Opera
+#########################################
+-->
+<meta name="theme-color" content="#012169"> <!-- $emory-blue -->
+
+<title>Courses | Emory Continuing Education</title>
+
+    <!--
+#########################################
+EXTERNAL LIBRARIES / CDN
+Place links to externally hosted
+CSS libraries below.
+#########################################
+-->
+
+<!--
+#########################################
+PRIMARY SITE STYLESHEET
+This stylesheet is a combination of all
+locally imported SCSS files.
+#########################################
+-->
+<link href="includes/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <header id="site-header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
+
+  <div class="logo-wrapper">
+
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="includes/images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
+
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="includes/images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
+
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="subheading">Menu</span>
+    </button>
+
+  </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Courses
+          <span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item active" href="courses.html">Browse Courses by Subject<span class="sr-only">(current)</span></a>
+			<a class="dropdown-item" href="search.html">Search Courses</a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="olli.html">OLLI (Ages 50+)</a>
+        </div>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificate Programs
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item" href="certificate-programs.html">All Certificate Programs</a>
+			<a class="dropdown-item" href="program.html">Big Data</a>
+			<a class="dropdown-item" href="program.html">Business Intelligence</a>
+			<a class="dropdown-item" href="program.html">Cybersecurity</a>
+			<a class="dropdown-item" href="program.html">Health IT</a>
+			<a class="dropdown-item" href="program.html">Au Pair</a>
+			<a class="dropdown-item" href="program.html">Business Communications</a>
+			<a class="dropdown-item" href="program.html">Creative Writing</a>
+			<a class="dropdown-item" href="program.html">Digital Photography</a>
+			<a class="dropdown-item" href="program.html">Event Planning</a>
+			<a class="dropdown-item" href="program.html">Fundraising</a>
+			<a class="dropdown-item" href="program.html">Graphic Design</a>
+			<a class="dropdown-item" href="program.html">Health Coach</a>
+			<a class="dropdown-item" href="program.html">HR Management</a>
+			<a class="dropdown-item" href="program.html">Landscape Design</a>
+			<a class="dropdown-item" href="program.html">Lean Six Sigma</a>
+			<a class="dropdown-item" href="program.html">Management</a>
+			<a class="dropdown-item" href="program.html">Supervision</a>
+			<a class="dropdown-item" href="program.html">Paralegal</a>
+			<a class="dropdown-item" href="program.html">Project Management</a>
+			<a class="dropdown-item" href="program.html">Web Design and Development</a>
+			<a class="dropdown-item" href="program.html">Digital Marketing</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info Sessions</a>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			About</a>
+		  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+		  	<a class="dropdown-item" href="about.html">About ECE</a>
+			 <a class="dropdown-item" href="corporate.html">Corporate Learning</a>
+		  </div>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-3 my-lg-0 navbar__search">
+
+    <div class="input-group mx-auto">
+
+        <!-- Search input box -->
+        <input
+            id="search-input"
+            type="text"
+            class="form-control navbar__search-input d-block d-lg-none"
+            placeholder="Enter keywords..."
+            aria-label="Enter keywords">
+
+        <!-- Search submit -->
+        <div class="input-group-append">
+            <input
+                id="search-submit"
+                type="submit"
+                name="search"
+                aria-label="Submit search query"
+                value="Search"
+                class="btn btn-primary navbar__search-submit d-block d-lg-none">
+        </div>
+
+        <!-- Search toggle -->
+        <div class="input-group-append d-none d-lg-block">
+            <button
+                id="search-toggle"
+                class="btn navbar__search-toggle icon-magnifier"
+                type="button"
+                aria-label="Toggle between search and menu"
+                title="Toggle between search and menu">
+            </button>
+        </div>
+
+    </div>
+    <!-- /.input-group -->
+
+</form>
+
+  </div>
+  <!-- /.collapse -->
+
+</nav>
+
+</header>
+
+    <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
+
+
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        <div class="hero hero-interior">
+    <div class="container d-flex h-100 flex-column justify-content-center">
+        <h1 class="hero__heading" id="page-title">Courses</h1>
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.hero .hero-interior -->
+    </section>
+
+    <section aria-label="Course subjects">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+
+				<div class="row mb-4">
+					<div class="col-lg-10 offset-lg-1 text-center">
+						<h2 class="heading">Etiam Aliquam Ultricies Mi, Vel Blandit est Tempus Nec</h2>
+						<p class="lead">Morbi aliquet magna et diam feugiat lacinia. Vestibulum molestie lectus sed tellus rhoncus luctus. Fusce accumsan ultrices diam sit amet pretium. Pellentesque nec imperdiet ante. Nam consequat tellus nec est placerat scelerisque. Nam ullamcorper elit velit, ut lacinia lorem blandit a.</p>
+					</div>
+				</div>
+
+				<!-- Subject Cards -->
+				<div class="card-icons card-icons--subjects">
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/smile-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Management and Supervision</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/chart-bars-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Lean Six Sigma and Project Management</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/pencil-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Test Preparation</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/highlight-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Fine Arts</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/laptop-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Microsoft Office</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/leaf-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Personal Enrichment</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/bubble-w.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">Foreign Languages</div>
+					</a>
+					<a href="search.html" class="card-icons__link">
+						<img src="includes/images/icons/sun-b.svg" alt="" class="img-fluid card-icons__icon" />
+						<div class="card-icons__text">OLLI (Ages 50+)</div>
+					</a>
+				</div>
+				<!-- /.card-icons -->
+
+                <div class="heading-group mt-5">
+					<h2>
+						<span class="heading-group__primary">Explore Course Offerings</span>
+					</h2>
+				</div>
+				<!-- /.heading-group -->
+                <ul class="list-row">
+    <li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Accounting
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Anthropology and Archaeology
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Biological Sciences
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Biotechnology
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Chemistry
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Communication
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Computer Science
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Creative Writing
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Digital Media and Design
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Dramatic Arts
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Economics
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Education
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Engineering Science
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Enterprise Management
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Environmental Studies
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Expository Writing
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Finance
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Languages
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Government
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                History
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                History of Art and Architecture
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Humanities
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Information Systems Management
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Journalism
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Legal Studies
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Management
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Mathematics
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Medical Sciences
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Museum Studies
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Organizational Behavior
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Philosophy
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Psychology
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+	<li class="list-row__item">
+        <a class="list-row__link" href="search.html">
+            <div class="list-row__text">
+                Social Sciences
+            </div>
+            <!-- /.list-row__text -->
+        </a>
+        <!-- /.list-row__link -->
+    </li>
+</ul>
+<!-- /.list-row -->
+
+				<!-- Testimonials -->
+				<div class="cta bg-facets-yellow mt-5">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-md-6 col-lg-8">
+							<h2 class="cta__text">Can’t find it? Reach out.</h2>
+						</div>
+						<!-- /.col-lg-8 -->
+						<div class="col-md-6 col-lg-4">
+							<a href="#" class="btn btn-primary btn-lg btn-block">Contact us</a>
+						</div>
+						<!-- /.col-lg-4 -->
+					</div>
+					<!-- /.row .align-items-center -->
+				</div>
+				<!-- /.cta .bg-facets-yellow -->
+			</div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+    <section aria-label="Testimonial Carousel with 2 items per slide">
+        <div class="bg-facets-gray">
+            <div class="container">
+                <div id="carouselTestimonial2x" class="carousel slide carousel-testimonial-2x pt-5" data-ride="carousel">
+
+    <div class="text-center">
+        <h2 class="heading mb-4">What Students Say about Us</h2>
+    </div>
+
+    <ol class="carousel-indicators">
+        <li data-target="#carouselTestimonial2x" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselTestimonial2x" data-slide-to="1"></li>
+        <li data-target="#carouselTestimonial2x" data-slide-to="2"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="carousel-testimonial__name">Alex Hvostik</div>
+                        <div class="carousel-testimonial__title">Business Intelligence</div>
+                        <div class="wysiwyg">
+                            “I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__thumb">
+                            <figure class="image image-1by1">
+                                <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                            </figure>
+                        </div>
+                        <!-- /.carousel-testimonial__thumb -->
+                    </blockquote>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="carousel-testimonial__name">Alex Hvostik</div>
+                        <div class="carousel-testimonial__title">Business Intelligence</div>
+                        <div class="wysiwyg">
+                            “I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__thumb">
+                            <figure class="image image-1by1">
+                                <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                            </figure>
+                        </div>
+                        <!-- /.carousel-testimonial__thumb -->
+                    </blockquote>
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.carousel-item -->
+
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="carousel-testimonial__name">Alex Hvostik</div>
+                        <div class="carousel-testimonial__title">Business Intelligence</div>
+                        <div class="wysiwyg">
+                            “I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__thumb">
+                            <figure class="image image-1by1">
+                                <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                            </figure>
+                        </div>
+                        <!-- /.carousel-testimonial__thumb -->
+                    </blockquote>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="carousel-testimonial__name">Alex Hvostik</div>
+                        <div class="carousel-testimonial__title">Business Intelligence</div>
+                        <div class="wysiwyg">
+                            “I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__thumb">
+                            <figure class="image image-1by1">
+                                <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                            </figure>
+                        </div>
+                        <!-- /.carousel-testimonial__thumb -->
+                    </blockquote>
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.carousel-item -->
+
+        <div class="carousel-item">
+            <div class="row">
+                <div class="col-md-6">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="carousel-testimonial__name">Alex Hvostik</div>
+                        <div class="carousel-testimonial__title">Business Intelligence</div>
+                        <div class="wysiwyg">
+                            "Dramatically expedite resource-leveling bandwidth with corporate results. Dramatically promote resource-leveling."
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__thumb">
+                            <figure class="image image-1by1">
+                                <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                            </figure>
+                        </div>
+                        <!-- /.carousel-testimonial__thumb -->
+                    </blockquote>
+                </div>
+                <!-- /.col-md-6 -->
+                <div class="col-md-6">
+                    <blockquote class="carousel-testimonial__quote">
+                        <div class="carousel-testimonial__name">Alex Hvostik</div>
+                        <div class="carousel-testimonial__title">Business Intelligence</div>
+                        <div class="wysiwyg">
+                            “I’ve gotten a lot of success out of the program. I landed a new job while in the program. So, I would highly recommend this course to others.”
+                        </div>
+                        <!-- /.wysiwyg -->
+                        <div class="carousel-testimonial__thumb">
+                            <figure class="image image-1by1">
+                                <img src="includes/images/placeholders/alex-hvostik.jpg" alt="placeholder">
+                            </figure>
+                        </div>
+                        <!-- /.carousel-testimonial__thumb -->
+                    </blockquote>
+                </div>
+                <!-- /.col-md-6 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /.carousel-item -->
+
+    </div>
+    <!-- /.carousel-inner -->
+
+</div>
+<!-- /.carousel -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- .bg-facets-gray -->
+    </section>
+
+</main>
+
+
+    <footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo mb-5">
+                    <img src="includes/images/logo-ece-footer.svg" alt="Emory University | Emory Continuing Education" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/facebook.svg" alt="Facebook" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/instagram.svg" alt="Instagram" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/twitter.svg" alt="Twitter" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="courses.html" class="footer__nav-link">Courses</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="certificate-programs.html" class="footer__nav-link">Certificate Programs</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Info Sessions</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">About</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contact</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Student Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Instructor Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Policies & Procedures</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="olli.html" class="footer__nav-link">OLLI</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="corporate.html" class="footer__nav-link">Corporate</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Military</a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-md-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="mt-4 text-md-right d-block d-lg-none">
+                    <a href="#" class="btn btn-dark">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="includes/images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
+</footer>
+
+    <!--
+#########################################
+JQUERY 3.3.1
+Bootstrap dependency
+#########################################
+-->
+<script src="includes/js/vendor/jquery/jquery.min.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP 4.1 COMPONENTS
+Include only the JS components needed
+for the website to function
+#########################################
+-->
+<script src="includes/js/vendor/bootstrap/util.js"></script>
+<script src="includes/js/vendor/popper/popper.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/popper/popper-utils.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/bootstrap/tooltip.js"></script>
+<script src="includes/js/vendor/bootstrap/alert.js"></script>
+<script src="includes/js/vendor/bootstrap/button.js"></script>
+<script src="includes/js/vendor/bootstrap/carousel.js"></script>
+<script src="includes/js/vendor/bootstrap/collapse.js"></script>
+<script src="includes/js/vendor/bootstrap/dropdown.js"></script>
+<script src="includes/js/vendor/bootstrap/index.js"></script>
+<script src="includes/js/vendor/bootstrap/modal.js"></script>
+<script src="includes/js/vendor/bootstrap/popover.js"></script>
+<script src="includes/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="includes/js/vendor/bootstrap/tab.js"></script>
+
+<!--
+#########################################
+PAYPAL - BOOTSTRAP ACCESSBILITY SUITE
+This trimmed down file contains
+BS carousel accessibility features
+#########################################
+-->
+<script src="includes/js/vendor/paypal/bootstrap-accessibility.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP BREAKPOINTS
+#########################################
+-->
+<script src="includes/js/if-b4-breakpoint.min.js"></script>
+
+<!--
+#########################################
+PRIMARY SITE JAVASCRIPT
+This javascript is a combination of all
+locally imported JS files.
+#########################################
+-->
+<script src="includes/js/site.js"></script>
+</body>
+
+</html>
