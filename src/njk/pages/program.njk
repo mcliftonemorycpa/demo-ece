@@ -1,0 +1,342 @@
+{% extends "layout.njk" %}
+{% set pageTitle = 'Accelerated Training in Big Data' %}
+{% set pageType = 'Certificate Programs' %}
+{% block head %}
+<title>{{ pageTitle }} | {{ siteName }}</title>
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        {% include "partials/hero/hero-interior.njk" %}
+    </section>
+
+    <section aria-label="Course Information">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-5 col-lg-4 order-1 order-md-2">
+                        {% include "partials/section/sidebar.njk" %}
+                    </div><!-- /.col-md-5 -->
+
+                    <!-- LEFT COLUMN -->
+                    <div class="col-md-7 col-lg-8 order-2 order-md-1">
+
+                        <div class="wysiwyg">
+                            <h2 class="headline">A 10-Week Immersion in Data Analysis</h2>
+                            <p class="lead">Every engagement with the digital world generates data. Structured or unstructured, these huge data sets can reveal useful patterns, trends, and information about people and their habits. The demand for workers with expertise in analyzing data is high.</p>
+                            <p>Join us for 10 full-day sessions of this highly intensive course where you’ll gain a comprehensive understanding of the critical and practical elements of big data analytics. Offered in an applied format, the program includes practice and lab components to address the application of big data sets in real-world situations.</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+
+						<p><a href="#details" class="btn btn-accent-3">Learn More</a></p>
+
+						<!-- Info cards -->
+
+						<h3 class="heading mt-5 mb-4" id="webinars">Learn More About this Program</h3>
+
+						<div class="card-info">
+							<div class="row no-gutters align-items-start">
+
+								<div class="col-sm-7 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="{{ includePath }}images/icons/calendar-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											<div class="font-weight-bold">Mon, May 14, 2018</div>
+											<div>12:00 p.m.</div>
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-sm-5 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="{{ includePath }}images/icons/laptop-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											Webinar
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-12 col-lg-4">
+									<a href="#" class="btn btn-accent-2 btn-block ml-0 ml-lg-2">Join an info session</a>
+								</div>
+								<!-- /.col-lg-4 -->
+
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-info -->
+
+						<div class="card-info">
+							<div class="row no-gutters align-items-start">
+
+								<div class="col-sm-7 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="{{ includePath }}images/icons/calendar-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											<div class="font-weight-bold">Wed, May 16, 2018</div>
+											<div>12:00 p.m.</div>
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-sm-5 col-lg-4">
+									<div class="card-info__item">
+										<div class="card-info__icon">
+											<img src="{{ includePath }}images/icons/laptop-w.svg" alt="" class="img-fluid icon-sm" />
+										</div>
+										<!-- /.card-info__icon -->
+										<div class="card-info__text">
+											Webinar
+										</div>
+										<!-- /.card-info__text -->
+									</div>
+									<!-- /.card-info__item -->
+								</div>
+								<!-- /.col-lg-4 -->
+
+								<div class="col-12 col-lg-4">
+									<a href="#" class="btn btn-accent-2 btn-block ml-0 ml-lg-2">Join an info session</a>
+								</div>
+								<!-- /.col-lg-4 -->
+
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-info -->
+
+						<!-- Highlight card -->
+
+						<div class="card-highlight">
+							<h3 class="card-highlight__title">Prerequisite</h3>
+							<div class="wysiwyg">
+								<p>ECE’s <a href="#">Business Intelligence</a> course or a degree or equivalent practical experience in business, banking and finance, supply chain, health care, pharma, science, engineering, software, IT, and/or analytics is recommended.</p>
+							</div>
+							<!-- /.wysiwyg -->
+						</div>
+						<!-- /.card-highlight -->
+
+                        <!-- Tabs -->
+
+						<!-- Tabs Featured -->
+						<div class="tabs">
+
+							<!-- Tab menu-->
+							<ul class="nav nav-tabs" id="details" role="tablist">
+								<li class="nav-item">
+									<a class="nav-link active" id="tab-1" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">Details</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-2" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">Curriculum</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-3" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">Careers</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link" id="tab-4" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">Who’s This For?</a>
+								</li>
+							</ul>
+
+							<!-- Tab content-->
+							<div class="tab-content" id="tabSimpleContent">
+								<div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab-1">
+									<div class="wysiwyg">
+										<div class="embed-responsive embed-responsive-16by9 mb-4">
+										  <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/toDyEVIFph4?rel=0" allowfullscreen></iframe>
+										</div>
+										<p>You’ll gain a comprehensive understanding of the critical and practical elements of big data analytics. The program includes hands-on practice and lab components to address the applications of big data in real-world simulations. Topics include data structure, warehousing, data mining and analysis, pattern recognition, trends analysis, data relevancy, data modeling, predictive and descriptive analytics, data visualization techniques, and more. Students will utilize analytical tools and products such as Splunk and gain familiarity with the applications of these products.</p>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab-2">
+									<div class="wysiwyg">
+										<p class="h5 subheading">Next Course Begins:</p>
+										<p><strong>Saturday, September 15–November 17, 2018</strong><br> 8:30 a.m.–5:30 p.m.</p>
+										<p class="h5 subheading">Required:</p>
+										<p>80 hours, classroom (10 Saturdays)</p>
+										<p class="h5 subheading">Optional (no extra cost, highly recommended):</p>
+										<ul>
+											<li>2 hours pre-program preparation</li>
+											<li>26 hours weekday online help sessions (remote access)</li>
+											<li>16 hours Python training (two Saturdays)</li>
+											<li>9 hours Tableau capstone project (three Saturdays)</li>
+											<li>9 hours R language capstone project (three Saturdays)</li>
+											<li>9 hours Splunk training (three Saturdays)</li>
+											<li>3 hours career enhancement training (one Saturday)</li>
+											<li>Total: 154 available hours of instruction (80 required; 74 optional)</li>
+										</ul>
+									</div>
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab-3">
+									<div class="wysiwyg">
+										<p>Big data applications are commonplace. Most large companies have one or more of these applications, providing fast access to large stores of customer and sales data. As the IT organization grows to install, support and maintain these applications, new job categories and new tasks are added to the mix. These can include:</p>
+										<ul>
+											<li>big data hardware and software support</li>
+											<li>business analysts (using analytics to probe and explore the data)</li>
+											<li>managers who must supervise and prioritize job tasks</li>
+										</ul>
+										<p>Hardware/software support positions often center on the technical nature of big data. The emphasis of our program focuses on the analyst and manager roles regarding business management of big data.</p>
+										<p>The following links provide example salaries of big data professionals. <em>Please note: These numbers do not reflect entry-level salaries; however, the articles may offer relative comparisons.</em></p>
+										<ul>
+											<li><a href="http://www.computersupportspecialist.org/computer-support-specialist-salary-what-areas-pay-the-big-bucks/" target="_blank" rel="noopener">Big Data Salary</a></li>
+											<li><a href="https://www.indeed.com/salaries/Business+Analytics-Salaries,-Atlanta" target="_blank" rel="noopener">Business Analytics Salary in Atlanta</a></li>
+										</ul>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+								<div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab-4">
+									<div class="wysiwyg">
+										<p>The Accelerated Training in Big Data certificate is best suited for individuals and college graduates interested in big data and data-related analytics careers; managers considering big data projects; and individuals who want to advance their business career.</p>
+									</div>
+									<!-- /.wysiwyg -->
+								</div>
+								<!-- /.tab-pane -->
+							</div>
+						</div>
+						<!-- /.tabs -->
+
+                    </div>
+                    <!-- /.col-md-7 -->
+
+                </div>
+                <!-- /.row -->
+
+				<!-- Testimonials -->
+				<div id="carouselTestimonialPhotos" class="carousel slide carousel-testimonial-photos my-5" data-ride="carousel">
+
+					<ol class="carousel-indicators">
+						<li data-target="#carouselTestimonialPhotos" data-slide-to="0" class="active"></li>
+						<li data-target="#carouselTestimonialPhotos" data-slide-to="1"></li>
+						<li data-target="#carouselTestimonialPhotos" data-slide-to="2"></li>
+					</ol>
+
+					<div class="row justify-content-center">
+						<div class="col-9 col-md-8">
+							<div class="carousel-inner">
+
+								<div class="carousel-item active">
+									<div class="row">
+										<div class="col-7 col-md-4 col-lg-3 mx-auto mb-3 mb-md-0 d-block">
+											<a href="https://www.youtube.com/watch?v=WM-VH1u4hMk" target="_blank" rel="noopener" class="carousel__thumb">
+												<figure class="image image-1by1">
+													<img src="{{ includePath }}images/placeholders/leleda-woldu.jpg" alt="placeholder">
+												</figure>
+											</a>
+										</div>
+										<!-- /.col-md-4 col-lg-3 -->
+										<div class="col-md-8 col-lg-9">
+											<div class="wysiwyg">
+												<p>“This has made me a lot more marketable, not only outside of my company, but also even within my company. Not a lot of people have this skill set that I’ve learned from this program, so I’ve become the go-to person to provide some insights into the data that we process on a daily basis.”</p>
+											</div>
+											<!-- /.wysiwyg -->
+											<div class="carousel-testimonial__name">Leleda Woldu</div>
+										</div>
+										<!-- /.col-md-8 col-lg-9 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.carousel-item -->
+
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-12">
+											<div class="wysiwyg">
+												<p>“I appreciate the Big Data program at Emory and the whole experience of participating in events -- and for the extra offerings of help. I felt that no other program has this type of commitment and out of the way offering of help. Just wanted to share my appreciation.”</p>
+											</div>
+											<!-- /.wysiwyg -->
+											<div class="carousel-testimonial__name">Suneetha V.</div>
+										</div>
+										<!-- /.col-md-12 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.carousel-item -->
+
+								<div class="carousel-item">
+									<div class="row">
+										<div class="col-12">
+											<div class="wysiwyg">
+												<p>“Just wanted to thank you for ultimately convincing me to go through with the big data program. Because of the program I was able to leave my sales job and will soon start a Business Intelligence role where I will be using R, Tableau, and Spotfire. Since I come from a sales background with no analytics experience, the big data program was instrumental in getting me into this field.”</p>
+											</div>
+											<!-- /.wysiwyg -->
+											<div class="carousel-testimonial__name">Andrew C.</div>
+										</div>
+										<!-- /.col-md-12 -->
+									</div>
+									<!-- /.row -->
+								</div>
+								<!-- /.carousel-item -->
+
+							</div>
+							<!-- /.carousel-inner -->
+						</div>
+						<!-- /.col-md-8 -->
+					</div>
+					<!-- /.row .justify-content-center -->
+
+					<a class="carousel-control-prev" href="#carouselTestimonialPhotos" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Previous</span>
+					</a>
+					<a class="carousel-control-next" href="#carouselTestimonialPhotos" role="button" data-slide="next">
+						<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						<span class="sr-only">Next</span>
+					</a>
+
+				</div>
+				<!-- /.carousel -->
+
+				<!-- CTA -->
+				<div class="row">
+					<div class="col">
+						<div class="cta bg-facets-yellow">
+							<div class="row align-items-center justify-content-between">
+								<div class="col-md-6 col-lg-8">
+									<h2 class="cta__text">Interested in this program?</h2>
+								</div>
+								<!-- /.col-lg-8 -->
+								<div class="col-md-6 col-lg-4">
+									<a href="#" class="btn btn-primary btn-lg btn-block">Register now</a>
+								</div>
+								<!-- /.col-lg-4 -->
+							</div>
+							<!-- /.row .align-items-center -->
+						</div>
+						<!-- /.cta .bg-facets-gray -->
+					</div>
+					<!-- /.col -->
+				</div>
+				<!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+{% endblock %}

@@ -1,0 +1,150 @@
+{% extends "layout.njk" %}
+{% set pageTitle = 'Defensive Driving Course (National Safety Council)' %}
+{% set pageType = 'Courses' %}
+{% block head %}
+<title>{{ pageTitle }} | {{ siteName }}</title>
+{% endblock %}
+
+{% block content %}
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        {% include "partials/hero/hero-interior.njk" %}
+    </section>
+
+    <section aria-label="Course Information">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+                <div class="row">
+
+                    <!-- RIGHT COLUMN: Sidebar Demo -->
+                    <div class="col-md-5 col-lg-4 order-1 order-md-2">
+                        <aside class="sidebar">
+
+							<div class="sidebar-card">
+
+								<div class="sidebar-card__section bg-gray-200">
+									<a href="#" class="btn btn-secondary btn-lg btn-block">Register Course</a>
+								</div>
+								<!-- /.sidebar-card__section -->
+
+								<ul class="sidebar-card__section">
+
+									<li class="sidebar-card__item">
+										<div class="sidebar-card__icon">
+											<img src="{{ includePath }}images/icons/book.svg" alt="" class="img-fluid">
+										</div>
+										<!-- /.sidebar-card__icon -->
+										<div class="sidebar-card__info">
+											DEFENSEDRIVE
+										</div>
+										<!-- /.sidebar-card__info -->
+									</li>
+									<!-- /.sidebar-card__item -->
+
+									<li class="sidebar-card__item">
+										<div class="sidebar-card__icon">
+											<img src="{{ includePath }}images/icons/calendar.svg" alt="" class="img-fluid">
+										</div>
+										<!-- /.sidebar-card__icon -->
+										<div class="sidebar-card__info">
+											<div class="font-weight-bold">Mon, July 9–Aug 24, 2018</div>
+											<div>9:30 a.m.–3:30 p.m.</div>
+										</div>
+										<!-- /.sidebar-card__info -->
+									</li>
+									<!-- /.sidebar-card__item -->
+
+									<li class="sidebar-card__item">
+										<div class="sidebar-card__icon">
+											<img src="{{ includePath }}images/icons/map-pin.svg" alt="" class="img-fluid">
+										</div>
+										<!-- /.sidebar-card__icon -->
+										<div class="sidebar-card__info">
+											<a href="https://goo.gl/maps/FYMoekTrmHJ2" target="_blank" rel="noopener">
+												<address>
+													6 Executive Park Dr NE,
+													<br> Atlanta,
+													<abbr title="Georgia">GA</abbr> 30329
+												</address>
+											</a>
+										</div>
+										<!-- /.sidebar-card__info -->
+									</li>
+									<!-- /.sidebar-card__item -->
+
+								</ul>
+								<!-- /.sidebar-card__section -->
+
+								<div class="sidebar-card__section bg-gray-200">
+									<div class="sidebar-card__item d-flex justify-content-between">
+										<div class="font-weight-bold">Cost for Members:</div>
+										<div>$30</div>
+									</div>
+									<div class="sidebar-card__item d-flex justify-content-between">
+										<div class="font-weight-bold">Cost for Non-Members:</div>
+										<div>$50</div>
+									</div>
+									<!-- /.sidebar-card__item -->
+								</div>
+								<!-- /.sidebar-card__section -->
+
+							</div>
+							<!-- /.sidebar-card -->
+
+							<!-- CTA -->
+								<div class="sidebar-cta sidebar-cta-purple">
+									<img src="{{ includePath }}images/icons/sun-w.svg" alt="" class="img-fluid mb-3 icon-md">
+									<p class="h5 subheading text-light">OLLI Membership</p>
+									<p class="small">Get discounts on courses and events, and many more benefits, with an annual OLLI membership.</p>
+									<a href="#" class="btn btn-accent-1 btn-lg btn-block mt-3">Join OLLI</a>
+								</div>
+								<!-- /.sidebar-cta -->
+
+						</aside>
+                    </div><!-- /.col-md-4 -->
+
+                    <!-- LEFT COLUMN -->
+                    <div class="col-md-7 col-lg-8 order-2 order-md-1">
+
+                        <div class="wysiwyg">
+                            <p class="lead">Participants will acquire the mental skills and knowledge to become a defensive driver, by recognizing that safe driving is a matter of personal choices. Focus will be on the seven most common driving mistakes and how to overcome them, along with the five conditions that affect your driving skills and response time. This course allows those who complete it to receive a discount on their auto insurance.</p>
+							<p>Limited to 40 students.</p>
+                        </div>
+                        <!-- /.wysiwyg -->
+
+						<div class="row">
+							<div class="col-lg-8 offset-lg-2">
+								<!-- BIO -->
+								<div class="sidebar-cta sidebar-cta-bio">
+									<div class="sidebar-bio__thumb">
+										<figure class="image image-1by1">
+											<img src="{{ includePath }}images/default-bio.png" alt="placeholder">
+										</figure>
+									</div>
+									<!-- /.sidebar-bio__thumb -->
+									<p class="h5 subheading">Instructor:</p>
+									<div class="font-weight-bold">Jim Spano</div>
+									<p class="small">Mr. Spano is a certified Safety and Health Program Manager. He holds a Master of Science Degree in Safety Management Systems from West Virginia University and an undergraduate teaching degree, BA, from Marshall University. He is an authorized National Safety Council and American Red Cross First Aid-CPR-AED instructor.</p>
+									<a href="#" class="btn btn-primary btn-block mt-3">View Full Bio</a>
+								</div>
+								<!-- /.sidebar-cta .sidebar-bio .gradient-hz-yellow -->
+							</div>
+							<!-- /.col-lg-8 -->
+						</div>
+						<!-- /.row -->
+
+                    </div>
+                    <!-- /.col-md-7 -->
+
+                </div>
+                <!-- /.row -->
+
+            </div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+{% endblock %}

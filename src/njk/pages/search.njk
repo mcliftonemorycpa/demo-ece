@@ -1,9 +1,9 @@
-{% extends "layout.njk" %} 
+{% extends "layout.njk" %}
 {% set pageTitle = 'Course Catalog' %}
 {% set pageType = 'Courses' %}
 {% block head %}
 <title>{{ pageTitle }} | {{ siteName }}</title>
-{% endblock %} 
+{% endblock %}
 
 {% block content %}
 <main id="main">
@@ -30,10 +30,10 @@
                         <aside class="sidebar">
                             <div class="heading h4 mb-4">Filter Results</div>
                             {% include "partials/form/search-filters.njk" %}
-                            <div class="sidebar-cta">
-								<img src="{{ includePath }}images/icons/license-w.svg" alt="" class="img-fluid mb-3 icon-md">
+                            <div class="sidebar-cta sidebar-cta-purple">
+								<img src="{{ includePath }}images/icons/bullhorn-w.svg" alt="" class="img-fluid mb-3 icon-md">
 								<p class="h6">Can’t find what you’re looking for?</p>
-								<a href="#" class="btn btn-warning btn-lg btn-block mt-3">Contact Us</a>
+								<a href="#" class="btn btn-accent-1 btn-lg btn-block mt-3">Contact Us</a>
 							</div>
 							<!-- /.sidebar-cta -->
                         </aside>

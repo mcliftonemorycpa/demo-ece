@@ -1,9 +1,9 @@
-{% extends "layout.njk" %} 
+{% extends "layout.njk" %}
 {% set pageTitle = 'About ECE' %}
 {% set pageType = 'About' %}
 {% block head %}
 <title>{{ pageTitle }} | {{ siteName }}</title>
-{% endblock %} 
+{% endblock %}
 
 {% block content %}
 <main id="main">
@@ -20,7 +20,7 @@
                         <h2 class="heading">Enriching Lives and Enhancing Careers since 1951</h2>
                         <div class="wysiwyg">
 							<p>For more than 65 years, Emory Continuing Education (ECE) has served as Emory’s noncredit division. Each year, thousands of students enroll in ECE courses from throughout the metro Atlanta area. Our mission is “to enrich the lives and enhance the careers of nontraditional students by providing excellence in education, advancing Emory's commitment to create, preserve, teach, and apply knowledge in the service of humanity.”</p>
-							<p>ECE offers a wide range of <a href="certificate-programs.html">certificate programs</a> and <a href="courses.html">open enrollment courses</a> (including online and hybrid options) for both professional development and personal enrichment. Areas of study include data analysis and business intelligence, management fundamentals, Lean Six Sigma, information technology and graphic/web design, communications, human resources and project management, health coach, foreign languages, English as a Second Language (ESL), professional and academic test preparation, and much more. Our <a href="#">Osher Lifelong Learning Institute</a> (ages 50+) offers classes and social programs that nourish the mind, body, and soul. <a href="#">Professional development courses</a> can be tailored and delivered onsite to corporate clients.</p>
+							<p>ECE offers a wide range of <a href="certificate-programs.html">certificate programs</a> and <a href="courses.html">open enrollment courses</a> (including online and hybrid options) for both professional development and personal enrichment. Areas of study include data analysis and business intelligence, management fundamentals, Lean Six Sigma, information technology and graphic/web design, communications, human resources and project management, health coach, foreign languages, English as a Second Language (ESL), professional and academic test preparation, and much more. Our <a href="olli.html">Osher Lifelong Learning Institute</a> (ages 50+) offers classes and social programs that nourish the mind, body, and soul. <a href="corporate.html">Professional development courses</a> can be tailored and delivered onsite to corporate clients.</p>
                         </div>
                         <!-- /.wysiwyg -->
                     </div>
@@ -49,7 +49,7 @@
                     </div>
                     <!-- /.col-md-6 -->
                     <div class="col-md-5">
-                        <img class="img-fluid" src="https://placehold.it/480x640" alt="placeholder"/>
+                        <img class="img-fluid" src="{{ includePath }}images/placeholders/book.jpg" alt="placeholder"/>
                     </div>
                     <!-- /.col-md-5 -->
                 </div>

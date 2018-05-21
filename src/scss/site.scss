@@ -9,6 +9,14 @@
 
 /* Template overrides */
 
+// Light yellow, just for this site
+$light-yellow: #ffcd59;
+
+// For some reason nav arrow color change didn't apply in my local submodule pull, don't have time to figure out why, this can probably be ignored outside the demo
+.dropdown-toggle::after {
+	border-top-color: $sky-blue;
+}
+
 // Align body background top so position doesn't shift as elements change height
 body {
 	background-position: center top;
@@ -19,14 +27,100 @@ body {
 	max-width: 1295px;
 }
 
+// Footer hat demo image
+.footer-hat {
+	background-image: url("../images/placeholders/about-collage.jpg");
+	height: 180px;
+}
+
 .btn {
-	// Reduce line-height 
+	// Reduce line-height
 	line-height: 1.1;
 	// Add letter-spacing
 	letter-spacing: .06em;
 }
 
-// Remove letter-spacing from accordion buttons
+// Make primary button dark blue
+.btn-primary {
+	background-color: $emory-blue;
+	border-color: $emory-blue;
+	&:hover {
+		background-color: darken($emory-blue, 10%);
+		border-color: darken($emory-blue, 10%);
+	}
+}
+.btn-outline-primary {
+	color: $emory-blue;
+	border-color: $emory-blue;
+}
+// Light blue button
+.btn-accent-1 {
+	color: $white;
+	background-color: $light-blue;
+	border-color: $light-blue;
+	&:hover {
+		color: $white;
+		background-color: darken($light-blue, 7%);
+		border-color: darken($light-blue, 7%);
+	}
+}
+// Light yellow button
+.btn-accent-2, .btn-warning {
+	color: $black;
+	background-color: $light-yellow;
+	border-color: $light-yellow;
+	&:hover {
+		color: $black;
+		background-color: darken($light-yellow, 10%);
+		border-color: darken($light-yellow, 10%);
+	}
+}
+.btn.btn-outline-warning {
+	color: $black;
+	border-color: $light-yellow;
+	&:hover {
+		color: $black;
+		background-color: darken($light-yellow, 10%);
+		border-color: darken($light-yellow, 10%);
+	}
+}
+// Make warning badge light yellow
+.badge-warning {
+	background-color: $light-yellow;
+}
+// Purple button
+.btn-accent-3 {
+	color: $white;
+	background-color: $purple;
+	border-color: $purple;
+	&:hover {
+		color: $white;
+		background-color: darken($purple, 10%);
+		border-color: darken($purple, 10%);
+	}
+}
+// Green button
+.btn-accent-4 {
+	color: $white;
+	background-color: $sea-green;
+	border-color: $sea-green;
+	&:hover {
+		color: $white;
+		background-color: darken($sea-green, 6%);
+		border-color: darken($sea-green, 6%);
+	}
+}
+// Change badge-light color
+.badge-light[href] {
+	color: theme-color("secondary");
+	transition: all .1s;
+	&:hover, &:focus {
+		color: $white;
+		background-color: theme-color("secondary");
+	}
+}
+
+// Remove letter-spacing from accordion buttons, since it was added globally to .btn
 .accordion .card-header .btn {
 	letter-spacing: normal;
 }
@@ -34,15 +128,15 @@ body {
 .btn-lg, .btn-group-lg > .btn {
 	// For some reason, .btn-lg size is being overidden by .btn. Override the override.
 	font-size: 1.25rem;
-	// Increase y padding 
+	// Increase y padding
 	padding-top: .75rem;
 	padding-bottom: .75rem;
 }
 
 // Darken outline button hover colors to match solid hover color, to differentiate it from un-hovered solid buttons in button groups
 .btn-outline-primary:hover {
-	background-color: #006394;
-    border-color: #005b87;
+	background-color: darken($emory-blue, 10%);
+	border-color: darken($emory-blue, 10%);
 }
 .btn-outline-secondary:hover {
 	background-color: #a00066;
@@ -67,7 +161,7 @@ body {
 	}
 }
 // Correct purple card gradient
-.card-icons .card-icons__link:nth-of-type(6n + 3), .gradient-hz-purple {
+.card-icons .card-icons__link:nth-of-type(6n + 3), .gradient-hz-purple, .sidebar-cta-purple {
 	@include gradient-horizontal( darken($purple, 25%), $purple );
 }
 
@@ -90,9 +184,41 @@ body {
 	}
 }
 
-// Decrease bottom padding of card with bottom arrow, to compensate for arrow offset 
+// Decrease bottom padding of card with bottom arrow, to compensate for arrow offset
 .card-links .card-links__link.card-link-arrow-bottom {
-	padding-bottom: 18px;
+	padding-bottom: 0;
+}
+
+// Add icon to links card, similar to .card-info
+.links-feed {
+	.links-feed__item {
+		display: flex;
+		flex-flow: row nowrap;
+	}
+	.links-feed__icon {
+		margin-right: .5rem;
+		.icon-sm {
+			min-width: 18px;
+			min-height: 18px;
+			margin-top: -4px;
+		}
+	}
+}
+
+// Align card actions buttons to bottom
+.card-actions__info {
+	.btn-group {
+		margin-top: auto;
+		margin-bottom: 5px;
+	}
+}
+
+// Card actions images don't cover full area at all breakpoints, this seems to help
+.card-actions .card-actions__img-wrap .card-actions__img {
+	min-height: 100%;
+	min-width: 100%;
+	max-width: none;
+	width: auto;
 }
 
 // Increase z-index elements with hover/focus outlines so outline isn't partially covered by other cards
@@ -117,10 +243,21 @@ body {
 .stats.stats-row {
 	.stats__bold {
 		font-size: 3.75rem;
+		color: $purple;
 	}
 	.stats__text {
 		font-size: 1.25rem;
 	}
+}
+
+// Define height and width for stats icons
+.stats.stats-col .stats__icon {
+	min-height: 48px;
+	min-width: 48px;
+}
+.stats.stats-row .stats__icon {
+	min-height: 50px;
+	min-width: 50px;
 }
 
 .list-row {
@@ -138,6 +275,45 @@ body {
 	}
 }
 
+// Align results icon top
+.search-results .search-results__date {
+	align-items: flex-start;
+	img {
+		margin-top: 2px;
+	}
+}
+
+// Carousel play button
+.carousel.carousel-testimonial-photos .carousel__thumb {
+	display: block;
+	padding-bottom: 27px;
+	&::after {
+		content: "";
+		background: url("../images/play-button.png") no-repeat center/cover;
+		height: 52px;
+		width: 52px;
+		position: absolute;
+		right: 5px;
+		bottom: 0;
+	}
+}
+
+// Reduce space between sidebar sections, mostly for the benefit of mobile
+.sidebar-card .sidebar-card__section {
+	padding: 15px 30px;
+}
+.sidebar-cta {
+	margin: 1.5rem 0;
+	&.sidebar-cta-bio {
+		margin-bottom: 0;
+	}
+}
+
+// Increase tab top padding to compensate for bottom margins of last child text element
+.tabs .tab-content {
+	padding-top: 30px;
+}
+
 @include media-breakpoint-down(sm) {
 	// Reduce H2 size on mobile, because long words overflow
 	h2, .h2 {
@@ -145,21 +321,29 @@ body {
 	}
 }
 
-@include media-breakpoint-down(md) {
-	// Dropdown toggle arrow
-	.dropdown-toggle::after {
-		display: none !important;
-	}
-}
-
 @include media-breakpoint-up(md) {
+	// Eh, decided to decrease hero height because it was a bit much in the mockups
+	.hero.hero-interior {
+		min-height: 300px;
+		height: 300px;
+		background-position: bottom;
+	}
 	// Increase hero heading size
 	.hero.hero-home .hero__heading, .hero .hero__heading {
 		font-size: 3rem;
 	}
-	// Negative bottom margin on shift photos to compensate for offset 
+	// Negative bottom margin on shift photos to compensate for offset
 	.photo-overlap .photo.photo-shift {
 		margin-bottom: -30px;
+	}
+	// Tweak footer hat height to show more image area
+	.footer-hat {
+		height: 350px;
+	}
+	// Multi-column list
+	.list-columns {
+		column-count: 2;
+		column-gap: 40px;
 	}
 }
 
@@ -178,11 +362,15 @@ body {
 			}
 		}
 	}
+	// Tweak footer hat height to show more image area
+	.footer-hat {
+		height: 450px;
+	}
 }
 
 @include media-breakpoint-up(xl) {
 	// Increase hero heading size
 	.hero.hero-home .hero__heading, .hero .hero__heading {
-		font-size: 4.5rem;
+		font-size: 3.5rem;
 	}
 }

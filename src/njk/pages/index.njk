@@ -1,9 +1,9 @@
-{% extends "layout.njk" %} 
+{% extends "layout.njk" %}
 {% set pageTitle = 'Home' %}
 {% set pageType = 'Layout' %}
 {% block head %}
 <title>{{ pageTitle}} | {{ siteName }}</title>
-{% endblock %} 
+{% endblock %}
 
 {% block content %}
 <main id="main">
@@ -35,7 +35,7 @@
                 <div class="text-center py-5">
                     <h2 class="heading text-white mb-0">Browse Our Courses and Programs</h2>
                 </div>
-                {% include "partials/component/card-links.njk" %}     
+                {% include "partials/component/card-links.njk" %}
             </div>
         </div>
     </section>
@@ -50,12 +50,24 @@
                             <p>Learn a new language, develop a finer palate for wine or hone work skills by mastering Excel or web programming. If you’re 50 or older, attend one or more of our XX OLLI classes to learn and meet new people. Enroll in certificate courses at your own pace to bolster your prospects at work or in pursuit of a new job. We also tailor onsite professional development classes for our corporate clients. Whether it’s for your own enjoyment or career needs, you’ll find a course that fits at ECE.</p>
                         </div>
                         <!-- /.wysiwyg -->
-                        <a href="about.html" class="btn btn-primary">About ECE</a>
+                        <a href="about.html" class="btn btn-accent-3">About ECE</a>
                     </div>
                     <!-- /.col-lg-6 -->
 
                     <div class="col-lg-6 order-1 align-self-center">
-                        {% include "partials/snippet/photo-overlap.njk" %}
+                        <div class="photo-overlap">
+							<div class="photo">
+								<figure class="image image-16by9">
+									<img src="{{ includePath }}images/placeholders/instructor-book.jpg" alt="placeholder" />
+								</figure>
+							</div>
+							<div class="photo photo-shift">
+								<figure class="image image-16by9">
+									<img src="{{ includePath }}images/placeholders/student-tablet.jpg" alt="placeholder" />
+								</figure>
+							</div>
+						</div>
+						<!-- /.photo-overlap -->
                     </div>
                     <!-- /.col-lg-6 -->
                 </div>
@@ -64,7 +76,7 @@
 				<div class="my-5">
 					<h2 class="heading mb-3">Info Sessions</h2>
 					{% include "partials/component/feed-events.njk" %}
-					<a href="#" class="btn btn-primary mt-4 mt-md-0">All Info Sessions</a>
+					<a href="#" class="btn btn-accent-1 mt-4 mt-md-0">All Info Sessions</a>
 				</div>
 
 				<div class="mt-5">

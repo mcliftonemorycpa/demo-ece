@@ -1,9 +1,9 @@
-{% extends "layout.njk" %} 
+{% extends "layout.njk" %}
 {% set pageTitle = 'All Elements' %}
 {% set pageType = 'Layout' %}
 {% block head %}
 <title>{{ pageTitle }} | {{ siteName }}</title>
-{% endblock %} 
+{% endblock %}
 
 {% block content %}
 <main id="main">
@@ -16,10 +16,10 @@
         <div class="wrapper wrapper-overlap">
             <div class="container">
                 <div class="row">
-                    
+
                     <!-- LEFT COLUMN: WYSIWYG Demo -->
                     <div class="col-md-8 col-lg-9">
-                        
+
                         <div class="wysiwyg">
                             <h1 id="section1">Heading Level 1</h1>
                             <p class="lead"><strong>Starting with some Lead Text:</strong> {% include "partials/wysiwyg/sentence-sm.njk" %}</p>
@@ -112,7 +112,7 @@
                     <div class="col-md-5">
                         <img class="img-fluid" src="https://placehold.it/480x640" alt="placeholder"/>
                     </div>
-                    
+
                 </div>
 
             </div>
@@ -141,7 +141,7 @@
         <div class="wrapper">
             <div class="container">
                 <div class="row justify-content-between">
-                    
+
                     <div class="col-md-8">
                         {% include "partials/component/card-info.njk" %}
                         {% include "partials/component/card-highlight.njk" %}
@@ -181,10 +181,10 @@
         <!-- /.wrapper -->
     </section>
 
-    <section aria-label="Card icons, News feed, Events feed ">
+    <section aria-label="Card icons, Buttons, News feed, Events feed ">
         <div class="wrapper bg-fractal-frame">
             <div class="container">
-                
+
                 <div class="text-center">
                     <h2 class="heading">Offering Value to Our Students</h2>
                 </div>
@@ -194,14 +194,25 @@
                 <hr>
                 <br>
 
+				<a href="#" class="btn btn-primary">Primary Button</a>
+				<a href="#" class="btn btn-secondary">Secondary Button</a>
+				<a href="#" class="btn btn-accent-1">Accent 1 Button</a>
+				<a href="#" class="btn btn-accent-2">Accent 2 Button</a>
+				<a href="#" class="btn btn-accent-3">Accent 3 Button</a>
+				<a href="#" class="btn btn-accent-4">Accent 4 Button</a>
+
+				<br>
+                <hr>
+                <br>
+
                 <div class="row">
-                    
-                    <div class="col-lg-4">
+
+                    <div class="col-lg-12">
                         <h2 class="heading mb-3">Latest News</h2>
                         {% include "partials/component/feed-news.njk" %}
                     </div>
 
-                    <div class="col-lg-4">
+                    <div class="col-lg-12">
                         <h2 class="heading mb-3">Upcoming Events</h2>
                         {% include "partials/component/feed-events.njk" %}
                     </div>
