@@ -16,6 +16,8 @@
     let $searchToggle       = $('#search-toggle');
     let $searchInput        = $('#search-input');
     let $searchSubmit       = $('#search-submit');
+	let $navCTA				= $('.nav__cta');
+	let $hero				= $('.hero');
 
     //Timeout Vars
     let scrollTimeout;
@@ -37,6 +39,11 @@
             $siteHeader.addClass("scroll");
         } else {
             $siteHeader.removeClass("scroll");
+        }
+		if ( $doc.scrollTop() > $hero.height() ) {
+            $navCTA.addClass("nav__cta--scroll");
+        } else {
+            $navCTA.removeClass("nav__cta--scroll");
         }
         return null;
     };

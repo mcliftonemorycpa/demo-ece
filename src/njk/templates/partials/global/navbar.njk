@@ -29,7 +29,7 @@
   <!-- Collapse menu content -->
   <div class="collapse navbar-collapse justify-content-end" id="nav-main">
 
-    <ul class="navbar-nav ml-auto d-flex align-items-center justify-content-end slide-horiz-l" id="main-menu">
+    <ul class="navbar-nav ml-auto d-flex align-items-start justify-content-end slide-horiz-l" id="main-menu">
 
       <li class="nav-item dropdown{% if pageType == 'Courses' %} active{% endif %}">
         <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
@@ -115,3 +115,9 @@
   <!-- /.collapse -->
 
 </nav>
+
+{% if pageTitle == 'Home' %}
+<div class="nav__cta">
+	<a href="courses.html" class="btn btn-secondary">Browse Courses</a>
+</div>
+{% endif %}

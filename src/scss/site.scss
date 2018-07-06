@@ -33,6 +33,31 @@ body {
 	height: 180px;
 }
 
+// Bigger logo
+#site-nav .logo__ece img {
+	max-width: 350px;
+	height: 23px;
+}
+
+// Nav CTA buttons
+.nav__cta {
+	@include gradient-horizontal( $pale-blue-3, $pale-blue-1 );
+	box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+	text-align: right;
+	width: 100%;
+	padding: 10px 15px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: -1;
+	opacity: 0;
+	transition: top .5s, opacity .5s;
+	&.nav__cta--scroll {
+		top: 100%;
+		opacity: 1;
+	}
+}
+
 .btn {
 	// Reduce line-height
 	line-height: 1.1;
@@ -160,9 +185,31 @@ body {
 		flex-grow: 0;
 	}
 }
+
+// Card border
+.card-icons .card-icons__link {
+	border: solid 1px $gray-400 !important;
+}
+
 // Correct purple card gradient
 .card-icons .card-icons__link:nth-of-type(6n + 3), .gradient-hz-purple, .sidebar-cta-purple {
 	@include gradient-horizontal( darken($purple, 25%), $purple );
+}
+
+// Additional icon card colors
+.card-icons .card-icons__link {
+	&:nth-of-type(6n + 2) {
+		@include gradient-horizontal( $gray-300, $gray-100 );
+	}
+	&:nth-of-type(6n + 4) {
+		@include gradient-horizontal( lighten($yellow, 10%), lighten($yellow, 30%) );
+	}
+	&:nth-of-type(6n + 6) {
+		@include gradient-horizontal( $sea-green, lighten($sea-green, 5%) );
+		.card-icons__text {
+			color: white;
+		}
+	}
 }
 
 // Sidebar card
@@ -322,10 +369,10 @@ body {
 }
 
 @include media-breakpoint-up(md) {
-	// Eh, decided to decrease hero height because it was a bit much in the mockups
+	// Decrease hero height because it was a bit much in the mockups
 	.hero.hero-interior {
-		min-height: 300px;
-		height: 300px;
+		min-height: 250px;
+		height: 250px;
 		background-position: bottom;
 	}
 	// Increase hero heading size
@@ -369,6 +416,12 @@ body {
 }
 
 @include media-breakpoint-up(xl) {
+	// Bigger logo
+	#site-nav .logo__ece img {
+		width: 450px;
+		max-width: 450px;
+		height: 30px;
+	}
 	// Increase hero heading size
 	.hero.hero-home .hero__heading, .hero .hero__heading {
 		font-size: 3.5rem;
