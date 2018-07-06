@@ -9142,6 +9142,32 @@ body {
   background-image: url("../images/placeholders/about-collage.jpg");
   height: 180px; }
 
+#site-nav .logo__ece img {
+  max-width: 350px;
+  height: 23px; }
+
+.nav__cta {
+  background-color: #dce7eb;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dce7eb), to(#f2f8fa));
+  background-image: linear-gradient(to right, #dce7eb 0%, #f2f8fa 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDCE7EB', endColorstr='#FFF2F8FA', GradientType=1);
+  -webkit-box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+          box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+  text-align: right;
+  width: 100%;
+  padding: 10px 15px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  -webkit-transition: top .5s, opacity .5s;
+  transition: top .5s, opacity .5s; }
+  .nav__cta.nav__cta--scroll {
+    top: 100%;
+    opacity: 1; }
+
 .btn {
   line-height: 1.1;
   letter-spacing: .06em; }
@@ -9243,12 +9269,38 @@ body {
         -ms-flex-positive: 0;
             flex-grow: 0; }
 
+.card-icons .card-icons__link {
+  border: solid 1px #ced4da !important; }
+
 .card-icons .card-icons__link:nth-of-type(6n + 3), .gradient-hz-purple, .sidebar-cta-purple {
   background-color: #332c5e;
   background-image: -webkit-gradient(linear, left top, right top, from(#332c5e), to(#6558b1));
   background-image: linear-gradient(to right, #332c5e 0%, #6558b1 100%);
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF332C5E', endColorstr='#FF6558B1', GradientType=1); }
+
+.card-icons .card-icons__link:nth-of-type(6n + 2) {
+  background-color: #dee2e6;
+  background-image: -webkit-gradient(linear, left top, right top, from(#dee2e6), to(#f8f9fa));
+  background-image: linear-gradient(to right, #dee2e6 0%, #f8f9fa 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFDEE2E6', endColorstr='#FFF8F9FA', GradientType=1); }
+
+.card-icons .card-icons__link:nth-of-type(6n + 4) {
+  background-color: #ffbe26;
+  background-image: -webkit-gradient(linear, left top, right top, from(#ffbe26), to(#ffdc8c));
+  background-image: linear-gradient(to right, #ffbe26 0%, #ffdc8c 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FFFFBE26', endColorstr='#FFFFDC8C', GradientType=1); }
+
+.card-icons .card-icons__link:nth-of-type(6n + 6) {
+  background-color: #006c5b;
+  background-image: -webkit-gradient(linear, left top, right top, from(#006c5b), to(#008670));
+  background-image: linear-gradient(to right, #006c5b 0%, #008670 100%);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#FF006C5B', endColorstr='#FF008670', GradientType=1); }
+  .card-icons .card-icons__link:nth-of-type(6n + 6) .card-icons__text {
+    color: white; }
 
 .sidebar-card .sidebar-card__item {
   width: auto; }
@@ -9362,8 +9414,8 @@ body {
 
 @media (min-width: 768px) {
   .hero.hero-interior {
-    min-height: 300px;
-    height: 300px;
+    min-height: 250px;
+    height: 250px;
     background-position: bottom; }
   .hero.hero-home .hero__heading, .hero .hero__heading {
     font-size: 3rem; }
@@ -9389,5 +9441,9 @@ body {
     height: 450px; } }
 
 @media (min-width: 1200px) {
+  #site-nav .logo__ece img {
+    width: 450px;
+    max-width: 450px;
+    height: 30px; }
   .hero.hero-home .hero__heading, .hero .hero__heading {
     font-size: 3.5rem; } }
