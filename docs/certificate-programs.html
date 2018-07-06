@@ -1,0 +1,1262 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--
+#########################################
+THEME COLOR
+This color determines the color of the
+web address bar in certain mobile
+browsers including Firefox OS, Chrome,
+Vivaldi, and Opera
+#########################################
+-->
+<meta name="theme-color" content="#012169"> <!-- $emory-blue -->
+
+<title>Certificate Programs | Emory Continuing Education</title>
+
+    <!--
+#########################################
+EXTERNAL LIBRARIES / CDN
+Place links to externally hosted
+CSS libraries below.
+#########################################
+-->
+
+<!--
+#########################################
+PRIMARY SITE STYLESHEET
+This stylesheet is a combination of all
+locally imported SCSS files.
+#########################################
+-->
+<link href="includes/css/site.css" rel="stylesheet">
+</head>
+
+<body>
+    <a href="#main-content" class="sr-only sr-only-focusable">Skip to main content</a>
+
+    <header id="site-header" class="header fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="site-nav">
+
+  <div class="logo-wrapper">
+
+    <div class="logo__emory">
+      <a href="http://www.emory.edu">
+        <img src="includes/images/logo-emory.svg" alt="Emory University">
+      </a>
+    </div>
+    <!-- /.logo__emory -->
+
+    <div class="logo__ece">
+      <a href="index.html">
+        <img src="includes/images/logo-ece.svg" alt="Emory Continuing Education">
+      </a>
+    </div>
+    <!-- /.logo__ece -->
+
+    <!-- Mobile menu toggle -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-main" aria-controls="nav-main" aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      <span class="subheading">Menu</span>
+    </button>
+
+  </div>
+  <!-- /.logo-wrapper -->
+
+  <!-- Collapse menu content -->
+  <div class="collapse navbar-collapse justify-content-end" id="nav-main">
+
+    <ul class="navbar-nav ml-auto d-flex align-items-start justify-content-end slide-horiz-l" id="main-menu">
+
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="courses.html" id="coursesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+          aria-expanded="false">
+          Courses
+        </a>
+        <div class="dropdown-menu" aria-labelledby="coursesDropdown">
+		  	<a class="dropdown-item" href="courses.html">Browse Courses by Subject</a>
+			<a class="dropdown-item" href="search.html">Search Courses</a>
+			<a class="dropdown-item" href="#">Management and Supervision</a>
+			<a class="dropdown-item" href="#">Lean Six Sigma and Project Management</a>
+			<a class="dropdown-item" href="#">IT, Design and Development</a>
+			<a class="dropdown-item" href="#">Test Preparation</a>
+			<a class="dropdown-item" href="#">Fine Arts</a>
+			<a class="dropdown-item" href="#">Microsoft Office</a>
+			<a class="dropdown-item" href="#">Personal Enrichment</a>
+			<a class="dropdown-item" href="#">Foreign Languages</a>
+			<a class="dropdown-item" href="olli.html">OLLI (Ages 50+)</a>
+        </div>
+      </li>
+
+	  <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="certificate-programs.html" id="programsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Certificate Programs
+          <span class="sr-only">(current)</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-2col" aria-labelledby="programsDropdown">
+			<a class="dropdown-item active" href="certificate-programs.html">All Certificate Programs<span class="sr-only">(current)</span></a>
+			<a class="dropdown-item" href="program.html">Big Data</a>
+			<a class="dropdown-item" href="program.html">Business Intelligence</a>
+			<a class="dropdown-item" href="program.html">Cybersecurity</a>
+			<a class="dropdown-item" href="program.html">Health IT</a>
+			<a class="dropdown-item" href="program.html">Au Pair</a>
+			<a class="dropdown-item" href="program.html">Business Communications</a>
+			<a class="dropdown-item" href="program.html">Creative Writing</a>
+			<a class="dropdown-item" href="program.html">Digital Photography</a>
+			<a class="dropdown-item" href="program.html">Event Planning</a>
+			<a class="dropdown-item" href="program.html">Fundraising</a>
+			<a class="dropdown-item" href="program.html">Graphic Design</a>
+			<a class="dropdown-item" href="program.html">Health Coach</a>
+			<a class="dropdown-item" href="program.html">HR Management</a>
+			<a class="dropdown-item" href="program.html">Landscape Design</a>
+			<a class="dropdown-item" href="program.html">Lean Six Sigma</a>
+			<a class="dropdown-item" href="program.html">Management</a>
+			<a class="dropdown-item" href="program.html">Supervision</a>
+			<a class="dropdown-item" href="program.html">Paralegal</a>
+			<a class="dropdown-item" href="program.html">Project Management</a>
+			<a class="dropdown-item" href="program.html">Web Design and Development</a>
+			<a class="dropdown-item" href="program.html">Digital Marketing</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="#">Info Sessions</a>
+      </li>
+
+	  <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="about.html" id="aboutDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+			About</a>
+		  <div class="dropdown-menu" aria-labelledby="aboutDropdown">
+		  	<a class="dropdown-item" href="about.html">About ECE</a>
+			 <a class="dropdown-item" href="corporate.html">Corporate Learning</a>
+		  </div>
+      </li>
+
+	  <li class="nav-item">
+        <a class="nav-link" href="#">Contact</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="btn btn-primary" href="login.html">Login</a>
+      </li>
+
+    </ul>
+
+    <form class="form-inline my-3 my-lg-0 navbar__search">
+
+    <div class="input-group mx-auto">
+
+        <!-- Search input box -->
+        <input
+            id="search-input"
+            type="text"
+            class="form-control navbar__search-input d-block d-lg-none"
+            placeholder="Enter keywords..."
+            aria-label="Enter keywords">
+
+        <!-- Search submit -->
+        <div class="input-group-append">
+            <input
+                id="search-submit"
+                type="submit"
+                name="search"
+                aria-label="Submit search query"
+                value="Search"
+                class="btn btn-primary navbar__search-submit d-block d-lg-none">
+        </div>
+
+        <!-- Search toggle -->
+        <div class="input-group-append d-none d-lg-block">
+            <button
+                id="search-toggle"
+                class="btn navbar__search-toggle icon-magnifier"
+                type="button"
+                aria-label="Toggle between search and menu"
+                title="Toggle between search and menu">
+            </button>
+        </div>
+
+    </div>
+    <!-- /.input-group -->
+
+</form>
+
+  </div>
+  <!-- /.collapse -->
+
+</nav>
+
+
+
+</header>
+
+    <a id="main-content" class="sr-only sr-only-focusable">Main content</a>
+
+
+<main id="main">
+
+    <section aria-labelledby="page-title">
+        <div class="hero hero-interior">
+    <div class="container d-flex h-100 flex-column justify-content-center">
+        <h1 class="hero__heading" id="page-title">Certificate Programs</h1>
+    </div>
+    <!-- /.container -->
+</div>
+<!-- /.hero .hero-interior -->
+    </section>
+
+    <section aria-label="Course subjects">
+        <div class="wrapper wrapper-overlap">
+            <div class="container">
+
+				<div class="row mb-4">
+					<div class="col-lg-10 offset-lg-1 text-center">
+						<h2 class="heading">In Porta Aliquam Nunc, Vitae Facilisis</h2>
+						<p class="lead">Quisque ut metus libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras lacinia, massa quis mollis iaculis, odio nibh venenatis lectus, et euismod purus velit ut eros. Duis quis diam dignissim, ultricies quam ut, laoreet quam. Duis nec purus sed.</p>
+					</div>
+				</div>
+
+				<!-- Subject Cards -->
+				<div class="row">
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Accelerated Training in Big Data</a></h3>
+										<div class="wysiwyg">
+											<p>Gain a comprehensive understanding of the critical and practical elements of big data analytics.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 15, 2018 – <br> November 17, 2018</div>
+											<div>8:30 a.m. – 5:30 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Accelerated Training in Business Intelligence</a></h3>
+										<div class="wysiwyg">
+											<p>Gain introductory knowledge of the field of Business Intelligence (BI), with emphasis on descriptive analytics.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, July 14, 2018 – <br> August 25, 2018</div>
+											<div>8:30 a.m. – 5:30 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Accelerated Training in Cybersecurity and Information Security</a></h3>
+										<div class="wysiwyg">
+											<p>Learn fundamentals of the fields of Cybersecurity and Information Systems Security (ISS).</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, July 14, 2018 – <br> October 13, 2018</div>
+											<div>8:30 a.m. – 5:30 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Accelerated Training in Health IT (AT-HIT)</a></h3>
+										<div class="wysiwyg">
+											<p>Prepare for a career in the surging Health IT field in the shortest time possible.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Dates TBA</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Au Pair</a></h3>
+										<div class="wysiwyg">
+											<p>As an Au Pair, improve your English skills while learning about the American culture.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Tuesday, September 25, 2018 – <br> November 13, 2018</div>
+											<div>7:00 p.m. – 9:30 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Business Communications</a></h3>
+										<div class="wysiwyg">
+											<p>Build and grow expertise in advanced communications skills for both leaders and individual contributors.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Friday, August 17, 2017 – <br> December 13, 2018</div>
+											<div>9:00 a.m. – 4:00 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Info Session</a>
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Creative Writing</a></h3>
+										<div class="wysiwyg">
+											<p>Push through writing blocks and develop your own unique voice as you work to successfully achieve your writing goals.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Tuesday, July 24, 2018 – <br> August 28, 2018</div>
+											<div>7:00 p.m. – 9:00 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Digital Photography</a></h3>
+										<div class="wysiwyg">
+											<p>Take better photos as a hobbyist, or start taking photos professionally.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Thursday, July 12, 2018 – <br> December 13, 2018<br> </div>
+											<div>6:30 p.m. – 8:30 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Event Planning</a></h3>
+										<div class="wysiwyg">
+											<p>Explore both the aesthetic details which make events sparkle as well as the behind-the-scenes logistics which make events safe and functional.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Thursday, August 9, 2018 – June 6, 2019<br> </div>
+											<div>9:00 a.m. – 4:00 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Fundraising</a></h3>
+										<div class="wysiwyg">
+											<p>Take the fear out of fundraising with our step-by-step directions on how to advance the mission of your organization and increase community support and donations.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Dates TBA</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Info Session</a>
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Graphic Design</a></h3>
+										<div class="wysiwyg">
+											<p>Develop the skills necessary to succeed in the print and digital design industry.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, June 16, 2018 – July 7, 2018<br> </div>
+											<div>9:00 a.m. – 12:15 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Health Coach</a></h3>
+										<div class="wysiwyg">
+											<p>Follow a powerful coaching process while employing motivational interviewing skills.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, June 2, 2018 – August 26, 2018<br> </div>
+											<div>8:30 a.m. – 5:30 p.m.</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Info Session</a>
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Essentials of HR Management</a></h3>
+										<div class="wysiwyg">
+											<p>Obtain the latest knowledge related to HR laws and regulations with regards to compensation, employment law, recruitment, benefits, risk management and more.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Landscape Design</a></h3>
+										<div class="wysiwyg">
+											<p>Jump start your design skills by learning from working professionals who share what they have learned from many decades of designing and installing award-winning home landscapes.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Lean Six Sigma</a></h3>
+										<div class="wysiwyg">
+											<p>Learn techniques and tools utilized for process improvement across industries ranging from Manufacturing to Healthcare — and everything in between.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Essentials of Management – Management</a></h3>
+										<div class="wysiwyg">
+											<p>Improve trust and communication with employees, and obtain basic tools to increase overall managerial skills.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Essentials of Management – Supervision</a></h3>
+										<div class="wysiwyg">
+											<p>For first-time supervisors and/or those looking to move up to a supervisor’s role — learn five essential components to success.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Info Session</a>
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Paralegal Studies</a></h3>
+										<div class="wysiwyg">
+											<p>Prepare as a college graduate with the in-depth legal knowledge and skills necessary to succeed in the legal profession.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Project Management</a></h3>
+										<div class="wysiwyg">
+											<p>Gain knowledge and skills to increase your value to an organization and enhance your future career prospects.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Fundamentals of Web Design and Development</a></h3>
+										<div class="wysiwyg">
+											<p>Develop the design and functional aspects of websites, and prepare a solid foundation for entry into the Web design and development industry.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+					<div class="col-lg-6 mb-4">
+						<div class="card-actions h-100">
+							<div class="row h-100">
+								<div class="col-sm-4">
+									<div class="card-actions__img-wrap">
+										<img class="card-actions__img d-none d-sm-block" src="includes/images/placeholders/program-thumb.jpg" alt="" />
+										<a href="program.html#webinars" class="badge badge-light card-actions__badge">Webinar</a>
+									</div>
+									<!-- /.card-actions__img -->
+								</div>
+								<!-- /.col-sm-4 -->
+
+								<div class="col-sm-8">
+									<div class="card-actions__info h-100 d-flex flex-column">
+										<h3 class="card-actions__title"><a href="program.html">Digital Marketing</a></h3>
+										<div class="wysiwyg">
+											<p>Develop skills in online marketing, including e-commerce, social media, search engine optimization, HTML and CSS, and web video production.</p>
+										</div>
+										<!-- /.wysiwyg -->
+										<!--<div class="card-actions__date">
+											<div class="font-weight-bold">Saturday, September 23</div>
+											<div>12 PM - 5 PM EST</div>
+										</div>-->
+										<!-- /.card-actions__date -->
+										<div class="btn-group" role="group" aria-label="Basic example">
+											<button type="button" class="btn btn-secondary">Enroll</button>
+											<button type="button" class="btn btn-outline-secondary">Learn More</button>
+										</div>
+										<!-- /.btn-group -->
+									</div>
+									<!-- /.card-actions__info -->
+								</div>
+								<!-- /.col-sm-8 -->
+							</div>
+							<!-- /.row -->
+						</div>
+						<!-- /.card-actions -->
+					</div>
+					<!-- /.col-lg-6 -->
+
+				</div>
+				<!-- /.row -->
+
+				<!-- Testimonials -->
+				<div class="cta bg-facets-yellow mt-5">
+					<div class="row align-items-center justify-content-between">
+						<div class="col-md-6 col-lg-8">
+							<h2 class="cta__text">Can’t find it? Reach out.</h2>
+						</div>
+						<!-- /.col-lg-8 -->
+						<div class="col-md-6 col-lg-4">
+							<a href="program.html#webinars" class="btn btn-primary btn-lg btn-block">Contact us</a>
+						</div>
+						<!-- /.col-lg-4 -->
+					</div>
+					<!-- /.row .align-items-center -->
+				</div>
+				<!-- /.cta .bg-facets-yellow -->
+			</div>
+            <!-- /.container -->
+        </div>
+        <!-- /.wrapper -->
+    </section>
+
+</main>
+
+
+    <footer id="site-footer" class="footer gradient-hz-blue pinch pinch-blue">
+    <div class="container">
+
+        <div class="row justify-content-between">
+            <div class="col-md-5">
+
+                <a href="index.html" class="footer__logo mb-5">
+                    <img src="includes/images/logo-ece-footer.svg" alt="Emory University | Emory Continuing Education" />
+                </a>
+
+                <ul class="nav footer__social">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/facebook.svg" alt="Facebook" class="img-fluid" />
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/instagram.svg" alt="Instagram" class="img-fluid" />
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">
+                            <img src="includes/images/icons/twitter.svg" alt="Twitter" class="img-fluid" />
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-5 -->
+            <div class="col-md-6">
+
+                <ul class="footer__nav">
+                    <li class="footer__nav-item">
+                        <a href="courses.html" class="footer__nav-link">Courses</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="certificate-programs.html" class="footer__nav-link">Certificate Programs</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Info Sessions</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="about.html" class="footer__nav-link">About</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Contact</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Student Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Instructor Login</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Policies & Procedures</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="olli.html" class="footer__nav-link">OLLI</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="corporate.html" class="footer__nav-link">Corporate</a>
+					</li>
+					<li class="footer__nav-item">
+                        <a href="#" class="footer__nav-link">Military</a>
+					</li>
+                </ul>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <div class="row align-items-center small">
+            <div class="col-md-6">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Refund Policy</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.col-md-6 -->
+            <div class="col-md-6">
+
+                <div class="text-md-right">2018 All rights reserved. Emory University.</div>
+
+                <div class="mt-4 text-md-right d-block d-lg-none">
+                    <a href="#" class="btn btn-dark">Back to top</a>
+                </div>
+
+            </div>
+            <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+
+    </div>
+    <!-- /.container -->
+
+    <a href="#" class="btn btn-dark footer__btn-top d-none d-lg-block">
+        <img src="includes/images/icons/chevron-up-w.svg" alt=""/>
+        <div class="sr-only">Back to top</div>
+    </a>
+
+</footer>
+
+    <!--
+#########################################
+JQUERY 3.3.1
+Bootstrap dependency
+#########################################
+-->
+<script src="includes/js/vendor/jquery/jquery.min.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP 4.1 COMPONENTS
+Include only the JS components needed
+for the website to function
+#########################################
+-->
+<script src="includes/js/vendor/bootstrap/util.js"></script>
+<script src="includes/js/vendor/popper/popper.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/popper/popper-utils.min.js"></script> <!-- POPPER.JS 1.14.1 - required for many BS popup components -->
+<script src="includes/js/vendor/bootstrap/tooltip.js"></script>
+<script src="includes/js/vendor/bootstrap/alert.js"></script>
+<script src="includes/js/vendor/bootstrap/button.js"></script>
+<script src="includes/js/vendor/bootstrap/carousel.js"></script>
+<script src="includes/js/vendor/bootstrap/collapse.js"></script>
+<script src="includes/js/vendor/bootstrap/dropdown.js"></script>
+<script src="includes/js/vendor/bootstrap/index.js"></script>
+<script src="includes/js/vendor/bootstrap/modal.js"></script>
+<script src="includes/js/vendor/bootstrap/popover.js"></script>
+<script src="includes/js/vendor/bootstrap/scrollspy.js"></script>
+<script src="includes/js/vendor/bootstrap/tab.js"></script>
+
+<!--
+#########################################
+PAYPAL - BOOTSTRAP ACCESSBILITY SUITE
+This trimmed down file contains
+BS carousel accessibility features
+#########################################
+-->
+<script src="includes/js/vendor/paypal/bootstrap-accessibility.js"></script>
+
+<!--
+#########################################
+BOOTSTRAP BREAKPOINTS
+#########################################
+-->
+<script src="includes/js/if-b4-breakpoint.min.js"></script>
+
+<!--
+#########################################
+PRIMARY SITE JAVASCRIPT
+This javascript is a combination of all
+locally imported JS files.
+#########################################
+-->
+<script src="includes/js/site.js"></script>
+</body>
+
+</html>
