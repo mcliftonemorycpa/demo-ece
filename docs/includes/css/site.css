@@ -9352,6 +9352,11 @@ body {
 .hero.hero-home .hero__heading, .hero .hero__heading {
   font-size: 2.5rem; }
 
+.hero.hero-interior {
+  min-height: 200px;
+  height: 200px;
+  background-position: bottom; }
+
 .stats.stats-col .stats__bold {
   font-size: 1.5rem; }
 
@@ -9413,11 +9418,7 @@ body {
     font-size: 2.25rem; } }
 
 @media (min-width: 768px) {
-  .hero.hero-interior {
-    min-height: 250px;
-    height: 250px;
-    background-position: bottom; }
-  .hero.hero-home .hero__heading, .hero .hero__heading {
+  .hero.hero-home .hero__heading {
     font-size: 3rem; }
   .photo-overlap .photo.photo-shift {
     margin-bottom: -30px; }
@@ -9445,5 +9446,5 @@ body {
     width: 450px;
     max-width: 450px;
     height: 30px; }
-  .hero.hero-home .hero__heading, .hero .hero__heading {
+  .hero.hero-home .hero__heading {
     font-size: 3.5rem; } }
