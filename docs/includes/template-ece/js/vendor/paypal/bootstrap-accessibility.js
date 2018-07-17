@@ -82,7 +82,7 @@
     return (/input|select|textarea|button|object/.test(nodeName) ?
       !element.disabled :
       "a" === nodeName ?
-      element.href || isTabIndexNotNaN : isTabIndexNotNaN) && visible(element); // the element and all of its ancestors must be visible
+      element.href || isTabIndexNotNaN : isTabIndexNotNaN) && visible(element); // the element and all of its ancestors must be visible  
   }
   var visible = function (element) {
     return $.expr.filters.visible(element) &&
@@ -114,7 +114,7 @@
     }
   });
 
-
+  
 
 
   // Carousel Extension
@@ -213,7 +213,7 @@
       $this.attr('aria-labelledby', id_title);
       $this.attr('aria-describedby', id_desc);
       $this.prepend('<p id="' + id_desc + '" class="sr-only">A carousel is a rotating set of images, rotation stops on keyboard focus on carousel tab controls or hovering the mouse pointer over images.  Use the tabs or the previous and next buttons to change the displayed slide.</p>')
-      $this.prepend('<h2 id="' + id_title + '" class="sr-only">Carousel content with ' + $tabpanels.length + ' slides.</h2>')
+      $this.prepend('<h2 id="' + id_title + '" class="sr-only">Carousel content with ' + $tabpanels.length + ' slides.</h2>') 
     }
 
     for (i = 0; i < $tabs.length; i++) {

@@ -1,16 +1,15 @@
-@charset "UTF-8";
 /*
- *
+ * 
  * EMORY BRAND COLOR PALETTE
- *
+ * 
 */
 /*
  * ECE Colors
 */
 /*
- *
+ * 
  * EMORY BRAND WEB FONTS
- *
+ * 
 */
 .align-baseline {
   vertical-align: baseline !important; }
@@ -6354,7 +6353,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .bs-popover-top .arrow::before, .bs-popover-auto[x-placement^="top"] .arrow::before {
     bottom: 0;
     border-top-color: rgba(16, 24, 32, 0.25); }
-
+  
   .bs-popover-top .arrow::after,
   .bs-popover-auto[x-placement^="top"] .arrow::after {
     bottom: 1px;
@@ -6374,7 +6373,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .bs-popover-right .arrow::before, .bs-popover-auto[x-placement^="right"] .arrow::before {
     left: 0;
     border-right-color: rgba(16, 24, 32, 0.25); }
-
+  
   .bs-popover-right .arrow::after,
   .bs-popover-auto[x-placement^="right"] .arrow::after {
     left: 1px;
@@ -6391,7 +6390,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .bs-popover-bottom .arrow::before, .bs-popover-auto[x-placement^="bottom"] .arrow::before {
     top: 0;
     border-bottom-color: rgba(16, 24, 32, 0.25); }
-
+  
   .bs-popover-bottom .arrow::after,
   .bs-popover-auto[x-placement^="bottom"] .arrow::after {
     top: 1px;
@@ -6420,7 +6419,7 @@ select.form-control-lg:not([size]):not([multiple]), .input-group-lg > select.for
   .bs-popover-left .arrow::before, .bs-popover-auto[x-placement^="left"] .arrow::before {
     right: 0;
     border-left-color: rgba(16, 24, 32, 0.25); }
-
+  
   .bs-popover-left .arrow::after,
   .bs-popover-auto[x-placement^="left"] .arrow::after {
     right: 1px;
@@ -7324,47 +7323,6 @@ mark,
   font-weight: 600;
   font-style: italic; }
 
-/* ----------------------------------- //
-//      CSS Hacks Mixins for Sass
-// ----------------------------------- //
-	How to use:
-	@include [Mixin_Name]( 'selector', (property: value) )
-	Example:
-	@include only_safari9( '.my_element', (color: red) )
-	@include only_edge( '.my_element', (
-		background-color: green,
-		display: flex,
-		margin: 2em,
-	))
-	Tips:
-	  - Use firefox mixins before IE mixins. Sometimes Firefox wants to precess the IE css but it can't and skips it's own CSS!
-
-
-/* ----------------------------------- //
-//          Firefox CSS Hacks
-// ----------------------------------- */
-/*--- Only Firefox ≥ 30 ---*/
-/* ----------------------------------- //
-//          Webkit CSS Hacks
-// ----------------------------------- */
-/*--- Only Webkit (Chrome, Safari, Opera ≥ 14) ---*/
-/*--- Only Chrome 28+, Opera ≥ 14 ---*/
-/*--- Only Safari ≥ 9 ---*/
-/*--- Only iOS Safari ≥ 9 ---*/
-/*--- Only Safari ≥ 9 (Non iOS) ---*/
-/* ----------------------------------- //
-//           Opera CSS Hacks
-// ----------------------------------- */
-/*--- Only Opera ≥ 9.5 ---*/
-/* ----------------------------------- //
-//     Edge CSS Hacks
-// ----------------------------------- */
-/* ----------------------------------- //
-//     Internet Explorer CSS Hacks
-// ----------------------------------- */
-/*--- Only IE10+ ---*/
-/*--- Only IE ≤ 11 ---*/
-/*--- Only IE ≥ 11 ---*/
 /*
  * Heading styles
 */
@@ -7378,19 +7336,19 @@ mark,
  * Vertical Gradient
 */
 /*
- *
+ * 
  * EMORY BRAND COLOR PALETTE
- *
+ * 
 */
 /*
  * ECE Colors
 */
 /*
- *
+ * 
  * EMORY BRAND WEB FONTS
- *
+ * 
 */
-/*
+/* 
  * Text selection color
 */
 ::-moz-selection {
@@ -7597,7 +7555,7 @@ body {
     position: relative;
     z-index: 1; }
 
-/*
+/* 
  * Create a placeholder space for images
  * to prevent content shifting around
  * while they load or if the image is broken
@@ -7635,7 +7593,7 @@ figure.image {
   padding: 4rem 0;
   margin: 0 auto;
   width: calc( 100% - (30px * 2));
-  max-width: calc( 1140px + 10rem - 7px);
+  max-width: calc( 1140px + 8rem);
   border-right: 1px solid #d9d9d6;
   border-left: 1px solid #d9d9d6;
   background-color: #fff; }
@@ -7679,14 +7637,6 @@ figure.image {
     top: 0; }
   .pinch::after {
     bottom: 0; }
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .pinch *::-ms-backdrop, .pinch::before {
-      height: 30px;
-      top: -5px; } }
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .pinch *::-ms-backdrop, .pinch::after {
-      height: 30px;
-      bottom: -5px; } }
   @media (max-width: 767.98px) {
     .pinch::before {
       -webkit-transform: translateY(-70%);
@@ -7759,10 +7709,6 @@ figure.image {
     position: absolute;
     z-index: 1;
     content: url("../images/icons/chevron-right-w.svg"); }
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .card-link-arrow *::-ms-backdrop, .card-link-arrow::after {
-      width: 20px;
-      height: 20px; } }
   .card-link-arrow.card-link-arrow-bottom::before, .card-link-arrow.card-link-arrow-bottom::after {
     bottom: -17.5px; }
   .card-link-arrow.card-link-arrow-bottom::before {
@@ -7773,9 +7719,6 @@ figure.image {
     left: 50%;
     -webkit-transform: translateX(-35%);
             transform: translateX(-35%); }
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .card-link-arrow.card-link-arrow-bottom *::-ms-backdrop, .card-link-arrow.card-link-arrow-bottom::after {
-      bottom: -10px; } }
   .card-link-arrow.card-link-arrow-right::before, .card-link-arrow.card-link-arrow-right::after {
     top: 50%; }
   .card-link-arrow.card-link-arrow-right::before {
@@ -7786,9 +7729,6 @@ figure.image {
     -webkit-transform: translateY(-35%);
             transform: translateY(-35%);
     right: -12.5px; }
-  @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
-    .card-link-arrow.card-link-arrow-right *::-ms-backdrop, .card-link-arrow.card-link-arrow-right::after {
-      top: 48%; } }
   @media (max-width: 767.98px) {
     .card-link-arrow.card-link-arrow-right::before {
       width: 30px;
@@ -7869,7 +7809,7 @@ figure.image {
   .heading-group.heading-group-dark .heading-group__secondary {
     color: #f2a900; }
 
-/*
+/* 
  * Styles specific to Cascade WYSIWYG areas
 */
 .wysiwyg h1,
@@ -8241,7 +8181,10 @@ figure.image {
     margin-bottom: 2rem;
     outline: 3px solid transparent;
     -webkit-transition: outline .2s ease-in-out;
-    transition: outline .2s ease-in-out; }
+    transition: outline .2s ease-in-out;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1; }
     .card-links .card-links__link:hover, .card-links .card-links__link:focus {
       outline-color: #f2a900;
       text-decoration: none; }
@@ -8685,9 +8628,7 @@ figure.image {
     font-weight: 700;
     line-height: 1rem;
     color: #495057;
-    padding: calc(30px / 2); }
-  .list-row .list-row__icon {
-    padding-left: calc(30px / 2); }
+    padding: calc(30px / 4) calc(30px / 2); }
   @media (min-width: 576px) {
     .list-row .list-row__item {
       margin-bottom: 30px;
@@ -8735,9 +8676,6 @@ figure.image {
       width: 100%;
       max-width: 300px;
       height: 30px; }
-  @supports (overflow: -webkit-marquee) and (justify-content: inherit) {
-    #site-nav .logo__ece {
-      margin-left: 1rem; } }
   #site-nav .navbar-toggler {
     margin-left: 1rem;
     font-size: 0.875rem; }
@@ -8756,6 +8694,9 @@ figure.image {
         padding-left: 0;
         padding-right: 0;
         font-size: 1.125rem; }
+      #site-nav .navbar-nav .nav-item .dropdown-toggle::after {
+        border-top: 0.3em solid #41b6e6;
+        margin-left: 0; }
       #site-nav .navbar-nav .nav-item:hover .nav-link {
         color: #007dba; }
       #site-nav .navbar-nav .nav-item.active .nav-link {
@@ -8807,9 +8748,6 @@ figure.image {
     position: relative;
     z-index: 3; }
   @media (max-width: 991.98px) {
-    #site-nav .dropdown-toggle::after {
-      content: none; } }
-  @media (max-width: 991.98px) {
     #site-nav .dropdown-menu {
       border: none;
       border-left: 1px solid #d9d9d6;
@@ -8831,12 +8769,9 @@ figure.image {
       #site-nav .navbar-nav .nav-item.active .nav-link {
         -webkit-box-shadow: inset 0 3px 0 0 #f2a900;
                 box-shadow: inset 0 3px 0 0 #f2a900; }
-    #site-nav .navbar-nav .dropdown-menu.show {
+    #site-nav .dropdown-menu.show {
       -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35);
-              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); }
-    #site-nav .navbar-nav .dropdown-menu .dropdown-toggle::after {
-      border-top: 0.3em solid #41b6e6;
-      margin-left: 0; } }
+              box-shadow: 0 5px 15px rgba(0, 0, 0, 0.35); } }
   @media (min-width: 1200px) {
     #site-nav .logo__ece img {
       width: 400px;
