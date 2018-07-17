@@ -282,6 +282,11 @@ body {
 .hero.hero-home .hero__heading, .hero .hero__heading {
 	font-size: 2.5rem;
 }
+.hero.hero-interior {
+	min-height: 200px;
+	height: 200px;
+	background-position: bottom;
+}
 
 // Increase stat sizes
 .stats.stats-col .stats__bold {
@@ -369,14 +374,8 @@ body {
 }
 
 @include media-breakpoint-up(md) {
-	// Decrease hero height because it was a bit much in the mockups
-	.hero.hero-interior {
-		min-height: 250px;
-		height: 250px;
-		background-position: bottom;
-	}
 	// Increase hero heading size
-	.hero.hero-home .hero__heading, .hero .hero__heading {
+	.hero.hero-home .hero__heading {
 		font-size: 3rem;
 	}
 	// Negative bottom margin on shift photos to compensate for offset
@@ -423,7 +422,7 @@ body {
 		height: 30px;
 	}
 	// Increase hero heading size
-	.hero.hero-home .hero__heading, .hero .hero__heading {
+	.hero.hero-home .hero__heading {
 		font-size: 3.5rem;
 	}
 }
